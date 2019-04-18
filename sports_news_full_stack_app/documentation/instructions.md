@@ -18,7 +18,7 @@ They want to be able to:
 For the front end of the website, users should be able to:
 
 - View a list of articles, ordered by date. (Newest first!)
-- Filter articles based on catagory
+- Filter articles based on category
 - Click through to the full story
 
 (Each Article might have a headline, summary paragraph, and the full story along with the journalist who wrote it - and any other fields you want to add.)
