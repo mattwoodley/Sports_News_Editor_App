@@ -9,7 +9,7 @@
 
 * Front end should pass sort conditions through with respect to database fields
 
-* List, Singular and Edit form views required
+* List, Singular and Edit form views required - draw up a diagram for each
 
 #### Intermediary Concerns
 
