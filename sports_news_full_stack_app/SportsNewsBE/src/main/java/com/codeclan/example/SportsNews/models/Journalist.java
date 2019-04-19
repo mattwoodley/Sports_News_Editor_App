@@ -21,8 +21,9 @@ public class Journalist {
 
     public Journalist(String firstName, String surname, String image) {
         this.firstName = firstName;
-        this.image = image;
         this.surname = surname;
+        this.image = image;
+
     }
 
     public Journalist(){};
