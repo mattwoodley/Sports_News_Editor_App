@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ae657b34-fbe7-4009-8e55-363f5cc08dd1" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/src/test/java/com/codeclan/example/SportsNews/SportsNewsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/codeclan/example/SportsNews/SportsNewsApplicationTests.java" afterDir="false" />
 >>>>>>> 3ae0a636eb708b0e145852bb2cb034d96da91a7e
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Journalist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Journalist.java" afterDir="false" />
+>>>>>>> eb33e1dc798084305f2f06fb6cffd99d58daaec2
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,6 +51,7 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor" />
@@ -64,6 +69,40 @@
             <state relative-caret-position="197">
               <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
 >>>>>>> 3ae0a636eb708b0e145852bb2cb034d96da91a7e
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/codeclan/example/SportsNews/SportsNewsApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Journalist.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#747#748#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
+                <element signature="e#894#895#0" expanded="true" />
+                <element signature="e#926#927#0" expanded="true" />
+                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#1018#1019#0" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
+              </folding>
+>>>>>>> eb33e1dc798084305f2f06fb6cffd99d58daaec2
             </state>
           </provider>
         </entry>
@@ -75,8 +114,20 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/components/DataLoader.java">
 >>>>>>> 3ae0a636eb708b0e145852bb2cb034d96da91a7e
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="22" />
+            <state relative-caret-position="-193">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/repositories/Journalists/JournalistRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,8 +142,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/repositories/Categories/CategoryRepository.java">
 >>>>>>> 3ae0a636eb708b0e145852bb2cb034d96da91a7e
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="75">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,7 +160,7 @@
 =======
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="345">
               <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="e#337#338#0" expanded="true" />
@@ -139,6 +190,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Journalist.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -150,6 +202,8 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+=======
+>>>>>>> eb33e1dc798084305f2f06fb6cffd99d58daaec2
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="143">
@@ -192,10 +246,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/ArticleProjection.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Article.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/repositories/Categories/CategoryRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/components/DataLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Article.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/repositories/Journalists/JournalistRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/codeclan/example/SportsNews/SportsNewsApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/components/DataLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Journalist.java" />
       </list>
     </option>
   </component>
@@ -301,15 +357,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SportsNews" type="462c0819:PsiDirectoryNode" />
-              <item name="projections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SportsNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SportsNews" type="462c0819:PsiDirectoryNode" />
               <item name="repositories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -331,6 +378,16 @@
               <item name="SportsNews" type="462c0819:PsiDirectoryNode" />
               <item name="repositories" type="462c0819:PsiDirectoryNode" />
               <item name="Categories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SportsNews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SportsNews" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="Journalists" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SportsNews" type="b2602c69:ProjectViewProjectNode" />
@@ -384,7 +441,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SportsNewsApplicationTests">
+  <component name="RunManager" selected="Application.SportsNewsApplication">
     <configuration name="SportsNewsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codeclan.example.SportsNews.SportsNewsApplication" />
       <module name="SportsNews" />
@@ -415,8 +472,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SportsNewsApplicationTests" />
         <item itemvalue="Application.SportsNewsApplication" />
+        <item itemvalue="JUnit.SportsNewsApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -432,6 +489,23 @@
       <updated>1555652583822</updated>
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SportsNewsApplicationTests - 2019.04.19 at 14h 45m 39s.xml">
+      <configuration name="SportsNewsApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SportsNewsApplicationTests - 2019.04.19 at 15h 23m 56s.xml">
+      <configuration name="SportsNewsApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SportsNewsApplicationTests - 2019.04.19 at 15h 27m 15s.xml">
+      <configuration name="SportsNewsApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SportsNewsApplicationTests - 2019.04.19 at 15h 28m 14s.xml">
+      <configuration name="SportsNewsApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SportsNewsApplicationTests - 2019.04.19 at 15h 37m 11s.xml">
+      <configuration name="SportsNewsApplicationTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
@@ -458,16 +532,20 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32976446" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32976446" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3279678" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39637828" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32976446" />
 =======
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3279678" />
 >>>>>>> 3ae0a636eb708b0e145852bb2cb034d96da91a7e
+=======
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3279678" />
+>>>>>>> eb33e1dc798084305f2f06fb6cffd99d58daaec2
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -604,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/repositories/Journalists/JournalistRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/SportsNewsApplication.java">
 >>>>>>> 3ae0a636eb708b0e145852bb2cb034d96da91a7e
       <provider selected="true" editor-type-id="text-editor">
@@ -667,9 +738,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/repositories/Articles/ArticleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="345">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="e#337#338#0" expanded="true" />
@@ -693,27 +771,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/repositories/Articles/ArticleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/repositories/Categories/CategoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/components/DataLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/repositories/Journalists/JournalistRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="22" />
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -722,9 +793,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/codeclan/example/SportsNews/SportsNewsApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/components/DataLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-193">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Journalist.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="197">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
 >>>>>>> 3ae0a636eb708b0e145852bb2cb034d96da91a7e
+=======
+        <state relative-caret-position="241">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+          </folding>
+>>>>>>> eb33e1dc798084305f2f06fb6cffd99d58daaec2
         </state>
       </provider>
     </entry>
