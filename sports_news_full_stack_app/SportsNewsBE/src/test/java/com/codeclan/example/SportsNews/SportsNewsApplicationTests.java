@@ -1,13 +1,21 @@
 package com.codeclan.example.SportsNews;
 
+import com.codeclan.example.SportsNews.models.Article;
 import com.codeclan.example.SportsNews.models.Category;
 import com.codeclan.example.SportsNews.models.Journalist;
+import com.codeclan.example.SportsNews.repositories.Articles.ArticleRepository;
 import com.codeclan.example.SportsNews.repositories.Categories.CategoryRepository;
+import com.codeclan.example.SportsNews.repositories.Journalists.JournalistRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
 
@@ -18,6 +26,12 @@ public class SportsNewsApplicationTests {
 
 	@Autowired
 	CategoryRepository categoryRepository;
+
+	@Autowired
+	JournalistRepository journalistRepository;
+
+	@Autowired
+	ArticleRepository articleRepository;
 
 	@Test
 	public void contextLoads() {
@@ -45,5 +59,19 @@ public class SportsNewsApplicationTests {
 	public void getJournalistImage() {
 		Journalist journalist1 = new Journalist("John", "Burn", "url");
 		assertEquals("url", journalist1.getImage());
+	}
+
+	@Test
+	public void articleHasDate() {
+		DateFormat sfd = new SimpleDateFormat("dd-MM-yy");
+		String newDate= "11-02-2019";
+		Date date = null;
+		try {
+			date = sfd.parse(newDate);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		Article footballArticle = new Article("football" , "Summary", "Full Story", date, "url", 5);
+		assertEquals(date, footballArticle.getDateCreated());
 	}
 }
