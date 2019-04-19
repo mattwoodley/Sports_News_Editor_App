@@ -1,4 +1,7 @@
 package com.codeclan.example.SportsNews.repositories.Categories;
 
-public interface CategoryRepository {
+import com.codeclan.example.SportsNews.models.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CategoryRepository extends JpaRepository<Category, Long> {
 }
