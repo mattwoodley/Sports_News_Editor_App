@@ -6,8 +6,11 @@ import javax.persistence.*;
 @Table(name="journalists")
 public class Journalist {
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "first_name")
+    private String firstName;
+
+    @Column(name = "surname")
+    private String surname;
 
     @Column(name = "image")
     private String image;
@@ -16,21 +19,13 @@ public class Journalist {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    public Journalist(String name, String image) {
-        this.name = name;
+    public Journalist(String firstName, String surname, String image) {
+        this.firstName = firstName;
         this.image = image;
+        this.surname = surname;
     }
 
     public Journalist(){};
-
-    public String getName() {
-        return name;
-    }
-
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public Long getId() {
         return id;
@@ -46,5 +41,21 @@ public class Journalist {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 }
