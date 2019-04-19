@@ -4,4 +4,5 @@ import React from 'react';
 const MicroArticle = (props) => {
 
 }
- export default MicroArticle;
+
+export default MicroArticle;

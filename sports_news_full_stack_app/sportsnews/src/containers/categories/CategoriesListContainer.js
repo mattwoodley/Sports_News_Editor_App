@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CategoryListView from '../../components/categories/CategoryListView.js';
+import CategoriesList from '../../components/categories/CategoriesList.js';
 import Request from '../../helpers/request.js';
 
 class CategoriesListContainer extends Component {

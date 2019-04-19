@@ -4,4 +4,4 @@ class JournalistEditForm extends Component {
 
 };
 
-  export default JournalistEditForm;
+export default JournalistEditForm;

@@ -4,4 +4,4 @@ class ArticleEditForm extends Component {
 
   }
 
-  export default ArticleEditForm;
+export default ArticleEditForm;

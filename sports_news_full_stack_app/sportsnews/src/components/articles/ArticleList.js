@@ -5,4 +5,5 @@ import MicroArticle from './MicroArticle.js';
 const ArticleList = (props) => {
 
 }
- export default ArticleList;
+
+export default ArticleList;

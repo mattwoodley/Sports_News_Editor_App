@@ -6,7 +6,7 @@ class Request {
     .then((res) => res.json());
   }
 
-//creates a new record
+//creates 1 new record
   post(url, payload){
     return fetch(url, {
       method: "POST",
@@ -15,7 +15,7 @@ class Request {
     })
   }
 
-// deletes a record
+// deletes 1 record
   delete(url) {
     return fetch(url, {
       method: "DELETE",
@@ -23,7 +23,7 @@ class Request {
     })
   }
 
-// patch is when you're updating a record
+// patch updates 1 record
   patch(url, payload){
     return fetch(url, {
       method: "PATCH",

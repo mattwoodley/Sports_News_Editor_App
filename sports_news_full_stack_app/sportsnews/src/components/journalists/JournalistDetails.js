@@ -6,4 +6,5 @@ import MicroJournalist from './MicroJournalist';
 const JournalistDetails = (props) => {
 
 }
- export default JournalistDetails;
+
+export default JournalistDetails;
