@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import JournalistForm from '../../components/journalists/JournalistForm.js';
+import JournalistEditForm from '../../components/journalists/JournalistEditForm.js';
 import Request from '../../helpers/request.js';
 
-class SingleJournalistContainer extends Component {
+class JournalistEditFormContainer extends Component {
 
 }
 
-export default SingleJournalistContainer;
+export default JournalistEditFormContainer;

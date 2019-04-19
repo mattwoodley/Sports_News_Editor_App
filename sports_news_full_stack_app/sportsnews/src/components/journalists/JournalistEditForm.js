@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-class PirateEditForm extends Component {
+class JournalistEditForm extends Component {
 
-  }
+};
 
-  export default ArticleEditForm;
+  export default JournalistEditForm;

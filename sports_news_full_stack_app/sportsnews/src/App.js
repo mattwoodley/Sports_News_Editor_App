@@ -6,11 +6,11 @@ import NavBar from './containers/NavBar';
 import Header from './containers/Header';
 import ArticleListContainer from './containers/articles/ArticleListContainer'
 import SingleArticleContainer from './containers/articles/SingleArticleContainer';
-import ArticleFormContainer from './containers/articles/ArticleFormContainer';
+import ArticleCreateFormContainer from './containers/articles/ArticleCreateFormContainer';
 import ArticleEditFormContainer from './containers/articles/ArticleEditFormContainer';
 import JournalistListContainer from './containers/articles/JournalistListContainer'
 import SingleJournalistContainer from './containers/articles/SingleJournalistContainer';
-import JournalistFormContainer from './containers/articles/JournalistFormContainer';
+import JournalistCreateFormContainer from './containers/articles/JournalistCreateFormContainer';
 import JournalistEditFormContainer from './containers/articles/JournalistEditFormContainer';
 import CategoriesListContainer from './containers/categories/CategoriesListContainer'
 
@@ -26,7 +26,7 @@ class App extends Component {
           <Switch>
             <Route exact path = '/' component={MainContainer}/>
             <Route exact path = '/articles' component={ArticleListContainer}/>
-            <Route exact path = '/articles/new' component={ArticleFormContainer}/>
+            <Route exact path = '/articles/new' component={ArticleCreateFormContainer}/>
             <Route exact path="/articles/edit/:id" render = {(props) =>{
               const id = props.match.params.id;
               return <ArticleEditFormContainer id = {id} />
@@ -38,7 +38,7 @@ class App extends Component {
           }}
         />
         <Route exact path = '/journalists' component={JournalistListContainer}/>
-        <Route exact path = '/journalists/new' component={JournalistFormContainer}/>
+        <Route exact path = '/journalists/new' component={JournalistCreateFormContainer}/>
         <Route exact path="/journalists/edit/:id" render = {(props) =>{
           const id = props.match.params.id;
           return <JournalistEditFormContainer id = {id} />
