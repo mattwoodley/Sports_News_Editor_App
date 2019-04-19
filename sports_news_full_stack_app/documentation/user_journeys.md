@@ -2,20 +2,16 @@
 ## Planning & Documentation
 ### User Journeys
 
-*As a user I want to be able to add new stories to the What's goin on news database*
+Create an Articles
 
-*As a user I want to be able to remove stories from the What's goin on news database*
+Update An Articles
 
-*As a user I want to be able to modify stories in the What's goin on news database*
+Delete an Articles
 
-*As a user I want to be able to add new journalists to the What's goin on news database as they submit articles to our publication*
+Find An Articles
 
-*As a user I want to be able to remove journalists to the What's goin on news database as they can no longer contribute to our publication for legal purposes*
+Sort an Articles by date
 
-*As a user I want an to be able to go about my work without simple tasks stressing me out*
+Sort an Article By popularity
 
-*As a user I need to be able to quickly judge the content of an article*
-
-*As an user who has spent a long time reading text, it would be helpful if i could check content by listening rather than looking*
-
-*As a user who needs to try and get through as many articles as possible I need to get a good overview of an article at a glance*
+Filter an Article by category

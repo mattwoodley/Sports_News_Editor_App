@@ -24,6 +24,9 @@
 
 **App should provide sort by date functionality**
 
+*As a user I want to be able to check what the most popular stories are on the site*
+**App should provide sort by read count functionality**
+
 *As a user I need to be able to see stories involving a specific sport*
 
 **App should provide a filter for specific sports**
