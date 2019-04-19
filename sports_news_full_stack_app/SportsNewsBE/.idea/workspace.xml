@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ae657b34-fbe7-4009-8e55-363f5cc08dd1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/ArticleProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/ArticleProjection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/CategoryProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/CategoryProjection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/JournalistProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/JournalistProjection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/codeclan/example/SportsNews/SportsNewsApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="33">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -65,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/ArticleProjection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -86,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/JournalistProjection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="150">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,9 +181,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/codeclan/example/SportsNews/SportsNewsApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/components/DataLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Journalist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/ArticleProjection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/CategoryProjection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/JournalistProjection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/ArticleProjection.java" />
       </list>
     </option>
   </component>
@@ -203,8 +200,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
-    <option name="y" value="97" />
+    <option name="x" value="19" />
+    <option name="y" value="52" />
     <option name="width" value="1024" />
     <option name="height" value="589" />
   </component>
@@ -222,6 +219,11 @@
             <path>
               <item name="SportsNews" type="b2602c69:ProjectViewProjectNode" />
               <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SportsNews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SportsNews" type="b2602c69:ProjectViewProjectNode" />
@@ -257,15 +259,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SportsNews" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SportsNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SportsNews" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SportsNews" type="b2602c69:ProjectViewProjectNode" />
@@ -443,7 +436,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="97" width="1024" height="589" extended-state="0" />
+    <frame x="19" y="52" width="1024" height="589" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3340122" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -459,7 +453,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3279678" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34406438" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -573,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/repositories/Categories/CategoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -597,13 +584,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/codeclan/example/SportsNews/SportsNewsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
@@ -642,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/ArticleProjection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/CategoryProjection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -661,11 +634,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/JournalistProjection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/models/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/codeclan/example/SportsNews/SportsNewsApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeclan/example/SportsNews/projections/ArticleProjection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
