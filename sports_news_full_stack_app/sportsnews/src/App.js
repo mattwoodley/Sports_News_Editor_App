@@ -48,6 +48,7 @@ class App extends Component {
         const id = props.match.params.id;
         return <SingleJournalistContainer id = {id} />
       }}
+      />
       <Route exact path="/categories/:id" render = {(props) =>{
         const id = props.match.params.id;
         return <CategoriesListContainer id = {id} />
