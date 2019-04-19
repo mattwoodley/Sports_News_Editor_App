@@ -37,14 +37,14 @@ class App extends Component {
             return <SingleArticleContainer id = {id} />
           }}
         />
-        <Route exact path = '/articles' component={JournalistListContainer}/>
-        <Route exact path = '/articles/new' component={JournalistFormContainer}/>
-        <Route exact path="/articles/edit/:id" render = {(props) =>{
+        <Route exact path = '/journalists' component={JournalistListContainer}/>
+        <Route exact path = '/journalists/new' component={JournalistFormContainer}/>
+        <Route exact path="/journalists/edit/:id" render = {(props) =>{
           const id = props.match.params.id;
           return <JournalistEditFormContainer id = {id} />
         }}
       />
-      <Route exact path="/articles/:id" render = {(props) =>{
+      <Route exact path="/journalists/:id" render = {(props) =>{
         const id = props.match.params.id;
         return <SingleJournalistContainer id = {id} />
       }}
