@@ -29,13 +29,24 @@ public class Article {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
 
-    public Article(String headline, String summary, String fullStory, Date dateCreated, String image, int readCount){
+    @ManyToOne
+    @JoinColumn(name = "category_id", nullable = false)
+    private Category category;
+
+    @ManyToOne
+    @JoinColumn(name = "journalist_id", nullable = false)
+    private Journalist journalist;
+
+    public Article(String headline, String summary, String fullStory, Date dateCreated, String image, int readCount, Category category, Journalist journalist){
         this.headline = headline;
         this.summary = summary;
         this.fullStory = fullStory;
         this.dateCreated = dateCreated;
         this.image = image;
         this.readCount = readCount;
+        this.category = category;
+        this.journalist = journalist;
+
     }
 
     public Article(){};
@@ -91,6 +102,22 @@ public class Article {
 
     public Long getId() {
         return id;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public Journalist getJournalist() {
+        return journalist;
+    }
+
+    public void setJournalist(Journalist journalist) {
+        this.journalist = journalist;
     }
 
     public void setId(Long id) {
