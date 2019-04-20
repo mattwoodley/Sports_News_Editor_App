@@ -13,7 +13,7 @@ class ArticleListContainer extends Component {
   componentDidMount(){
     let request = new Request()
     request.get('/api/articles').then((data) => {
-      this.setState({articles: data})
+      this.setState({articles: data._embedded.articles})
     })
   }
 
