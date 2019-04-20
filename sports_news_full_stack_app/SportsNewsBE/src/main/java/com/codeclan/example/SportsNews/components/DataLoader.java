@@ -40,6 +40,41 @@ public class DataLoader implements ApplicationRunner {
             e.printStackTrace();
         }
 
+        DateFormat sfd1 = new SimpleDateFormat("dd-MM-yy");
+        String newDate1 = "12-02-2019";
+        Date date1 = null;
+        try {
+            date1 = sfd.parse(newDate1);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        DateFormat sfd2 = new SimpleDateFormat("dd-MM-yy");
+        String newDate2 = "13-02-2019";
+        Date date2 = null;
+        try {
+            date1 = sfd.parse(newDate2);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        DateFormat sfd3 = new SimpleDateFormat("dd-MM-yy");
+        String newDate3 = "14-02-2019";
+        Date date3 = null;
+        try {
+            date3 = sfd.parse(newDate3);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        DateFormat sfd4 = new SimpleDateFormat("dd-MM-yy");
+        String newDate4 = "15-02-2019";
+        Date date4 = null;
+        try {
+            date4 = sfd.parse(newDate4);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
         Category football = new Category("Football");
         categoryRepository.save(football);
 
@@ -91,13 +126,13 @@ public class DataLoader implements ApplicationRunner {
         Article articleFootball1 = new Article("Football", "About football", "Long story about football", date, "url", 7, football, journalistFootball3);
         articleRepository.save(articleFootball1);
 
-        Article articleFootball2 = new Article("Football", "About football", "The winner", date, "url", 5, football, journalistFootball1);
+        Article articleFootball2 = new Article("Football", "About football", "The winner", date1, "url", 5, football, journalistFootball1);
         articleRepository.save(articleFootball2);
 
-        Article articleBaseball1 = new Article("Baseball", "About baseball", "Great team of great people", date, "url", 2, basketball, journalistFootball1);
+        Article articleBaseball1 = new Article("Baseball", "About baseball", "Great team of great people", date4, "url", 2, basketball, journalistFootball1);
         articleRepository.save(articleBaseball1);
 
-        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date, "url5", 0, basketball, journalistFootball3);
+        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date3, "url5", 0, basketball, journalistFootball3);
         articleRepository.save(articleBaseball2);
 
         football.addArticle(articleFootball1);
