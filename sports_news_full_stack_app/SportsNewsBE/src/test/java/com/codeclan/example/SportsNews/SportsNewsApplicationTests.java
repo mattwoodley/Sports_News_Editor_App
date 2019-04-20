@@ -71,7 +71,26 @@ public class SportsNewsApplicationTests {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		Article footballArticle = new Article("football" , "Summary", "Full Story", date, "url", 5);
+		Category football = new Category("Football");
+		Journalist journalist1 = new Journalist("John", "Burn", "url");
+		Article footballArticle = new Article("football" , "Summary", "Full Story", date, "url", 5,football, journalist1 );
 		assertEquals(date, footballArticle.getDateCreated());
+	}
+
+	@Test
+	public void canAddArticleToCategory() {
+		DateFormat sfd = new SimpleDateFormat("dd-MM-yy");
+		String newDate = "11-02-2019";
+		Date date = null;
+		try {
+			date = sfd.parse(newDate);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		Category football = new Category("Football");
+		Journalist journalist1 = new Journalist("John", "Burn", "url");
+		Article footballArticle = new Article("football", "Summary", "Full Story", date, "url", 5,football, journalist1 );
+		football.addArticle(footballArticle);
+		assertEquals(1, football.getArticles().size());
 	}
 }

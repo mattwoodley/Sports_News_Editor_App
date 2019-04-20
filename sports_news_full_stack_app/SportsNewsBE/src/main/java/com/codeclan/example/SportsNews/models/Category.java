@@ -1,10 +1,16 @@
 package com.codeclan.example.SportsNews.models;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "categories")
 public class Category {
+
+
     @Column(name = "name")
     private String name;
 
@@ -12,10 +18,15 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
 
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
+    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
+    private List<Article> articles;
+
     public Category(){};
 
     public Category(String name) {
         this.name = name;
+        this.articles = new ArrayList<Article>();
     }
 
 
@@ -36,4 +47,16 @@ public class Category {
         return this.name;
     }
 
+    public List<Article> getArticles() {
+        return articles;
+    }
+
+    public void setArticles(List<Article> articles) {
+        this.articles = articles;
+    }
+
+    public void addArticle(Article article) {
+        this.articles.add(article);
+    }
 }
+

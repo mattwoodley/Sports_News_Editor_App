@@ -52,7 +52,7 @@ public class DataLoader implements ApplicationRunner {
         Journalist journalist2 = new Journalist("Gordon", "Doe", "url");
         journalistRepository.save(journalist2);
 
-        Article articleFootball = new Article("Football", "About football", "Long story about football", date, "url", 7);
+        Article articleFootball = new Article("Football", "About football", "Long story about football", date, "url", 7, football, journalist2);
         articleRepository.save(articleFootball);
     }
 }

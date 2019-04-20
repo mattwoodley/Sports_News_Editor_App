@@ -1,6 +1,8 @@
 package com.codeclan.example.SportsNews.projections;
 
 import com.codeclan.example.SportsNews.models.Article;
+import com.codeclan.example.SportsNews.models.Category;
+import com.codeclan.example.SportsNews.models.Journalist;
 import org.springframework.data.rest.core.config.Projection;
 
 import java.util.Date;
@@ -13,6 +15,8 @@ public interface ArticleProjection {
  Date getDateCreated();
  String getImage();
  int getReadCount();
+ Category getCategory();
+ Journalist getJournalist();
 
 
 
