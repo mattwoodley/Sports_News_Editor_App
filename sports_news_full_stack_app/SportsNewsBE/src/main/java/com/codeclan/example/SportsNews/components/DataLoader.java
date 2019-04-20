@@ -75,6 +75,7 @@ public class DataLoader implements ApplicationRunner {
             e.printStackTrace();
         }
 
+
         Category football = new Category("Football");
         categoryRepository.save(football);
 
@@ -92,6 +93,7 @@ public class DataLoader implements ApplicationRunner {
 
         Category golf = new Category("Golf");
         categoryRepository.save(golf);
+
 
         Journalist journalistFootball1 = new Journalist("John", "Burn", "url");
         journalistRepository.save(journalistFootball1);
@@ -123,7 +125,28 @@ public class DataLoader implements ApplicationRunner {
         Journalist journalistGolf = new Journalist("Kelly", "Tilgman", "url");
         journalistRepository.save(journalistGolf);
 
-        Article articleFootball1 = new Article("Football", "About football", "Long story about football", date, "url", 7, football, journalistFootball3);
+
+        Article articleFootball1 = new Article(
+                "Benitez pleased with important Magpies win",
+                "Newcastle manager Rafael Benitez said he 'wants to compete' after watching his team beat Southampton at St James's Park.",
+                "Ayoze Perez made the difference, scoring all three goals as they saw off a spirited second-half performance from the Saints.\n" +
+                        "\n" +
+                        "Benitez, who is out of contract in the summer, said nothing had changed in regard to his job situation and suggested he still needs assurances before deciding his future.\n" +
+                        "\n" +
+                        "\"We are in the same position as we were before,\" he said. \"When I came here, I could see the potential of the club to be challenging, certainly for seventh to 10th in the table but looking higher.\n" +
+                        "\n" +
+                        "\"But when you analyse the transfer fees and wage bills of other teams, we're not competing.\n" +
+                        "\n" +
+                        "\"I am the manager until 30 June. We can see the potential. When you see the teams between seventh and 15th, we have to compete with them.\"\n" +
+                        "\n" +
+                        "Benitez suggested earlier in the week that he wanted to manage in the Champions League again, which will leave Newcastle fans nervous that he will not renew his contract when it expires.\n" +
+                        "\n" +
+                        "For now though, this win propelled Newcastle into 12th place in the Premier League table, 10 points above the relegation zone and almost certainly safe for another season.\n" +
+                        "\n" +
+                        "\"Mathematically, we will have to wait and see what happens,\" Benitez said. \"But I think we will be safe.\"\n" +
+                        "\n" +
+                        "For Southampton, an improved second-half performance yielded only substitute Mario Lemina's goal and they sit just five points above Cardiff in 18th with four games to play.",
+                date, "url", 7, football, journalistFootball3);
         articleRepository.save(articleFootball1);
 
         Article articleFootball2 = new Article("Football", "About football", "The winner", date1, "url", 5, football, journalistFootball1);

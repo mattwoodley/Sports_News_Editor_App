@@ -16,7 +16,7 @@ public class Article implements Serializable {
     @Column(name="summary")
     private String summary;
 
-    @Column(name="full_story")
+    @Column(name="full_story", length=10485760)
     private String fullStory;
 
     @Column(name="date_created")
