@@ -24,7 +24,7 @@ class ArticleEditFormContainer extends Component {
       this.setState({categories: categories._embedded.categories})
     });
 
-    request.get("/api/journalists").then((raids) => {
+    request.get("/api/journalists").then((journalists) => {
       this.setState({journalists: journalists._embedded.journalists})
     });
   }
