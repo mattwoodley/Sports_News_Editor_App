@@ -49,6 +49,9 @@ public class DataLoader implements ApplicationRunner {
         Category formula1 = new Category("Formula 1");
         categoryRepository.save(formula1);
 
+        Category rugby = new Category("Rugby");
+        categoryRepository.save(rugby);
+
         Journalist journalist1 = new Journalist("John", "Burn", "url");
         journalistRepository.save(journalist1);
 
