@@ -25,7 +25,7 @@ class ArticleEditFormContainer extends Component {
     });
 
     request.get("/api/journalists").then((raids) => {
-      this.setState({raids: raids._embedded.raids})
+      this.setState({journalists: journalists._embedded.journalists})
     });
   }
 
