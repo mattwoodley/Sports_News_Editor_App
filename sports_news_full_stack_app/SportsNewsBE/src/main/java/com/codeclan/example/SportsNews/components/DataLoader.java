@@ -149,7 +149,51 @@ public class DataLoader implements ApplicationRunner {
                 date, "url", 7, football, journalistFootball3);
         articleRepository.save(articleFootball1);
 
-        Article articleFootball2 = new Article("Football", "About football", "The winner", date1, "url", 5, football, journalistFootball1);
+        Article articleFootball2 = new Article(
+                "Manchester City 1-0 Tottenham: 'Gripping and nervy in a different way'",
+                "Manchester City and Tottenham delivered an all-time classic in the Champions League on Wednesday night. It gave this Premier League sequel an impossible act to follow.",
+                "Yet, even though it was settled by teenager Phil Foden's early header as opposed to the goal-laden European encounter, this was gripping, nervy and engrossing in its own way within the context of the title and top four.\n" +
+                        "\n" +
+                        "It was a game that cranked up almost unbearable levels of tension in the last 15 minutes as City protected a victory that could prove the difference between winning and losing the title they secured with a historic 100 points last season.\n" +
+                        "\n" +
+                        "Liverpool's brilliant stride-for-stride campaign alongside City means margins for error have been eradicated from this title race. One slip, not necessarily even a defeat, may prove fatal for either team.\n" +
+                        "\n" +
+                        "As the physical and mental exertions - maybe even the wounds - of the crushing midweek exit to Spurs that ended City's hopes of an unprecedented quadruple kicked in, Pep Guardiola's side mined every reserve they have to keep their destiny in their own hands.City were not at their best but this demonstrated that they possess more than what simply meets the eye. They have heart and resilience to set alongside the obvious quality.\n" +
+                        "\n" +
+                        "This was the steely side of Manchester City, the day finesse was set on one side in search of the big domestic prize.\n" +
+                        "\n" +
+                        "It is a fair bet that those conducting the Etihad Stadium clean-up as supporters dispersed into the sunshine will have collected their fair share of chewed fingernails - it was that sort of game with that sort of conclusion.\n" +
+                        "\n" +
+                        "While City's fans turned their ire - tinged with mild panic - on referee Michael Oliver, they may also have reason to be thankful he ignored very presentable penalty claims as Kyle Walker looked to have handled under pressure from Dele Alli in the second half.\n" +
+                        "\n" +
+                        "Guardiola was lavish in his praise of City's players afterwards. He knew the hazards this fixture presented on a variety of levels and to come through with a vital victory renews momentum with only four league games left.\n" +
+                        "\n" +
+                        "In soaring temperatures, City's players needed to shrug off the fatigue in mind and body, the crushing disappointment of such a painful loss, and focus on a game they simply had to win - and do it instantly against a high-quality side who were also playing for high stakes amid the jeopardy of a fight for a place in the top four.\n" +
+                        "\n" +
+                        "Guardiola showed faith in 18-year-old Foden and was rewarded with that early header, greeted with a thunderous roar by supporters who knew their team needed them.\n" +
+                        "\n" +
+                        "Lots has been said, unfairly, about the loyalty of City's fans after the empty seats at the FA Cup semi-final against Brighton (financial restraints and the manner in which they followed their team in droves down the divisions seem to be ignored in the argument against them), but the atmosphere at the Etihad has been superb in the past two games.\n" +
+                        "\n" +
+                        "They helped City get over the line and push them towards a potentially pivotal Manchester derby at Old Trafford knowing victory there could take them a long way towards a second successive title.The key contributors on the pitch against Spurs were the precocious Foden, goalkeeper Ederson and the perpetual motion that is Bernardo Silva.\n" +
+                        "\n" +
+                        "Foden's introduction was seamless. He played with the fearlessness and joy of youth allied to the winner's streak that will surely make him a future star for City and England.\n" +
+                        "\n" +
+                        "Ederson, an outstanding goalkeeper, often drifts under the radar as City's gems elsewhere take the attention, but this was a match-winning performance as he saved from Son Heung-min, Christian Eriksen and Lucas Moura when Spurs applied pressure.\n" +
+                        "\n" +
+                        "As for Silva, if any City player could be excused for betraying a hint of lethargy after the efforts of Wednesday it was the Portuguese.\n" +
+                        "\n" +
+                        "He was non-stop for 96 minutes in defeat and similar in victory. When you add his superb ability on the ball and his constant improvement, he is the full modern football package.\n" +
+                        "\n" +
+                        "Even Aymeric Laporte, at fault for goals on Wednesday, redeemed himself with a perfectly timed challenge on the rampaging Son when he looked certain to score.\n" +
+                        "\n" +
+                        "The roar from City fans that greeted referee Oliver's final whistle was a reflection of the importance of this win and its symbolism.\n" +
+                        "\n" +
+                        "It would have been easy for City to go under after the suffering of Wednesday, although it should be stressed Spurs drove through similar barriers themselves, the difference being they emerged victorious.\n" +
+                        "\n" +
+                        "The scenery now moves to Cardiff, where Liverpool travel on Sunday, then on to Old Trafford on Wednesday, with City still in control as they know victory in all their games will bring them the title.\n" +
+                        "\n" +
+                        "This season has been two superpowers slugging it out. The decisive is yet to be landed, but in this game City showed guts in their search for glory to end a week shot through with pain with the pleasure of victory.",
+                date1, "url", 5, football, journalistFootball1);
         articleRepository.save(articleFootball2);
 
         Article articleBaseball1 = new Article("Baseball", "About baseball", "Great team of great people", date4, "url", 2, basketball, journalistFootball1);
