@@ -43,8 +43,11 @@ public class DataLoader implements ApplicationRunner {
         Category football = new Category("Football");
         categoryRepository.save(football);
 
-        Category baseball = new Category("Baseball");
-        categoryRepository.save(baseball);
+        Category basketball = new Category("Basketball");
+        categoryRepository.save(basketball);
+
+        Category formula1 = new Category("Formula 1");
+        categoryRepository.save(formula1);
 
         Journalist journalist1 = new Journalist("John", "Burn", "url");
         journalistRepository.save(journalist1);
@@ -58,10 +61,10 @@ public class DataLoader implements ApplicationRunner {
         Article articleFootball2 = new Article("Football", "About football", "The winner", date, "url", 5, football, journalist1);
         articleRepository.save(articleFootball2);
 
-        Article articleBaseball1 = new Article("Baseball", "About baseball", "Great team of great people", date, "url", 2, baseball, journalist1);
+        Article articleBaseball1 = new Article("Baseball", "About baseball", "Great team of great people", date, "url", 2, basketball, journalist1);
         articleRepository.save(articleBaseball1);
 
-        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date, "url5", 0, baseball, journalist2);
+        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date, "url5", 0, basketball, journalist2);
         articleRepository.save(articleBaseball2);
 
         football.addArticle(articleFootball1);
