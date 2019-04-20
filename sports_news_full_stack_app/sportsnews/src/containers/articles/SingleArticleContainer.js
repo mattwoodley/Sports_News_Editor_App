@@ -6,7 +6,7 @@ import Request from '../../helpers/request.js';
 class SingleArticleContainer extends Component {
   constructor(props){
     super(props);
-    this.state = {articles: null}
+    this.state = {article: null}
     this.handleDelete = this.handleDelete.bind(this)
     this.handleEdit= this.handleEdit.bind(this)
   }
