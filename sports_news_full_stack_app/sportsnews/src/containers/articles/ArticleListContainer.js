@@ -9,12 +9,14 @@ class ArticleListContainer extends Component {
     this.state = {articles: []}
   }
 
-//link in to back end api to fetch all articles store in state, TODO sort conditions
-    let request = new Request()
+//link in to back end api to fetch all articles store in state
+componentDidMount(){
+    let request = new Request();
     request.get('/api/articles').then((data) => {
       this.setState({articles: data._embedded.articles})
     })
   }
+
 
 //render the main article list (which itself renders individual microarticles)
   render(){
