@@ -67,8 +67,13 @@ public class DataLoader implements ApplicationRunner {
         Journalist journalistFootball3 = new Journalist("Gordon", "Doe", "url");
         journalistRepository.save(journalistFootball3);
 
-        Journalist journalistbasketball1 = new Journalist("Laura", "Savvas", "url");
-        journalistRepository.save(journalistbasketball1);
+        Journalist journalistBasketball1 = new Journalist("Laura", "Savvas", "url");
+        journalistRepository.save(journalistBasketball1);
+
+        Journalist journalistBasketball2 = new Journalist("Andrew", "Alloia", "url");
+        journalistRepository.save(journalistBasketball2);
+
+
 
         Article articleFootball1 = new Article("Football", "About football", "Long story about football", date, "url", 7, football, journalistFootball3);
         articleRepository.save(articleFootball1);
