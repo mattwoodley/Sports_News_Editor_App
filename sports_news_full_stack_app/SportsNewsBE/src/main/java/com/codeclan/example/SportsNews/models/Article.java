@@ -34,12 +34,12 @@ public class Article implements Serializable {
 
     @JsonIgnoreProperties("articles")
     @ManyToOne
-    @JoinColumn(name = "category_id", nullable = false)
+    @JoinColumn(name = "category_id", nullable = true)
     private Category category;
 
     @JsonIgnoreProperties("articles")
     @ManyToOne
-    @JoinColumn(name = "journalist_id", nullable = false)
+    @JoinColumn(name = "journalist_id", nullable = true)
     private Journalist journalist;
 
     public Article(String headline, String summary, String fullStory, Date dateCreated, String image, int readCount, Category category, Journalist journalist){

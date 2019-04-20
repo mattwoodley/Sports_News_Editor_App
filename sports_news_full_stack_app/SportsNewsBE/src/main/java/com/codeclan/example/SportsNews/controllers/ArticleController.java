@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/articles")
+@RequestMapping("/articles")
 public class ArticleController{
 
     @Autowired
@@ -25,7 +25,7 @@ public class ArticleController{
     @Autowired
     CategoryRepository categoryRepository;
 
-    @PutMapping(value = "/{id}/category/{categoryId}/journalist/{journalistId}")
+    @PutMapping(value = "/{id}/{categoryId}/{journalistId}")
     public void updateAddArticle(@PathVariable Long id, @PathVariable Long categoryId, @PathVariable Long journalistId){
         Article article = articleRepository.getOne(id);
         Category category = categoryRepository.getOne(categoryId);
