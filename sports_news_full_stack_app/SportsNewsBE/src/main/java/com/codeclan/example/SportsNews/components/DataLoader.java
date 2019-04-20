@@ -58,33 +58,39 @@ public class DataLoader implements ApplicationRunner {
         Category golf = new Category("Golf");
         categoryRepository.save(golf);
 
-        Journalist journalist1 = new Journalist("John", "Burn", "url");
-        journalistRepository.save(journalist1);
+        Journalist journalistFootball1 = new Journalist("John", "Burn", "url");
+        journalistRepository.save(journalistFootball1);
 
-        Journalist journalist2 = new Journalist("Gordon", "Doe", "url");
-        journalistRepository.save(journalist2);
+        Journalist journalistFootball2 = new Journalist("Joe", "Bradshaw", "url");
+        journalistRepository.save(journalistFootball2);
 
-        Article articleFootball1 = new Article("Football", "About football", "Long story about football", date, "url", 7, football, journalist2);
+        Journalist journalistFootball3 = new Journalist("Gordon", "Doe", "url");
+        journalistRepository.save(journalistFootball3);
+
+        Journalist journalistbasketball1 = new Journalist("Laura", "Savvas", "url");
+        journalistRepository.save(journalistbasketball1);
+
+        Article articleFootball1 = new Article("Football", "About football", "Long story about football", date, "url", 7, football, journalistFootball3);
         articleRepository.save(articleFootball1);
 
-        Article articleFootball2 = new Article("Football", "About football", "The winner", date, "url", 5, football, journalist1);
+        Article articleFootball2 = new Article("Football", "About football", "The winner", date, "url", 5, football, journalistFootball1);
         articleRepository.save(articleFootball2);
 
-        Article articleBaseball1 = new Article("Baseball", "About baseball", "Great team of great people", date, "url", 2, basketball, journalist1);
+        Article articleBaseball1 = new Article("Baseball", "About baseball", "Great team of great people", date, "url", 2, basketball, journalistFootball1);
         articleRepository.save(articleBaseball1);
 
-        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date, "url5", 0, basketball, journalist2);
+        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date, "url5", 0, basketball, journalistFootball3);
         articleRepository.save(articleBaseball2);
 
         football.addArticle(articleFootball1);
         football.addArticle(articleFootball2);
         categoryRepository.save(football);
 
-        journalist1.addArticle(articleFootball2);
-        journalist1.addArticle(articleBaseball1);
-        journalistRepository.save(journalist1);
-        journalist2.addArticle(articleFootball1);
-        journalistRepository.save(journalist2);
+        journalistFootball1.addArticle(articleFootball2);
+        journalistFootball1.addArticle(articleBaseball1);
+        journalistRepository.save(journalistFootball1);
+        journalistFootball3.addArticle(articleFootball1);
+        journalistRepository.save(journalistFootball3);
 
 
     }
