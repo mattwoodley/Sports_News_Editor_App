@@ -7,17 +7,21 @@ import org.springframework.data.rest.core.config.Projection;
 
 import java.util.Date;
 
-@Projection(name = "embedJournalist", types = Article.class)
+@Projection(name = "embedCategory", types = Article.class)
 public interface ArticleProjection {
  String getHeadline();
+
  String getSummary();
+
  String getFullStory();
+
  Date getDateCreated();
+
  String getImage();
+
  int getReadCount();
+
  Category getCategory();
+
  Journalist getJournalist();
-
-
-
 }

@@ -61,6 +61,9 @@ public class DataLoader implements ApplicationRunner {
         Article articleBaseball1 = new Article("Baseball", "About baseball", "Great team of great people", date, "url", 2, baseball, journalist1);
         articleRepository.save(articleBaseball1);
 
+        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date, "url5", 0, baseball, journalist2);
+        articleRepository.save(articleBaseball2);
+
         football.addArticle(articleFootball1);
         football.addArticle(articleFootball2);
         categoryRepository.save(football);
