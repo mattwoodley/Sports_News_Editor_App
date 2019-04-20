@@ -9,8 +9,7 @@ class ArticleListContainer extends Component {
     this.state = {articles: []}
   }
 
-//link in to back end api to fetch all articles store in state, TODO sort conditions TODO investigate embedded?
-  componentDidMount(){
+//link in to back end api to fetch all articles store in state, TODO sort conditions
     let request = new Request()
     request.get('/api/articles').then((data) => {
       this.setState({articles: data._embedded.articles})
