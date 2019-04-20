@@ -196,8 +196,52 @@ public class DataLoader implements ApplicationRunner {
                 date1, "url", 5, football, journalistFootball1);
         articleRepository.save(articleFootball2);
 
-        Article articleBaseball1 = new Article("Baseball", "About baseball", "Great team of great people", date4, "url", 2, basketball, journalistFootball1);
-        articleRepository.save(articleBaseball1);
+        Article articleFootball3 = new Article(
+                "Scott McKenna rose to head Aberdeen's goal",
+                "Aberdeen leapfrogged Kilmarnock into third place in the Scottish Premiership thanks to Scott McKenna's goal as the hosts ended the game with eight men.",
+                "Centre-half Kirk Broadfoot was sent off when his foot struck the face of goalkeeper Joe Lewis in front of goal during a bruising first half.\n" +
+                        "\n" +
+                        "Scott McKenna headed in a Graeme Shinnie corner after 66 minutes.\n" +
+                        "\n" +
+                        "Stuart Findlay was then shown a second yellow card with six minutes remaining and Rory McKenzie a straight red.McKenna's goal was enough to extend the run of league victories for Derek McInnes' side at Rugby Park to 10 games.\n" +
+                        "\n" +
+                        "Steve Clarke's Kilmarnock, who started the day ahead of the Dons on goal difference after a run of six games unbeaten, remain a point short of equalling their record points tally set last season.The first half between sides whose managers have been touted for the Scotland head coach vacancy would be defined by controversy.\n" +
+                        "\n" +
+                        "Michael Devlin fouled Eamonn Brophy near the halfway line in an incident reminiscent of the one between the sides at Pittodrie earlier this season when the Aberdeen defender was red carded for a foul on Greg Stewart.\n" +
+                        "\n" +
+                        "This time, there were more Aberdeen defenders in close proximity and referee Steven McLean brandished a yellow.\n" +
+                        "\n" +
+                        "That controversy would pale in comparison to the incident that resulted in Broadfoot being sent off.\n" +
+                        "\n" +
+                        "The Kilmarnock defender was through on goal, but his control let him down and he lunged in on Lewis, his studs catching the goalkeeper in the face.\n" +
+                        "\n" +
+                        "Referee McLean was in no doubt and showed a straight red, much to the frustration of Broadfoot, who left the field kicking a water bottle.\n" +
+                        "\n" +
+                        "The home fans were furious. Minutes earlier, Sam Cosgrove - already on a yellow - put in a late challenge on Greg Taylor. The Dons striker escaped with just a talking to from the referee.\n" +
+                        "\n" +
+                        "Cosgrove - who was getting involved in far too many incidents - was subbed off at half-time.\n" +
+                        "\n" +
+                        "As for the football, the first half was largely a scrappy non-event littered with fouls, a header from McKenna going wide of a post being as close as Aberdeen had come, while Kilmarnock's Eamonn Brophy forced Lewis into a near-post save.\n" +
+                        "\n" +
+                        "That McKenna header was a warning from Aberdeen and, as Graeme Shinnie swung in a corner, the Scotland centre-half headed home to give the Dons the lead.\n" +
+                        "\n" +
+                        "The Kilmarnock fans kept up their support to the end, even when they saw their side reduced to nine men - Findlay shown a second yellow for a foul on Shinnie.\n" +
+                        "\n" +
+                        "Substitute James Wilson's fierce shot was well saved by goalkeeper Daniel Bachmann before, incredibly, Kilmarnock would end the match with just eight men - McKenzie sent off for retaliating angrily after a challenge in midfield.This was a huge win for Aberdeen in the race for Europe.\n" +
+                        "\n" +
+                        "Steve Clarke has done some amazing things with Kilmarnock since he arrived in Scottish football, but one team he has failed to conquer are Aberdeen - and so it continues.\n" +
+                        "\n" +
+                        "A 10th league win in a row at Rugby Park is a remarkable stat. It also keeps up the incredible away form the Dons have shown this season.\n" +
+                        "\n" +
+                        "More importantly, this puts Aberdeen clear in third place and firmly in the ascendancy in the race for a Europa League spot.\n" +
+                        "\n" +
+                        "But so much of the attention will focus on the refereeing decisions. The Kilmarnock fans booed off McLean at the end.\n" +
+                        "\n" +
+                        "Should he have sent off Cosgrove? Possibly. The sending off of Broadfoot was also debatable. Yes, he seemed to catch Lewis with his studs. But it was probably more reckless than excessive force so perhaps a yellow card would have sufficed.\n" +
+                        "\n" +
+                        "The proximity of those decisions - they happened within minutes of each other - meant the home fans felt particularly hard done by.",
+                date4, "url", 2, football, journalistFootball1);
+        articleRepository.save(articleFootball3);
 
         Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date3, "url5", 0, basketball, journalistFootball3);
         articleRepository.save(articleBaseball2);
@@ -207,7 +251,7 @@ public class DataLoader implements ApplicationRunner {
         categoryRepository.save(football);
 
         journalistFootball1.addArticle(articleFootball2);
-        journalistFootball1.addArticle(articleBaseball1);
+        journalistFootball1.addArticle(articleFootball3);
         journalistRepository.save(journalistFootball1);
         journalistFootball3.addArticle(articleFootball1);
         journalistRepository.save(journalistFootball3);
