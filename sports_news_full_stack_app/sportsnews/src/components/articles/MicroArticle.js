@@ -2,6 +2,9 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
+//MicroArticle is a small preview of each article which will appear in the articleList, JournalistDetail and CategoriesList
+//note the use of fragment to avoid creating a dom node - each microarticle is contained within the parent li or div element - this will allow for different layouts of the same component
+
 const MicroArticle = (props) => {
 return(
 <React.Fragment>
