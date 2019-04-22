@@ -9,4 +9,5 @@ import java.util.List;
 
 @RepositoryRestResource(excerptProjection = ArticleProjection.class)
 public interface ArticleRepository extends JpaRepository<Article, Long>, ArticleRepositoryCustom {
+
 }
