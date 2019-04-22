@@ -17,7 +17,7 @@ class JournalistEditForm extends Component {
     const updateJournalist = {
       "firstName": this.state.firstName,
       "surname": this.state.surname,
-      "image": this.state.fullstory
+      "image": this.state.image
     }
     this.props.handleJournalistEdit(updateJournalist);
 
