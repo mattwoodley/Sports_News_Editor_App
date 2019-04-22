@@ -16,6 +16,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -135,5 +136,11 @@ public class SportsNewsApplicationTests {
 		journalistRepository.save(journalist1);
 		journalist2.addArticle(articleFootball1);
 		journalistRepository.save(journalist2);
+	}
+
+	@Test
+	public void canFindArticlesByCategoryId(){
+     	List<Article> found = categoryRepository.findArticlesByCategory(1L);
+     	assertEquals(3, found.size());
 	}
 }
