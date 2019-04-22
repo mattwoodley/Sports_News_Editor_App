@@ -1,11 +1,14 @@
 package com.codeclan.example.SportsNews.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 @Table(name="articles")
-public class Article {
+public class Article implements Serializable {
 
     @Column(name="headline")
     private String headline;
@@ -13,7 +16,7 @@ public class Article {
     @Column(name="summary")
     private String summary;
 
-    @Column(name="full_story")
+    @Column(name="full_story", length=10485760)
     private String fullStory;
 
     @Column(name="date_created")
@@ -29,12 +32,14 @@ public class Article {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
 
+    @JsonIgnoreProperties("articles")
     @ManyToOne
-    @JoinColumn(name = "category_id", nullable = false)
+    @JoinColumn(name = "category_id", nullable = true)
     private Category category;
 
+    @JsonIgnoreProperties("articles")
     @ManyToOne
-    @JoinColumn(name = "journalist_id", nullable = false)
+    @JoinColumn(name = "journalist_id", nullable = true)
     private Journalist journalist;
 
     public Article(String headline, String summary, String fullStory, Date dateCreated, String image, int readCount, Category category, Journalist journalist){
@@ -105,7 +110,7 @@ public class Article {
     }
 
     public Category getCategory() {
-        return category;
+        return this.category;
     }
 
     public void setCategory(Category category) {

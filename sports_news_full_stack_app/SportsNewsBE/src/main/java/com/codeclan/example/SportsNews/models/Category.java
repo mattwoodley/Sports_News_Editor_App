@@ -1,5 +1,6 @@
 package com.codeclan.example.SportsNews.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
@@ -18,6 +19,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
 
+    @JsonIgnoreProperties("journalists")
     @Cascade(org.hibernate.annotations.CascadeType.DELETE)
     @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
     private List<Article> articles;
