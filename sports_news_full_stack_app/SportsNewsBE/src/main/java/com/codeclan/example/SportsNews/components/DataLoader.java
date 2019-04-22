@@ -403,7 +403,7 @@ public class DataLoader implements ApplicationRunner {
                 date7, "images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
         articleRepository.save(articleRugby2);
 
-        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date3, "url5", 0, basketball, journalistFootball3);
+        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date3, "images/baseball1.jpg", 0, basketball, journalistFootball3);
         articleRepository.save(articleBaseball2);
 
         football.addArticle(articleFootball1);
