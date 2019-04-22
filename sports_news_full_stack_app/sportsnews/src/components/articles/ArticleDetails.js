@@ -7,11 +7,11 @@ const ArticleDetails = (props) => {
 
 //declare these two to be used in the buttons below, we link the button to the variable to the props function eventually leading to the scope of Single Article Container
   const onDelete = () => {
-    props.handleDelete(props.article.id);
+    props.handleDelete(props.id);
   }
 
   const onEdit = () => {
-    props.handleEdit(props.article.id)
+    props.handleEdit(props.id)
   }
 
 //if nothing is passed down return null

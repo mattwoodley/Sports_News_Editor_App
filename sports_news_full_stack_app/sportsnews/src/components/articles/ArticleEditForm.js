@@ -7,7 +7,7 @@ class ArticleEditForm extends Component {
     this.state = {
       "headline": props.article.headline,
       "summary": props.article.summary,
-      "fullstory": props.article.fullstory,
+      "fullstory": props.article.fullStory,
       "dateCreated": props.article.date,
       "image": props.article.image,
       "readCount": props.article.readCount,
