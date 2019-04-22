@@ -299,9 +299,7 @@ public class DataLoader implements ApplicationRunner {
 
         Article articleTennis1 = new Article(
                 "Fed Cup: How Scotland can thrive after World Group promotion",
-                "Anne Keothavong was a playing member of Scotland's Fed Cup team when they made the trip to Sweden for the 2012 World Group play-off." +
-                        "" +
-                        "Seven years, and three further play-off disappointments later, she is now the captain of a side which finally has the chance to discover whether it can be competitive against the world's elite.",
+                "Anne Keothavong was a playing member of Scotland's Fed Cup team when they made the trip to Sweden for the 2012 World Group play-off.",
                 "Ayoze Perez made the difference, scoring all three goals as they saw off a spirited second-half performance from the Saints." +
                         "" +
                         "Benitez, who is out of contract in the summer, said nothing had changed in regard to his job situation and suggested he still needs assurances before deciding his future." +
@@ -325,88 +323,83 @@ public class DataLoader implements ApplicationRunner {
 
         Article articleRugby1 = new Article(
                 "Israel Folau: Australia full-back's future to be decided at hearing on 4 May",
-                "Israel Folau's future will be decided at a hearing on 4 May after the full-back was sacked by Rugby Australia following a social media post in which he said hell awaits gay people.",
-                "Israel Folau's future will be decided at a hearing on 4 May after the full-back was sacked by Rugby Australia following a social media post in which he said \"hell awaits\" gay people.\n" +
-                        "\n" +
-                        "The 30-year-old requested a code of conduct hearing after his dismissal.\n" +
-                        "\n" +
-                        "It will be heard behind closed doors in Sydney by a three-member panel.\n" +
-                        "\n" +
-                        "Wallabies coach Michael Cheika has said Folau, who won 73 caps and was expected to play at this year's World Cup, was unlikely to be selected again.\n" +
-                        "\n" +
-                        "Folau, who signed a four-year deal with Sydney-based Super Rugby side the Waratahs in March and had a contract with Rugby Australia until 2022, escaped punishment for similar comments last year.\n" +
-                        "\n" +
-                        "Rugby Australia said he \"had committed a high-level breach of the Professional Players' Code of Conduct warranting termination of his employment contract\".\n" +
-                        "\n" +
-                        "The governing body has also set aside Sunday, 5 May if the hearing goes into a second day.\n" +
-                        "\n" +
-                        "In addition to his rugby union career, Folau has also played professional rugby league and Australian rules football.\n" +
-                        "\n" +
+                "Israel Folau's future will be decided at a hearing on 4 May after the full-back was sacked by Rugby Australia.",
+                "Israel Folau's future will be decided at a hearing on 4 May after the full-back was sacked by Rugby Australia following a social media post in which he said hell awaits gay people." +
+                        "" +
+                        "The 30-year-old requested a code of conduct hearing after his dismissal." +
+                        "" +
+                        "It will be heard behind closed doors in Sydney by a three-member panel." +
+                        "" +
+                        "Wallabies coach Michael Cheika has said Folau, who won 73 caps and was expected to play at this year's World Cup, was unlikely to be selected again." +
+                        "" +
+                        "Folau, who signed a four-year deal with Sydney-based Super Rugby side the Waratahs in March and had a contract with Rugby Australia until 2022, escaped punishment for similar comments last year." +
+                        "" +
+                        "Rugby Australia said he had committed a high-level breach of the Professional Players' Code of Conduct warranting termination of his employment contract." +
+                        "" +
+                        "The governing body has also set aside Sunday, 5 May if the hearing goes into a second day." +
+                        "" +
+                        "In addition to his rugby union career, Folau has also played professional rugby league and Australian rules football." +
+                        "" +
                         "Last week, Australian rugby league's governing body ruled out Folau returning to the National Rugby League.",
                 date5, "../public/images/folau_reuters.jpg", 0, rugby, journalistRugby);
         articleRepository.save(articleRugby1);
 
         Article articleGolf1 = new Article(
                 "RBC Heritage: CT Pan wins first PGA Tour title with one-shot win",
-                "Chinese Taipei's CT Pan won his first PGA Tour title with a one-shot victory at the RBC Heritage in South Carolina.\n" +
-                        "\n" +
-                        "The 27-year-old world number 113, two adrift overnight, had only one bogey in a four under 67 for a 12-under total.",
-                "Chinese Taipei's CT Pan won his first PGA Tour title with a one-shot victory at the RBC Heritage in South Carolina.\n" +
-                        "\n" +
-                        "The 27-year-old world number 113, two adrift overnight, had only one bogey in a four under 67 for a 12-under total.\n" +
-                        "\n" +
-                        "Irishman Shane Lowry, who led after both the first two rounds, finished in a tie for third, two back, after a 70.\n" +
-                        "\n" +
-                        "World number one Dustin Johnson was one ahead into the last day but ended eight off the pace after an errant 77, with Ian Poulter seven under after a 73.\n" +
-                        "\n" +
-                        "The gusting winds of earlier in the event had reduced to a stiff breeze at Hilton Head on Sunday and in the early stages of Johnson's round, four other players had joined him at 10 under.\n" +
-                        "\n" +
-                        "Lowry made three birdies in his first six holes to open a two-shot lead, but missed a short par putt at the ninth and then took four from the left of the 12th green for a double bogey to slip three behind.\n" +
-                        "\n" +
-                        "American Matt Kuchar, winner in 2014, holed an eight-foot birdie putt at the last to set the target at 11 under but Pan, making his 79th start on the PGA Tour, calmly parred his final two holes to remain at 12 under.\n" +
-                        "\n" +
-                        "It left Lowry, in the penultimate group, needing to hole his second shot from 180 yards at the 460-yard par four 18th to tie, but he finished with a par.\n" +
-                        "\n" +
-                        "Pan is only the second player from Chinese Taipei to triumph on the PGA Tour, following TC Chen at the 1987 Genesis Open.\n" +
-                        "\n" +
+                "Chinese Taipei's CT Pan won his first PGA Tour title with a one-shot victory at the RBC Heritage in South Carolina.",
+                "Chinese Taipei's CT Pan won his first PGA Tour title with a one-shot victory at the RBC Heritage in South Carolina." +
+                        "" +
+                        "The 27-year-old world number 113, two adrift overnight, had only one bogey in a four under 67 for a 12-under total." +
+                        "" +
+                        "Irishman Shane Lowry, who led after both the first two rounds, finished in a tie for third, two back, after a 70." +
+                        "" +
+                        "World number one Dustin Johnson was one ahead into the last day but ended eight off the pace after an errant 77, with Ian Poulter seven under after a 73." +
+                        "" +
+                        "The gusting winds of earlier in the event had reduced to a stiff breeze at Hilton Head on Sunday and in the early stages of Johnson's round, four other players had joined him at 10 under." +
+                        "" +
+                        "Lowry made three birdies in his first six holes to open a two-shot lead, but missed a short par putt at the ninth and then took four from the left of the 12th green for a double bogey to slip three behind." +
+                        "" +
+                        "American Matt Kuchar, winner in 2014, holed an eight-foot birdie putt at the last to set the target at 11 under but Pan, making his 79th start on the PGA Tour, calmly parred his final two holes to remain at 12 under." +
+                        "" +
+                        "It left Lowry, in the penultimate group, needing to hole his second shot from 180 yards at the 460-yard par four 18th to tie, but he finished with a par." +
+                        "" +
+                        "Pan is only the second player from Chinese Taipei to triumph on the PGA Tour, following TC Chen at the 1987 Genesis Open." +
+                        "" +
                         "The final group petered out tamely, Johnson dropped seven shots in five holes on the back nine and finished in a tie for 28th, while Poulter shared 10th after making only two birdies.",
                 date5, "../public/images/ct_pan_getty.jpg", 0, golf, journalistGolf);
         articleRepository.save(articleGolf1);
 
-
-
-
         Article articleRugby2 = new Article(
                 "Billy Vunipola: Fan confrontation 'scary', says Saracens forward",
-                "Billy Vunipola says being confronted by a Munster fan after Saracens' Champions Cup semi-final win was quite scary. The Sarries and England forward, 26, was booed throughout, scored a late try and was named man of the match in the 32-16 win at Coventry's Ricoh Arena.",
-                "He was warned by his club and the Rugby Football Union this week for defending Israel Folau's social media post in which he said \"hell awaits\" gay people.\n" +
-                        "\n" +
-                        "\"People say I put my foot in it so I have to deal with it,\" Vunipola said.\n" +
-                        "\n" +
-                        "The number eight told BBC Radio 5 Live: \"It's not something I'm afraid of. I probably have to expect that it's going to keep happening.\n" +
-                        "\n" +
-                        "\"It was quite a motivating factor that people were booing me. I wanted to back up my words and show my team-mates that I did not mean to distract them.\"\n" +
-                        "\n" +
-                        "The fan who confronted Vunipola was quickly led away by stewards.\n" +
-                        "\n" +
-                        "European Professional Club Rugby, the tournament organisers, said: \"Following the regrettable incident at the Ricoh Arena, the spectator in question is currently being detained by the stadium authorities.\"\n" +
-                        "\n" +
-                        "La Rochelle edge Sale in Challenge Cup semi-final\n" +
-                        "Harlequins fall short against Clermont Auvergne\n" +
-                        "Last week Vunipola was criticised for 'liking' an Instagram post from Australia winger Folau which warned gay people that hell awaited them unless they repented.\n" +
-                        "\n" +
-                        "Folau later had his contract cancelled by Rugby Australia.\n" +
-                        "\n" +
-                        "Vunipola defended his views, writing on Instagram: \"There just comes a point when you insult what I grew up believing in that you just say enough is enough. Man was made for woman to procreate, that was the goal no?\"\n" +
-                        "\n" +
-                        "Vunipola said after the game on Saturday: \"It was probably insensitive, but also something I strongly believe in.\n" +
-                        "\n" +
-                        "\"I'll probably not be as honest as I have been about things that probably hurt a lot of people. I know that now.\n" +
-                        "\n" +
-                        "\"I'm not going to change the happy-go-lucky person I am. My faith is what got me to this position. It's something I'll stick by.\n" +
-                        "\n" +
-                        "\"It's been awesome having friends supporting me, whether they agree with me or not.\"\n" +
-                        "\n",
+                "Billy Vunipola says being confronted by a Munster fan after Saracens' Champions Cup semi-final win was quite scary",
+                "He was warned by his club and the Rugby Football Union this week for defending Israel Folau's social media post in which he said hell awaits gay people." +
+                        "" +
+                        "People say I put my foot in it so I have to deal with it, Vunipola said." +
+                        "" +
+                        "The number eight told BBC Radio 5 Live: It's not something I'm afraid of. I probably have to expect that it's going to keep happening." +
+                        "" +
+                        "It was quite a motivating factor that people were booing me. I wanted to back up my words and show my team-mates that I did not mean to distract them." +
+                        "" +
+                        "The fan who confronted Vunipola was quickly led away by stewards." +
+                        "" +
+                        "European Professional Club Rugby, the tournament organisers, said: Following the regrettable incident at the Ricoh Arena, the spectator in question is currently being detained by the stadium authorities." +
+                        "" +
+                        "La Rochelle edge Sale in Challenge Cup semi-final" +
+                        "Harlequins fall short against Clermont Auvergne" +
+                        "Last week Vunipola was criticised for 'liking' an Instagram post from Australia winger Folau which warned gay people that hell awaited them unless they repented." +
+                        "" +
+                        "Folau later had his contract cancelled by Rugby Australia." +
+                        "" +
+                        "Vunipola defended his views, writing on Instagram: There just comes a point when you insult what I grew up believing in that you just say enough is enough. Man was made for woman to procreate, that was the goal no?" +
+                        "" +
+                        "Vunipola said after the game on Saturday: It was probably insensitive, but also something I strongly believe in." +
+                        "" +
+                        "I'll probably not be as honest as I have been about things that probably hurt a lot of people. I know that now." +
+                        "" +
+                        "I'm not going to change the happy-go-lucky person I am. My faith is what got me to this position. It's something I'll stick by." +
+                        "" +
+                        "It's been awesome having friends supporting me, whether they agree with me or not." +
+                        "",
                 date7, "../public/images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
         articleRepository.save(articleRugby2);
 
