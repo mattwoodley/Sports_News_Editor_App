@@ -10,7 +10,7 @@ class JournalistCreateFormContainer extends Component {
   }
 
   //make a post request to api, giving it the article in JSON
-  handleArticlePost(journalists){
+  handleJournalistPost(journalist){
     const request = new Request();
     request.post('/api/journalists', journalist).then(() => {
       window.location = '/journalists'
@@ -22,7 +22,7 @@ class JournalistCreateFormContainer extends Component {
 
     return (
       <JournalistCreateForm
-        handleArticlePost={this.handleArticlePost}
+        handleJournalistPost={this.handleJournalistPost}
       />
     )
   }
