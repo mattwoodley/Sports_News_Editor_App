@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.text.DateFormat;
@@ -122,9 +123,10 @@ public class SportsNewsApplicationTests {
      	assertEquals(3, found.size());
 	}
 
+
 	@Test
 	public void canFindByDateAscending() {
-		ArrayList<Article> found = articleRepository.findByOrderByCreationDateAsc();
-		assertEquals("2019-04-01", found.get(0).getDateCreated());
+		List<Article> articles = articleRepository.findAll(Sort.by(Sort.Direction.DESC, "dateCreated"));
+		assertEquals("2019-04-01",articles.get(7).getDateCreated());
 	}
 }

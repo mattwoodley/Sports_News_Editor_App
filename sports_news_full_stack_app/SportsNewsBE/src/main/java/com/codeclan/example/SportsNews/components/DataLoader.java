@@ -150,7 +150,7 @@ public class DataLoader implements ApplicationRunner {
                         "The scenery now moves to Cardiff, where Liverpool travel on Sunday, then on to Old Trafford on Wednesday, with City still in control as they know victory in all their games will bring them the title." +
                         "" +
                         "This season has been two superpowers slugging it out. The decisive is yet to be landed, but in this game City showed guts in their search for glory to end a week shot through with pain with the pleasure of victory.",
-                "2019-04-02", "images/football2.jpg", 5, football, journalistFootball1);
+                "2019-04-15", "images/football2.jpg", 5, football, journalistFootball1);
         articleRepository.save(articleFootball2);
 
         Article articleFootball3 = new Article(
