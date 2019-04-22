@@ -30,7 +30,7 @@ class ArticleEditForm extends Component {
       "category": event.target.category.value,
       "journalist": event.target.journalist.value
     }
-    this.props.handleArticlePost(updateArticle);
+    this.props.handleArticleEdit(updateArticle);
 
   }
 

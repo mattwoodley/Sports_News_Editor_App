@@ -32,7 +32,7 @@ class JournalistEditFormContainer extends Component {
     if( !this.state.journalist){
       return <h1>Please Wait...</h1>;
     }
-    return <JournalistEditForm journalist={this.state.journalist} handleJournalistEdit= {this.handleJournalistEdit} />
+    return <JournalistEditForm id={this.props.id} journalist={this.state.journalist} handleJournalistEdit= {this.handleJournalistEdit} />
 
   }
 }

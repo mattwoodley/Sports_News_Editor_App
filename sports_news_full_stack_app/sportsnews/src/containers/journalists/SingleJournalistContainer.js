@@ -36,7 +36,7 @@ class SingleJournalistContainer extends Component {
 
 //compulsory React render function it has to return something so in the event there is no journalist return nothing to save console.error()
 // else return the journalistdetails component - feed it props of the whole journalist object - the embedded articles  and the two functions above to be used to edit/delete from articleDetail view
-//note that I've also added in a conditional where a journalist may be viewed 
+//note that I've also added in a conditional where a journalist may be viewed
 
   render(){
     if(!this.state.journalist){
@@ -45,13 +45,13 @@ class SingleJournalistContainer extends Component {
     if(!this.state.articles){
       return(
         <div className="component">
-      <JournalistDetails journalist = {this.state.journalist} articles={null} handleDelete = {this.handleDelete} handleEdit={this.handleEdit}/>
+      <JournalistDetails id={this.props.id} journalist = {this.state.journalist} articles={null} handleDelete = {this.handleDelete} handleEdit={this.handleEdit}/>
        </div>
      )
     }
     return (
       <div className="component">
-       <JournalistDetails journalist = {this.state.journalist} articles={this.state.journalist._embedded.articles} handleDelete = {this.handleDelete} handleEdit={this.handleEdit}/>
+       <JournalistDetails id={this.props.id} journalist = {this.state.journalist} articles={this.state.journalist._embedded.articles} handleDelete = {this.handleDelete} handleEdit={this.handleEdit}/>
      </div>
     )
 
