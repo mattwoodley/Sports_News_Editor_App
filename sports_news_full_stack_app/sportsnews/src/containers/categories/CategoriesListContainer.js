@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import CategoriesList from '../../components/categories/CategoriesList.js';
 import Request from '../../helpers/request.js';
-import MicroArticle from '../../components/articles/MicroArticle.js';
 
 class CategoriesListContainer extends Component {
 
 //props are passed in from app, set up a blank state to receive article to be passed down to components, edit and delete are bound at object scope and passed down to component
   constructor(props){
     super(props);
-    this.state = {article: null}
+    this.state = {articles: null}
     this.handleDelete = this.handleDelete.bind(this);
     this.handleEdit= this.handleEdit.bind(this);
   }
@@ -16,9 +15,9 @@ class CategoriesListContainer extends Component {
 //when the component mounts, grab a single article as well as the details of the journalist contained within article, set state to include this article to be passed down
   componentDidMount(){
     let request = new Request();
-    const url = '/api/articles/' + this.props.category + '?projection=embedJournalist';
+    const url = '/api/articles/' + this.props.id + '?projection=embedJournalist';
     request.get(url).then((data) => {
-      this.setState({article: data})
+      this.setState({articles: data})
     })
   }
 
@@ -28,7 +27,7 @@ class CategoriesListContainer extends Component {
     const request = new Request();
     const url = '/api/articles/' + id;
     request.delete(url).then(() => {
-      window.location = '/categories/' + this.props.category;
+      window.location = '/categories/' + this.props.id;
     });
   }
 
@@ -41,13 +40,12 @@ class CategoriesListContainer extends Component {
 // else return the ArticleDetails component - feed it props of the whole article object - the embedded journalist object and the two functions above to be used to edit/delete from ArticleDetails view
 //TODO - come back and feed journalist down
   render(){
-    if(!this.state.article){
+    if(!this.state.articles){
       return null;
     }
     return (
       <div className="component">
         <CategoriesList/>
-        <MicroArticle articles = {this.state.article} journalist={this.state.article._embedded.journalist} handleDelete = {this.handleDelete} handleEdit={this.handleEdit}/>
       </div>
     )
 

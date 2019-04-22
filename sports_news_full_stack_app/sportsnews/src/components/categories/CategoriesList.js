@@ -10,7 +10,13 @@ const CategoriesList = (props) => {
 		 	return (
 				<li key={index} className="microarticle-li">
 					<div className = "micro-article">
-    				<MicroArticle id={index} headline={article.headline} summary={article.summary} image={article.image} dateCreated={article.dateCreated} />
+    				<MicroArticle
+              id={article.id}
+              headline={article.headline}
+              summary={article.summary}
+              image={article.image}
+              dateCreated={article.dateCreated}
+              />
     			</div>
   			</li>
 		)
