@@ -13,6 +13,7 @@ return(
       </Link>
       <h4 className='microatricleHeadline'>{props.headline}</h4>
       <p className='microarticleSummary'>{props.summary}</p>
+      <p className='microarticlecategory'>{props.category.name}</p>
       <p className='microarticledate'>{props.dateCreated}</p>
 </React.Fragment>
 );
