@@ -376,8 +376,8 @@ public class DataLoader implements ApplicationRunner {
                         "\n" +
                         "\"It's been awesome having friends supporting me, whether they agree with me or not.\"\n" +
                         "\n",
-                date5, "../public/images/folau_reuters.jpg", 0, rugby, journalistRugby);
-        articleRepository.save(articleRugby1);
+                date6, "../public/images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
+        articleRepository.save(articleRugby2);
 
         Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date3, "url5", 0, basketball, journalistFootball3);
         articleRepository.save(articleBaseball2);
