@@ -1,6 +1,8 @@
 import React from 'react';
 import MicroJournalist from './MicroJournalist.js';
 
+//JournalistListContainer renders JournalistList -  responsible for rendering  an ul of microjournalist elements - list format to be used for CSS styling.
+//journalists once retrieved from api collection mapped to useful react component
 
 const JournalistList = (props) => {
   const journalists = props.journalists.map((journalist,index) => {
