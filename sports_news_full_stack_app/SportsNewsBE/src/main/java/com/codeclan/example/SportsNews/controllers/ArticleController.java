@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/articles")
 public class ArticleController{
 
     @Autowired
-        ArticleRepository articleRepository;
+    ArticleRepository articleRepository;
 
     @Autowired
     JournalistRepository journalistRepository;
@@ -34,4 +36,9 @@ public class ArticleController{
         article.setJournalist(journalist);
         articleRepository.save(article);
     }
+
+//   @RequestMapping(value="category/{category}")
+//    public List<Article> getArticlesByCategory (@PathVariable Category category) {
+//        return  articleRepository.getArticlesByCategory(category);
+//    }
 }

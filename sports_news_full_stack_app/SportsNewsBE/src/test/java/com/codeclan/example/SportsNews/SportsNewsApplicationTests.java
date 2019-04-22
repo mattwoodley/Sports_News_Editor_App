@@ -16,6 +16,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -135,5 +136,33 @@ public class SportsNewsApplicationTests {
 		journalistRepository.save(journalist1);
 		journalist2.addArticle(articleFootball1);
 		journalistRepository.save(journalist2);
+	}
+
+	@Test
+	public void canGetArticlesByCategory() {
+
+		DateFormat sfd = new SimpleDateFormat("dd-MM-yy");
+		String newDate= "11-02-2019";
+		Date date = null;
+		try {
+			date = sfd.parse(newDate);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+
+		Category football = new Category("Football");
+		categoryRepository.save(football);
+
+		Journalist journalist2 = new Journalist("Gordon", "Doe", "url");
+		journalistRepository.save(journalist2);
+
+		Article articleFootball1 = new Article("Football", "About football", "Long story about football", date, "url", 7, football, journalist2);
+		articleRepository.save(articleFootball1);
+
+		Article articleFootball2 = new Article("Football", "About football", "Long story about football", date, "url", 7, football, journalist2);
+		articleRepository.save(articleFootball2);
+
+		List<Article> result = articleRepository.getArticlesByCategory(football);
+		assertEquals(2, result.size());
 	}
 }
