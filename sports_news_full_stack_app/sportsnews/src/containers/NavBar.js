@@ -8,12 +8,12 @@ class NavBar extends Component {
     return(
       <React.Fragment>
         <nav>
-        <Link className='navButton' to="/">Home</Link>
-        <Link className='navButton' to="/articles">Articles</Link>
-        <Link className='navButton' to="/journalists">Journalists</Link>
-        <Link className='navButton' to="/categories">Categories</Link>
-    </nav>
-    </React.Fragment>
+          <Link className='navButton' to="/">Home</Link>
+          <Link className='navButton' to="/articles">Articles</Link>
+          <Link className='navButton' to="/journalists">Journalists</Link>
+          <Link className='navButton' to="/categories">Categories</Link>
+        </nav>
+      </React.Fragment>
     )
   }
 }
