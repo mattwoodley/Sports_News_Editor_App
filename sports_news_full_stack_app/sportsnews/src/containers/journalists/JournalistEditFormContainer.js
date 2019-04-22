@@ -6,7 +6,7 @@ class JournalistEditFormContainer extends Component {
   constructor(props){
     super(props);
     this.state = {journalist: null}
-    this.handleArticleEdit = this.handleArticleEdit.bind(this);
+    this.handleJournalistEdit = this.handleJournalistEdit.bind(this);
   }
 
 //when mounted get the single journalist using id from props, along with full suite of categories
@@ -14,8 +14,8 @@ class JournalistEditFormContainer extends Component {
   componentDidMount(){
     const request = new Request();
 
-    request.get("/api/journalists").then((journalists) => {
-      this.setState({journalists: journalists})
+    request.get("/api/journalists/" + this.props.id).then((journalists) => {
+      this.setState({journalist: journalists})
     });
   }
 
@@ -27,12 +27,12 @@ class JournalistEditFormContainer extends Component {
     })
   }
 
-//render a loading screen while waiting or the JournalistEditForm handing down the journalist and full suite of categories, journalists and teh article to be edited
+//render a loading screen while waiting or the JournalistEditForm handing down the journalist to be edited
   render(){
     if( !this.state.journalist){
       return <h1>Please Wait...</h1>;
     }
-    return <JournalistEditForm journalist={this.state.journalist} handleArticleEdit= {this.handleArticleEdit} />
+    return <JournalistEditForm journalist={this.state.journalist} handleJournalistEdit= {this.handleJournalistEdit} />
 
   }
 }
