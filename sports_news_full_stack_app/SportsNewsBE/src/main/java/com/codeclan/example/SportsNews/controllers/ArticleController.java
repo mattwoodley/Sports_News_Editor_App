@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.persistence.OrderBy;
+
 @RestController
 @RequestMapping("/articles")
 public class ArticleController{
 
     @Autowired
-        ArticleRepository articleRepository;
+    ArticleRepository articleRepository;
 
     @Autowired
     JournalistRepository journalistRepository;
@@ -26,7 +28,7 @@ public class ArticleController{
     CategoryRepository categoryRepository;
 
     @PutMapping(value = "/{id}/{categoryId}/{journalistId}")
-    public void updateAddArticle(@PathVariable Long id, @PathVariable Long categoryId, @PathVariable Long journalistId){
+    public void updateAddArticle(@PathVariable Long id, @PathVariable Long categoryId, @PathVariable Long journalistId) {
         Article article = articleRepository.getOne(id);
         Category category = categoryRepository.getOne(categoryId);
         Journalist journalist = journalistRepository.getOne(journalistId);

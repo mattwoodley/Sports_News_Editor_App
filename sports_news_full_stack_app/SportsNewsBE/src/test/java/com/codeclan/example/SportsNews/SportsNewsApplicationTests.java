@@ -143,4 +143,10 @@ public class SportsNewsApplicationTests {
      	List<Article> found = categoryRepository.findArticlesByCategory(1L);
      	assertEquals(3, found.size());
 	}
+
+//	@Test
+//	public void canFindByDateAscending() {
+//		List<Article> found = articleRepository.findByOrderByCreationDateAsc();
+//		assertEquals("11-02-2019", found.get(0).getDateCreated());
+//	}
 }
