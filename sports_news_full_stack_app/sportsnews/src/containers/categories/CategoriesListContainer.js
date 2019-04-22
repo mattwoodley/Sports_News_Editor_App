@@ -13,11 +13,18 @@ class CategoriesListContainer extends Component {
   }
 
 //when the component mounts, grab a single article as well as the details of the journalist contained within article, set state to include this article to be passed down
+  // componentDidMount(){
+  //   let request = new Request();
+  //   const url = '/api/articles/' + this.props.id + '?projection=embedJournalist';
+  //   request.get(url).then((data) => {
+  //     this.setState({articles: data})
+  //   })
+  // }
+
   componentDidMount(){
     let request = new Request();
-    const url = '/api/articles/' + this.props.id + '?projection=embedJournalist';
-    request.get(url).then((data) => {
-      this.setState({articles: data})
+    request.get('/api/categories').then((data) => {
+      this.setState({articles: data._embedded.categories})
     })
   }
 
@@ -45,7 +52,7 @@ class CategoriesListContainer extends Component {
     }
     return (
       <div className="component">
-        <CategoriesList/>
+        <CategoriesList articles={this.state.articles}/>
       </div>
     )
 
