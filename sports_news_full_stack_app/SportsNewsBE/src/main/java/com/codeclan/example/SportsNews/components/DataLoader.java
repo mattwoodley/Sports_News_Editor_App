@@ -320,6 +320,7 @@ public class DataLoader implements ApplicationRunner {
                         "" +
                         "For Southampton, an improved second-half performance yielded only substitute Mario Lemina's goal and they sit just five points above Cardiff in 18th with four games to play.",
                 date5, "../public/images/fedcup_getty2.jpg", 1, tennis, journalistTennis);
+        articleRepository.save(articleTennis1);
 
 
         Article articleRugby1 = new Article(
@@ -344,6 +345,36 @@ public class DataLoader implements ApplicationRunner {
                         "Last week, Australian rugby league's governing body ruled out Folau returning to the National Rugby League.",
                 date5, "../public/images/folau_reuters.jpg", 0, rugby, journalistRugby);
         articleRepository.save(articleRugby1);
+
+        Article articleGolf1 = new Article(
+                "RBC Heritage: CT Pan wins first PGA Tour title with one-shot win",
+                "Chinese Taipei's CT Pan won his first PGA Tour title with a one-shot victory at the RBC Heritage in South Carolina.\n" +
+                        "\n" +
+                        "The 27-year-old world number 113, two adrift overnight, had only one bogey in a four under 67 for a 12-under total.",
+                "Chinese Taipei's CT Pan won his first PGA Tour title with a one-shot victory at the RBC Heritage in South Carolina.\n" +
+                        "\n" +
+                        "The 27-year-old world number 113, two adrift overnight, had only one bogey in a four under 67 for a 12-under total.\n" +
+                        "\n" +
+                        "Irishman Shane Lowry, who led after both the first two rounds, finished in a tie for third, two back, after a 70.\n" +
+                        "\n" +
+                        "World number one Dustin Johnson was one ahead into the last day but ended eight off the pace after an errant 77, with Ian Poulter seven under after a 73.\n" +
+                        "\n" +
+                        "The gusting winds of earlier in the event had reduced to a stiff breeze at Hilton Head on Sunday and in the early stages of Johnson's round, four other players had joined him at 10 under.\n" +
+                        "\n" +
+                        "Lowry made three birdies in his first six holes to open a two-shot lead, but missed a short par putt at the ninth and then took four from the left of the 12th green for a double bogey to slip three behind.\n" +
+                        "\n" +
+                        "American Matt Kuchar, winner in 2014, holed an eight-foot birdie putt at the last to set the target at 11 under but Pan, making his 79th start on the PGA Tour, calmly parred his final two holes to remain at 12 under.\n" +
+                        "\n" +
+                        "It left Lowry, in the penultimate group, needing to hole his second shot from 180 yards at the 460-yard par four 18th to tie, but he finished with a par.\n" +
+                        "\n" +
+                        "Pan is only the second player from Chinese Taipei to triumph on the PGA Tour, following TC Chen at the 1987 Genesis Open.\n" +
+                        "\n" +
+                        "The final group petered out tamely, Johnson dropped seven shots in five holes on the back nine and finished in a tie for 28th, while Poulter shared 10th after making only two birdies.",
+                date5, "../public/images/ct_pan_getty.jpg", 0, golf, journalistGolf);
+        articleRepository.save(articleGolf1);
+
+
+
 
         Article articleRugby2 = new Article(
                 "Billy Vunipola: Fan confrontation 'scary', says Saracens forward",
@@ -376,7 +407,7 @@ public class DataLoader implements ApplicationRunner {
                         "\n" +
                         "\"It's been awesome having friends supporting me, whether they agree with me or not.\"\n" +
                         "\n",
-                date6, "../public/images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
+                date7, "../public/images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
         articleRepository.save(articleRugby2);
 
         Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date3, "url5", 0, basketball, journalistFootball3);
@@ -384,7 +415,15 @@ public class DataLoader implements ApplicationRunner {
 
         football.addArticle(articleFootball1);
         football.addArticle(articleFootball2);
+        tennis.addArticle(articleTennis1);
+        rugby.addArticle(articleRugby1);
+        rugby.addArticle(articleRugby2);
+        golf.addArticle(articleGolf1);
+
         categoryRepository.save(football);
+        categoryRepository.save(tennis);
+        categoryRepository.save(rugby);
+        categoryRepository.save(golf);
 
         journalistFootball1.addArticle(articleFootball2);
         journalistFootball1.addArticle(articleFootball3);
