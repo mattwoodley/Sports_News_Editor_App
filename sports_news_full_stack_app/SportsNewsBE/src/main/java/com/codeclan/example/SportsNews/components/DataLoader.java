@@ -244,7 +244,7 @@ public class DataLoader implements ApplicationRunner {
                         "In addition to his rugby union career, Folau has also played professional rugby league and Australian rules football." +
                         "" +
                         "Last week, Australian rugby league's governing body ruled out Folau returning to the National Rugby League.",
-                date5, "images/folau_reuters.jpg", 0, rugby, journalistRugby);
+                "2019-04-05", "images/folau_reuters.jpg", 0, rugby, journalistRugby);
         articleRepository.save(articleRugby1);
 
         Article articleGolf1 = new Article(
@@ -269,7 +269,7 @@ public class DataLoader implements ApplicationRunner {
                         "Pan is only the second player from Chinese Taipei to triumph on the PGA Tour, following TC Chen at the 1987 Genesis Open." +
                         "" +
                         "The final group petered out tamely, Johnson dropped seven shots in five holes on the back nine and finished in a tie for 28th, while Poulter shared 10th after making only two birdies.",
-                date5, "images/ct_pan_getty.jpg", 0, golf, journalistGolf);
+                "2019-04-06", "images/ct_pan_getty.jpg", 0, golf, journalistGolf);
         articleRepository.save(articleGolf1);
 
         Article articleRugby2 = new Article(
@@ -303,10 +303,10 @@ public class DataLoader implements ApplicationRunner {
                         "" +
                         "It's been awesome having friends supporting me, whether they agree with me or not." +
                         "",
-                date7, "images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
+                "2019-04-07", "images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
         articleRepository.save(articleRugby2);
 
-        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date3, "images/baseball1.jpg", 0, basketball, journalistFootball3);
+        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", "2019-04-08", "images/baseball1.jpg", 0, basketball, journalistFootball3);
         articleRepository.save(articleBaseball2);
 
         football.addArticle(articleFootball1);
