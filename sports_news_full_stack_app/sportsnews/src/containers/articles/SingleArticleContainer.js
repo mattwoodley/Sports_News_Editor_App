@@ -37,14 +37,14 @@ class SingleArticleContainer extends Component {
 
 //compulsory React render function it has to return something so in the event there is no article return nothing to save console.error()
 // else return the articledetails component - feed it props of the whole article object - the embedded journo object and the two functions above to be used to edit/delete from articleDetail view
-
+//TODO - come back and feed journalist down
   render(){
     if(!this.state.article){
       return null;
     }
     return (
       <div className="component">
-       <ArticleDetails article = {this.state.article} journalist={this.state.article._embedded.journalist} handleDelete = {this.handleDelete} handleEdit={this.handleEdit}/>
+       <ArticleDetails article = {this.state.article} journalist={this.state.article.journalist} handleDelete = {this.handleDelete} handleEdit={this.handleEdit}/>
      </div>
     )
 
