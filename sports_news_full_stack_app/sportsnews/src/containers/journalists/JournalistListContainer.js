@@ -20,7 +20,7 @@ componentDidMount(){
 //render the main journalist  list (which itself renders individual microjournalists)
   render(){
     return (
-     <JournalistList journalist = {this.state.journalists} />
+     <JournalistList journalists = {this.state.journalists} />
     )
   }
 }
