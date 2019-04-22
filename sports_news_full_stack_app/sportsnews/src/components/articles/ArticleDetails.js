@@ -30,6 +30,7 @@ const ArticleDetails = (props) => {
         <Link to = {"/journalists/" + props.journalist.id} className="article-microjournalist-link">
           <MicroJournalist journalist={props.journalist}/>
         </Link>
+        <p classname='article-category'>{props.article._embedded.category.name}</p>
       <p classname='article-date-created'>{props.article.dateCreated}</p>
       <button className='admin-button' type='button' onClick={onEdit}>Edit this Article</button>
       <button className='admin-button' type='button' onClick={onDelete}>Delete this Article</button>

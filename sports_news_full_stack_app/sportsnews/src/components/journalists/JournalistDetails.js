@@ -27,10 +27,7 @@ const JournalistDetails = (props) => {
 
     return (
       <React.Fragment>
-        {/* <h2 className='journalist-image'>{props.journalist.image}</h2>
-        <p className='journalist-firstName'>{props.journalist.firstName}</p>
-        <p classname='journalist-surname'>{props.journalist.surname}</p> */}
-            <MicroJournalist id={props.journalist.id} firstName={props.journalist.firstName} surname={props.journalist.surname} image={props.journalist.image}/>
+        <MicroJournalist id={props.journalist.id} firstName={props.journalist.firstName} surname={props.journalist.surname} image={props.journalist.image}/>
         <button className='admin-button' type='button' onClick={onEdit}>Edit Journalist</button>
         <button className='admin-button' type='button' onClick={onDelete}>Delete Journalist</button>
         <ArticleList articles = {props.journalist._embedded.articles} />
