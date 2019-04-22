@@ -1,4 +1,5 @@
-import React,{Link} from 'react';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import MicroJournalist from '../journalists/MicroJournalist';
 
 //stateless component, curly brackets requirement of using return
@@ -26,9 +27,9 @@ const ArticleDetails = (props) => {
       <h2 className='article-headline'>{props.article.headline}</h2>
       <p className='article-summary'>{props.article.summary}</p>
       <p classname='article-full-story'>{props.article.fullStory}</p>
-        {/* <Link to = {"/journalists/" + props.journalist.id} className="article-microjournalist-link">
+        <Link to = {"/journalists/" + props.journalist.id} className="article-microjournalist-link">
           <MicroJournalist journalist={props.journalist}/>
-        </Link> */}
+        </Link>
       <p classname='article-date-created'>{props.article.dateCreated}</p>
       <button className='admin-button' type='button' onClick={onEdit}>Edit this Article</button>
       <button className='admin-button' type='button' onClick={onDelete}>Delete this Article</button>
