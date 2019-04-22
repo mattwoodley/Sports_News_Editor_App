@@ -1,5 +1,5 @@
 import React from 'react';
-import MicroArticle from '../articles/MicroArticle';
+import ArticleList from '../articles/ArticleList';
 import MicroJournalist from './MicroJournalist';
 import {Link} from 'react-router-dom';
 
@@ -21,6 +21,8 @@ const JournalistDetails = (props) => {
     }
 
 
+
+
   //render the article using the details passed down in props. Note the re-use of MicroJournalist. Starting to get the vibe that this is what react is about.
 
     return (
@@ -31,6 +33,7 @@ const JournalistDetails = (props) => {
             <MicroJournalist id={props.journalist.id} firstName={props.journalist.firstName} surname={props.journalist.surname} image={props.journalist.image}/>
         <button className='admin-button' type='button' onClick={onEdit}>Edit Journalist</button>
         <button className='admin-button' type='button' onClick={onDelete}>Delete Journalist</button>
+        <ArticleList articles = {props.journalist._embedded.articles} />
       </React.Fragment>
     )
 
