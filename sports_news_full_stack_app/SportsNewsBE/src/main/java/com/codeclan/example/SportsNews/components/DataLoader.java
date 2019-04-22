@@ -149,34 +149,34 @@ public class DataLoader implements ApplicationRunner {
         categoryRepository.save(golf);
 
 
-        Journalist journalistFootball1 = new Journalist("John", "Burn", "url");
+        Journalist journalistFootball1 = new Journalist("John", "Burn", "images/journalist1.jpg");
         journalistRepository.save(journalistFootball1);
 
-        Journalist journalistFootball2 = new Journalist("Joe", "Bradshaw", "url");
+        Journalist journalistFootball2 = new Journalist("Joe", "Bradshaw", "images/journalist2.jpg");
         journalistRepository.save(journalistFootball2);
 
-        Journalist journalistFootball3 = new Journalist("Gordon", "Doe", "url");
+        Journalist journalistFootball3 = new Journalist("Gordon", "Doe", "images/journalist3.jpg");
         journalistRepository.save(journalistFootball3);
 
-        Journalist journalistBasketball1 = new Journalist("Laura", "Savvas", "url");
+        Journalist journalistBasketball1 = new Journalist("Laura", "Savvas", "images/journalist4.jpg");
         journalistRepository.save(journalistBasketball1);
 
-        Journalist journalistBasketball2 = new Journalist("Andrew", "Alloia", "url");
+        Journalist journalistBasketball2 = new Journalist("Andrew", "Alloia", "images/journalist5.jpg");
         journalistRepository.save(journalistBasketball2);
 
-        Journalist journalist1Formula1 = new Journalist("Ted", "Kravitz", "url");
+        Journalist journalist1Formula1 = new Journalist("Ted", "Kravitz", "images/journalist6.jpg");
         journalistRepository.save(journalist1Formula1);
 
-        Journalist journalist2Formula1 = new Journalist("Suzi", "Perry","url");
+        Journalist journalist2Formula1 = new Journalist("Suzi", "Perry","images/journalist7.jpg");
         journalistRepository.save(journalist2Formula1);
 
-        Journalist journalistRugby = new Journalist("Brian", "Moore", "url");
+        Journalist journalistRugby = new Journalist("Brian", "Moore", "images/journalist8.jpg");
         journalistRepository.save(journalistRugby);
 
-        Journalist journalistTennis = new Journalist("Katrina", "Adams", "url");
+        Journalist journalistTennis = new Journalist("Katrina", "Adams", "images/journalist8.jpg");
         journalistRepository.save(journalistTennis);
 
-        Journalist journalistGolf = new Journalist("Kelly", "Tilgman", "url");
+        Journalist journalistGolf = new Journalist("Kelly", "Tilgman", "images/journalist9.jpg");
         journalistRepository.save(journalistGolf);
 
 
