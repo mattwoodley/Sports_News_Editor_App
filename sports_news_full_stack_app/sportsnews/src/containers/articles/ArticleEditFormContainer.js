@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ArticleEditForm from '../../components/articles/ArticleEditForm.js';
 import Request from '../../helpers/request.js';
 
-//container requires categories,journalists and an article as we'll be populating edit form
+//container requires categories, journalists and an article as we'll be populating edit form
 
 class ArticleEditFormContainer extends Component {
   constructor(props){

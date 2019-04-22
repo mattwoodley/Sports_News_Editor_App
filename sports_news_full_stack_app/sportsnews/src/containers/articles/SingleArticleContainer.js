@@ -13,15 +13,15 @@ class SingleArticleContainer extends Component {
 
 //when the component mounts, grab a single article as well as the details of the journalist contained within article, set state to include this article to be passed down
   componentDidMount(){
-    let request = new Request()
+    let request = new Request();
     const url = '/api/articles/' + this.props.id + '?projection=embedJournalist';
     request.get(url).then((data) => {
       this.setState({article: data})
     })
   }
 
-// this function will be passed down to articledetail component for rendering there
-// make a request to back end api to delete article based on id, then return to /article route (articleListContainer)
+// this function will be passed down to ArticleDetails component for rendering there
+// make a request to back end api to delete article based on id, then return to /articles route (articleListContainer)
   handleDelete(id){
     const request = new Request();
     const url = '/api/articles/' + id;
@@ -30,13 +30,13 @@ class SingleArticleContainer extends Component {
     })
   }
 
-// again, passed down to articleDetail component, provides that
+// again, passed down to ArticleDetails component, provides that functionality down to ArticleDetails
   handleEdit(id){
     window.location = '/articles/edit/' + id
   }
 
 //compulsory React render function it has to return something so in the event there is no article return nothing to save console.error()
-// else return the articledetails component - feed it props of the whole article object - the embedded journo object and the two functions above to be used to edit/delete from articleDetail view
+// else return the ArticleDetails component - feed it props of the whole article object - the embedded journalist object and the two functions above to be used to edit/delete from ArticleDetails view
 //TODO - come back and feed journalist down
   render(){
     if(!this.state.article){

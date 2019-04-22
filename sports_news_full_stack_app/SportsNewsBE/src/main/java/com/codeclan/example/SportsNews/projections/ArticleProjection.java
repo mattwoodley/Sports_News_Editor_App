@@ -9,6 +9,8 @@ import java.util.Date;
 
 @Projection(name = "embedCategory", types = Article.class)
 public interface ArticleProjection {
+ Long getId();
+
  String getHeadline();
 
  String getSummary();
