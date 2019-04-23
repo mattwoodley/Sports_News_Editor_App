@@ -367,5 +367,51 @@ public class DataLoader implements ApplicationRunner {
                 "2019-04-21", "images/statueee.jpg", 1, football, journalistFootball3);
         articleRepository.save(articleFootBall6);
 
+        Article articleTennis3 = new Article(
+                "Fed Cup: Australia to face France in November's final",
+                "Australia reached their first Fed Cup final for 26 years with a 3-2 win over Belarus in Brisbane",
+                "Australia reached their first Fed Cup final for 26 years with a 3-2 win over Belarus in Brisbane.\n" +
+                        "\n" +
+                        "Ashleigh Barty and Samantha Stosur beat Victoria Azarenka and Aryna Sabalenka 7-5 3-6 6-2 in the deciding doubles tie to seal victory.\n" +
+                        "\n" +
+                        "Barty also won both her singles matches, while US Open champion Stosur lost twice.\n" +
+                        "\n" +
+                        "In November's final, Australia will host France, who beat favourites Romania 3-2 on Sunday.\n" +
+                        "\n" +
+                        "French Open champion Simona Halep won both of her singles matches for Romania but victories for France's Kristina Mladenovic and Pauline Parmentier - against Mihaela Buzarnescu and Irina-Camelia Begu respectively - meant the tie went into a doubles decider.\n" +
+                        "\n" +
+                        "Mladenovic and Caroline Garcia, who had not played together since the 2016 Fed Cup final after a public fall-out, came from behind to beat Halep and Monica Niculescu 5-7 6-3 6-4 and clinch victory for two-time champions France.\n" +
+                        "\n" +
+                        "Romania, who beat defending champions the Czech Republic in an epic quarter-final, had been bidding to reach their first final.\n" +
+                        "\n" +
+                        "France's most recent Fed Cup title was in 2003, while Australia won the last of their seven titles in 1974.\n" +
+                        "\n" +
+                        "Australia's team of Rennae Stubbs, Elizabeth Smylie and Nicole Provis lost 3-0 to Spain in the 1993 final.\n" +
+                        "\n" +
+                        "\"It's super exciting. We all work so hard all year and we're such a tight team,\" said Stosur. \"We're going to be giving it our best shot here in November.\"",
+                "2019-04-19", "images/barty.jpg", 0, tennis, journalistTennis);
+        articleRepository.save(articleTennis3);
+
+        Article articleRugby3 = new Article(
+                "Pro14: Titles, home draws and European places on the line on final day",
+                "The regular season in the Pro14 reaches a climax on Saturday with seven matches in four countries",
+                "The regular season in the Pro14 reaches a climax on Saturday with seven matches in four countries.\n" +
+                        "\n" +
+                        "Defending champions Leinster have clinched the Conference B title and with it a home game in the play-off semi finals.\n" +
+                        "\n" +
+                        "But Glasgow and Munster can both still win Conference A, and there is a battle for third place in Conference B between Benetton, Edinburgh and Scarlets.\n" +
+                        "\n" +
+                        "Can Benetton claim a Champions Cup spot for Italy, and will any Welsh region make it into Europe's top tournament?\n" +
+                        "\n" +
+                        "The final weekend - where every game is a local derby - was designed to keep interest high when there was a danger of dead rubbers dominating.\n" +
+                        "\n" +
+                        "As it turns out, there's a lot more than just local bragging rights at stake.\n" +
+                        "\n" +
+                        "Here's a closer look:",
+                "2019-04-21", "images/gettyimages-1137149800.jpg", 0, rugby, journalistRugby);
+        articleRepository.save(articleRugby3);
+
+
+
     }
 }
