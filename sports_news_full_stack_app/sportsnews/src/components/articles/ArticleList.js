@@ -12,7 +12,7 @@ const ArticleList = (props) => {
 		 	return (
 				<li key={index} className="microarticle-li">
 					<div className = "micro-article">
-				<MicroArticle id={article.id} headline={article.headline} summary={article.summary} image={article.image} category={article.category} dateCreated={article.dateCreated} />
+				<MicroArticle article={article}/>
 			</div>
 			</li>
 		)

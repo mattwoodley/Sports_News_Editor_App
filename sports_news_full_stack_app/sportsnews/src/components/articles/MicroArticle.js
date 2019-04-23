@@ -8,13 +8,15 @@ import {Link} from 'react-router-dom';
 const MicroArticle = (props) => {
 return(
 <React.Fragment>
-  <Link to = {"/articles/" + props.id} className="microarticle-img-link">
-        <img src={props.image}/>
+  <div className='microjournalist'>
+  <Link to = {"/articles/" + props.article.id} className="microarticle-img-link">
+        <img src={props.article.image}/>
       </Link>
-      <h4 className='microatricleHeadline'>{props.headline}</h4>
-      <p className='microarticleSummary'>{props.summary}</p>
-      <p className='microarticlecategory'>{props.category.name}</p>
-      <p className='microarticledate'>{props.dateCreated}</p>
+      <h4 className='microatricleHeadline'>{props.article.headline}</h4>
+      <p className='microarticleSummary'>{props.article.summary}</p>
+      <p className='microarticlecategory'>{props.article.category.name}</p>
+      <p className='microarticledate'>{props.article.dateCreated}</p>
+    </div>
 </React.Fragment>
 );
 }
