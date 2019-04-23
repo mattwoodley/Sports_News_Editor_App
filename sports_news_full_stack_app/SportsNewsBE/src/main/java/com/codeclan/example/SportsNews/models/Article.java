@@ -20,7 +20,7 @@ public class Article implements Serializable {
     private String fullStory;
 
     @Column(name="date_created")
-    private Date dateCreated;
+    private String dateCreated;
 
     @Column(name="image")
     private String image;
@@ -42,7 +42,7 @@ public class Article implements Serializable {
     @JoinColumn(name = "journalist_id", nullable = true)
     private Journalist journalist;
 
-    public Article(String headline, String summary, String fullStory, Date dateCreated, String image, int readCount, Category category, Journalist journalist){
+    public Article(String headline, String summary, String fullStory, String dateCreated, String image, int readCount, Category category, Journalist journalist){
         this.headline = headline;
         this.summary = summary;
         this.fullStory = fullStory;
@@ -81,11 +81,11 @@ public class Article implements Serializable {
         this.fullStory = fullStory;
     }
 
-    public Date getDateCreated() {
+    public String getDateCreated() {
         return dateCreated;
     }
 
-    public void setDateCreated(Date dateCreated) {
+    public void setDateCreated(String dateCreated) {
         this.dateCreated = dateCreated;
     }
 

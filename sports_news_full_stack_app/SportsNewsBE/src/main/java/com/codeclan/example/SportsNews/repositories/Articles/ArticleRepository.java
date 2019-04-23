@@ -5,9 +5,12 @@ import com.codeclan.example.SportsNews.projections.ArticleProjection;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RepositoryRestResource(excerptProjection = ArticleProjection.class)
 public interface ArticleRepository extends JpaRepository<Article, Long>, ArticleRepositoryCustom {
+
+    public List<Article> findArticlesByCategory(Long categoryId);
 
 }
