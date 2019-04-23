@@ -101,7 +101,7 @@ public class DataLoader implements ApplicationRunner {
                         "Mathematically, we will have to wait and see what happens,Benitez said. But I think we will be safe."+
                         "" +
                         "For Southampton, an improved second-half performance yielded only substitute Mario Lemina's goal and they sit just five points above Cardiff in 18th with four games to play.",
-                "2019-04-01", "images/football1.jpg", 7, football, journalistFootball3);
+                "2019-04-01", "/images/football1.jpg", 7, football, journalistFootball3);
 
         articleRepository.save(articleFootball1);
 
@@ -149,7 +149,7 @@ public class DataLoader implements ApplicationRunner {
                         "The scenery now moves to Cardiff, where Liverpool travel on Sunday, then on to Old Trafford on Wednesday, with City still in control as they know victory in all their games will bring them the title." +
                         "" +
                         "This season has been two superpowers slugging it out. The decisive is yet to be landed, but in this game City showed guts in their search for glory to end a week shot through with pain with the pleasure of victory.",
-                "2019-04-15", "images/football2.jpg", 5, football, journalistFootball1);
+                "2019-04-15", "/images/football2.jpg", 5, football, journalistFootball1);
         articleRepository.save(articleFootball2);
 
         Article articleFootball3 = new Article(
@@ -196,7 +196,7 @@ public class DataLoader implements ApplicationRunner {
                         "Should he have sent off Cosgrove? Possibly. The sending off of Broadfoot was also debatable. Yes, he seemed to catch Lewis with his studs. But it was probably more reckless than excessive force so perhaps a yellow card would have sufficed." +
                         "" +
                         "The proximity of those decisions - they happened within minutes of each other - meant the home fans felt particularly hard done by.",
-                "2019-04-03", "images/football3.jpg", 2, football, journalistFootball1);
+                "2019-04-03", "/images/football3.jpg", 2, football, journalistFootball1);
         articleRepository.save(articleFootball3);
 
         Article articleTennis1 = new Article(
@@ -219,7 +219,7 @@ public class DataLoader implements ApplicationRunner {
                         "Mathematically, we will have to wait and see what happens, Benitez said. But I think we will be safe." +
                         "" +
                         "For Southampton, an improved second-half performance yielded only substitute Mario Lemina's goal and they sit just five points above Cardiff in 18th with four games to play.",
-                "2019-04-04", "images/fedcup_getty2.jpg", 1, tennis, journalistTennis);
+                "2019-04-04", "/images/fedcup_getty2.jpg", 1, tennis, journalistTennis);
         articleRepository.save(articleTennis1);
 
 
@@ -243,7 +243,7 @@ public class DataLoader implements ApplicationRunner {
                         "In addition to his rugby union career, Folau has also played professional rugby league and Australian rules football." +
                         "" +
                         "Last week, Australian rugby league's governing body ruled out Folau returning to the National Rugby League.",
-                "2019-04-05", "images/folau_reuters.jpg", 0, rugby, journalistRugby);
+                "2019-04-05", "/images/folau_reuters.jpg", 0, rugby, journalistRugby);
         articleRepository.save(articleRugby1);
 
         Article articleGolf1 = new Article(
@@ -268,7 +268,7 @@ public class DataLoader implements ApplicationRunner {
                         "Pan is only the second player from Chinese Taipei to triumph on the PGA Tour, following TC Chen at the 1987 Genesis Open." +
                         "" +
                         "The final group petered out tamely, Johnson dropped seven shots in five holes on the back nine and finished in a tie for 28th, while Poulter shared 10th after making only two birdies.",
-                "2019-04-06", "images/ct_pan_getty.jpg", 0, golf, journalistGolf);
+                "2019-04-06", "/images/ct_pan_getty.jpg", 0, golf, journalistGolf);
         articleRepository.save(articleGolf1);
 
         Article articleRugby2 = new Article(
@@ -302,10 +302,10 @@ public class DataLoader implements ApplicationRunner {
                         "" +
                         "It's been awesome having friends supporting me, whether they agree with me or not." +
                         "",
-                "2019-04-07", "images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
+                "2019-04-07", "/images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
         articleRepository.save(articleRugby2);
 
-        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", "2019-04-08", "images/baseball1.jpg", 0, basketball, journalistFootball3);
+        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", "2019-04-08", "/images/baseball1.jpg", 0, basketball, journalistFootball3);
         articleRepository.save(articleBaseball2);
 
 
