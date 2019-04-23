@@ -475,7 +475,99 @@ public class DataLoader implements ApplicationRunner {
                 "2019-04-18", "images/106562580_awj.jpg", 4, rugby, journalistRugby);
         articleRepository.save(articleRugby5);
 
+        Article articleCricket1 = new Article(
+                "One-Day Cup: Ben Slater century sets up Notts win over Warwickshire",
+                "Opener Ben Slater hit a century as Nottinghamshire made it three wins out of three in the One-Day Cup, beating Warwickshire by 118 runs at Edgbaston",
+                "Opener Ben Slater hit a century as Nottinghamshire made it three wins out of three in the One-Day Cup, beating Warwickshire by 118 runs at Edgbaston.\n" +
+                        "\n" +
+                        "Slater made exactly 100 off 115 balls, with 15 fours, to rescue his side after they slumped from 81-0 to 98-4.\n" +
+                        "\n" +
+                        "He put on 95 with Steven Mullaney (40) and they eventually totalled 301-9 despite 5-45 from spinner Jeetan Patel.\n" +
+                        "\n" +
+                        "Warwickshire struggled to 22-4 and although Liam Banks made 57 and Alex Thomson 55, they were all out for 183.\n" +
+                        "\n" +
+                        "One-Day Cup group tables\n" +
+                        "Having opted to bat first, Notts made a positive start through Slater and Joe Clarke (39), with the latter hitting three fours and a six from the final four deliveries of Henry Brookes' fourth over, which cost 23.\n" +
+                        "\n" +
+                        "Patel's off-spin, though, checked their progress and he twice took two wickets in the space of three balls, eventually bowling Slater with one that turned and hit off stump, on his way to only the second limited-overs 'five-for' of his career.\n" +
+                        "\n" +
+                        "Matt Carter (21 not out) hit two full tosses from Chris Woakes for four to see the total past 300 and then made a breakthrough at the start of Warwickshire's reply by having Ed Pollock lbw for a duck.\n" +
+                        "\n" +
+                        "With none of their top four reaching double figures, the home side were never in the hunt, but could take encouragement from the batting of teenager Banks and Thomson, who both achieved maiden fifties for the first team in any format before Luke Fletcher (3-21) had Patel lbw in the 38th over to end the game.\n" +
+                        "\n" +
+                        "Both sides are next in action on Friday when Notts are at home to Leicestershire and Warwickshire host Durham",
+                "2019-04-17", "images/106559325_slater_getty.jpg", 0, cricket, journalistCricket);
+        articleRepository.save(articleCricket1);
+
+        Article articleCricket2 = new Article(
+                "One-Day Cup: Hampshire beat Middlesex by 119 runs as Aiden Markram stars",
+                "Aiden Markram hit 88 off 90 balls for Hampshire and then took 3-39 with the ball as they comfortably beat Middlesex by 119 runs in the One-Day Cup",
+                "Aiden Markram hit 88 off 90 balls for Hampshire and then took 3-39 with the ball as they comfortably beat Middlesex by 119 runs in the One-Day Cup.\n" +
+                        "\n" +
+                        "The win was Hampshire's third from three games in this year's competition.\n" +
+                        "\n" +
+                        "Markram's knock and Rilee Rossouw's 64 from 55 balls helped the home side post 301-9, despite Tom Helm's fine 5-71.\n" +
+                        "\n" +
+                        "Eoin Morgan's 41 was the visitors' best offering with the bat in reply, as they slipped to 182 all out on their way to a first defeat in the group.\n" +
+                        "\n" +
+                        "One-Day Cup group tables\n" +
+                        "Liam Dawson (3-37), Kyle Abbott (3-36) and Markram worked their way through Middlesex's line-up, before Mason Crane sealed the win when he bowled Tim Murtagh in the 36th over.\n" +
+                        "\n" +
+                        "Earlier Rossouw, Dawson and Markram had all impressed with the bat for the holders, after openers Tom Alsop (23) and Markram had guided them past 50 without loss.\n" +
+                        "\n" +
+                        "The victory put Hampshire top of South Group, while Middlesex, who are in action again against Surrey at The Oval on Thursday, have two wins from their three games.",
+                "2019-04-16", "images/106564515_aidenmarkramrex.jpg", 3, cricket, journalistCricket);
+        articleRepository.save(articleCricket2);
+
+        Article articleCricket3 = new Article(
+                "Ashton Turner in record fifth successive T20 duck - four of them first ball",
+                "Australian Ashton Turner became the first man in Twenty20 history to make five consecutive ducks as he fell first ball in the Indian Premier League",
+                "It was the third successive IPL golden duck for the 26-year-old, who batted at number five for Rajasthan Royals.\n" +
+                        "\n" +
+                        "Team-mate Ajinkya Rahane, the India batsman, struck their side's highest IPL score with an unbeaten 105.\n" +
+                        "\n" +
+                        "Last month Turner hit 84 against India in a one-day international and he has played three ODIs and five T20s.\n" +
+                        "\n" +
+                        "His unbeaten one-day innings in Chandigarh broke the run of T20 ducks, which began with a first-ball dismissal in the Big Bash League in February and was followed by a five-ball nought for Australia against India.\n" +
+                        "\n" +
+                        "The Royals, captained by Australian Steve Smith and featuring England all-rounder Ben Stokes and newcomer Jofra Archer, lost the match against Delhi Capitals by six wickets with four deliveries left.\n" +
+                        "\n" +
+                        "Smith compiled his second successive fifty, though Stokes made only eight and has scored a modest 112 runs in eight innings in this year's event, with a best of 46.\n" +
+                        "\n" +
+                        "Archer clipped the stumps with a full toss but the bails stayed in place and he finished with 0-31 from his four overs.\n" +
+                        "\n" +
+                        "The 24-year-old Sussex all-rounder took 11 wickets in his 10 matches but he and Stokes now head home to prepare for England's one-day series against Pakistan, beginning on 8 May, which is preceded by a one-off match with Ireland on 3 May.\n" +
+                        "\n" +
+                        "Barbados-born Archer, 24, qualified to play for England in March after a change in residency rules.\n" +
+                        "\n" +
+                        "He was not selected in a preliminary 15-man World Cup squad but could still be chosen if he impresses in the pre-tournament matches as changes can be made up to 23 May.\n" +
+                        "\n" +
+                        "India left-hander Rishabh Pant won Monday's match in Jaipur with a six as the Capitals moved to the top of the table on net run-rate, although they have played a game more than second-placed Chennai Super Kings.\n" +
+                        "\n" +
+                        "The Royals are one place off the foot of the table, eight points behind the leaders, with the top four teams qualifying for the play-off phase, which starts on 7 May",
+                "2019-04-15", "images/106550967_ashton_turner_getty.jpg", 12, cricket, journalistCricket);
+        articleRepository.save(articleCricket3);
 
 
+        Article articleRugby6 = new Article(
+                "Super League: St Helens 62-16 Hull FC",
+                "Adam Swift and Kevin Naiqama scored a hat-trick of tries each as St Helens ran in 11 tries to hammer Hull FC.",
+                "Joe Westerman and Carlos Tuimavave gave Hull the lead early on but Saints raced back through two Jonny Lomax tries.\n" +
+                        "\n" +
+                        "Naiqama, Swift and Lachlan Coote also crossed before the break but Jez Litten cut the deficit for the hosts.\n" +
+                        "\n" +
+                        "Swift completed his hat-trick while Naiqama scored twice more either side of Jack Welsby's try as Saints wrapped up a stunning Easter Monday victory.\n" +
+                        "\n" +
+                        "Despite their early setback through Westerman and Tuimavave's tries, Saints soon took control of the game, with Lomax registering two tries on his 200th Saints appearance.\n" +
+                        "\n" +
+                        "The win caps off a fine Easter period for Saints, who enjoyed a thumping derby win against Wigan on Friday.\n" +
+                        "\n" +
+                        "Their third victory in a row in Super League ensures they maintain their four-point lead on second-placed Warrington at the top of the table with 12 games played.\n" +
+                        "\n" +
+                        "Hull also won their respective local derby against city rivals Hull Kingston Rovers, but were undone by a stunning display from the league leaders.\n" +
+                        "\n" +
+                        "Naiqama has now scored six tries since joining from NRL side Wests Tigers at the start of this season.",
+                "2019-04-17", "images/106550412_aw3_8555.jpg", 1, rugby, journalistRugby);
+        articleRepository.save(articleRugby6);
     }
 }
