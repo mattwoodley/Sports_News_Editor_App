@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.persistence.OrderBy;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -38,9 +39,14 @@ public class ArticleController{
         article.setJournalist(journalist);
         articleRepository.save(article);
     }
-    @RequestMapping(value = "/")
-    public List<Article> findByOrderByCategory() {
-        List<Article> articles = articleRepository.findAll(Sort.by(Sort.Direction.DESC, "dateCreated"));
+    @RequestMapping(value = "/criteria/{criteria}/sortorder/{sortOrder}")
+    public List<Article> findByDateCreated(@PathVariable String criteria, @PathVariable String sortOrder) {
+        List<Article> articles;
+        if(sortOrder.equals("ASC")) {
+           articles = articleRepository.findAll(Sort.by(Sort.Direction.ASC, criteria));
+        }else{
+            articles = articleRepository.findAll(Sort.by(Sort.Direction.DESC, criteria));
+        }
         return articles;
     }
 }
