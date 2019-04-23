@@ -11,6 +11,6 @@ import java.util.List;
 @RepositoryRestResource(excerptProjection = ArticleProjection.class)
 public interface ArticleRepository extends JpaRepository<Article, Long>, ArticleRepositoryCustom {
 
-    public List<Article> findArticlesByCategory(Long categoryId);
+    List<Article> findArticlesByCategory(Long categoryId);
 
 }

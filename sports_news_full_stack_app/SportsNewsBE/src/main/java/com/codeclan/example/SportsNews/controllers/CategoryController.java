@@ -28,14 +28,14 @@ public class CategoryController {
         Category category = categoryRepository.getOne(id);
         categoryRepository.save(category);
     }
-//    @RequestMapping(value = "/criteria/{criteria}/sortorder/{sortOrder}")
-//    public List<Article> findByDateCreated(@PathVariable String criteria, @PathVariable String sortOrder) {
-//        List<Article> articles;
-//        if(sortOrder.equals("ASC")) {
-//            articles = articleRepository.findAll(Sort.by(Sort.Direction.ASC, criteria));
-//        }else{
-//            articles = articleRepository.findAll(Sort.by(Sort.Direction.DESC, criteria));
-//        }
-//        return articles;
-//    }
+    @RequestMapping(value = "/criteria/{criteria}/sortorder/{sortOrder}")
+    public List<Article> findByDateCreated(@PathVariable String criteria, @PathVariable String sortOrder) {
+        List<Article> articles;
+        if(sortOrder.equals("ASC")) {
+            articles = articleRepository.findAll(Sort.by(Sort.Direction.ASC, criteria));
+        }else{
+            articles = articleRepository.findAll(Sort.by(Sort.Direction.DESC, criteria));
+        }
+        return articles;
+    }
 }
