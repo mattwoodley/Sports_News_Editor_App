@@ -412,6 +412,70 @@ public class DataLoader implements ApplicationRunner {
         articleRepository.save(articleRugby3);
 
 
+        Article articleRugby4 = new Article(
+                "Rugby Football Union says more cases of positive tests reflects society use",
+                "Four Premiership rugby players tested positive for cocaine last season, which the Rugby Football Union say reflects increasing drug use in society",
+                "Four Premiership rugby players tested positive for cocaine last season, which the Rugby Football Union say reflects increasing drug use in society.\n" +
+                        "\n" +
+                        "There were three more cases in 2017-2018 compared to the previous campaign.\n" +
+                        "\n" +
+                        "\"The positives reflect risks 18-35 year-olds are exposed to when going out socially,\" RFU's Dr Simon Kemp says.\n" +
+                        "\n" +
+                        "\"We are trying to have a policy which continues to protect the game, but recognises illicit drug use in society is becoming increasingly common.\"\n" +
+                        "\n" +
+                        "Dr Kemp added that the players who tested positive for recreational drug use had found themselves peripheral figures at their clubs.\n" +
+                        "\n" +
+                        "\"These positives are not from players who are typically playing and training every week,\" the medical chief explained.\n" +
+                        "\n" +
+                        "\"These are players who [have become] somewhat dislocated from their clubs, either through injury or non-selection.\n" +
+                        "\n" +
+                        "\"All of these players were reviewed by an independent specialist psychiatrist, and plans to manage any ongoing problems were created.\"\n" +
+                        "\n" +
+                        "The RFU run an illicit drugs programme independent of the World Anti-Doping Agency (WADA), and carried out 332 tests during the 2017-2018 season, 94% of which were hair samples and have a 3-5 month detection period.\n" +
+                        "\n" +
+                        "\"We are confident that this level of testing, which is over and above what we are required to do under the WADA code, tries to cover off both protecting the reputation and integrity of the game and addressing some of the health issues we know are associated with illicit drug use,\" Dr Kemp added.\n" +
+                        "\n" +
+                        "Under the programme, players are guaranteed anonymity for a first offence, but are fined and required to undergo a rehabilitation programme, which the authorities insist is enough of a deterrent.\n" +
+                        "\n" +
+                        "\"With 300-plus tests, covering three to five months worth of use, if this was a broader problem and it hadn't been a disincentive, we would see more positives,\" said Premiership Rugby's Phil Winstanley.",
+                "2019-04-23", "images/gettyimages-1127376085.jpg", 0, rugby, journalistRugby);
+        articleRepository.save(articleRugby4);
+
+
+        Article articleRugby5 = new Article(
+                "Judgement Day: Alun Wyn Jones and George North set for returns",
+                "Alun Wyn Jones and George North are in line to return for Ospreys' crucial Pro14 match against Cardiff Blues",
+                "Alun Wyn Jones and George North are in line to return for Ospreys' crucial Pro14 match against Cardiff Blues.\n" +
+                        "\n" +
+                        "Neither has played since Wales' Grand Slam-clinching Six Nations win against Ireland on 16 March.\n" +
+                        "\n" +
+                        "Both face fitness tests, but lock Jones is set to return after his knee problem while wing North is close after breaking a bone in his hand.\n" +
+                        "\n" +
+                        "\"They have had some contact this week, we will check again on Thursday and Friday,\" said coach Allen Clarke.\n" +
+                        "\n" +
+                        "\"We need to take that to another level before we finalise selection.\n" +
+                        "\n" +
+                        "\"It would be great if they could come through but we are not in a position to confirm that yet.\"\n" +
+                        "\n" +
+                        "Pro14: What's at stake on final day\n" +
+                        "Ospreys expect Wales duo to stay\n" +
+                        "Jones and North were both injured in the same passage of play early in the 25-7 defeat of Ireland in Cardiff.\n" +
+                        "\n" +
+                        "North left the field while Jones played on with a bandaged knee to lead Wales to a fourth Grand Slam in 14 years.\n" +
+                        "\n" +
+                        "Saturday's clash with the Blues in the Cardiff Judgement Day double-header will decide who finishes fourth in Conference A and wins a play-off place to qualify for the 2019-20 European Champions Cup.\n" +
+                        "\n" +
+                        "Ospreys are one place ahead of the Blues after a run of three wins, and North is keen to play after his lay-off.\n" +
+                        "\n" +
+                        "\"It's been a long few weeks and it was not a straightforward break,\" he said.\n" +
+                        "\n" +
+                        "\"I have put in a good block of training and I will be up for selection and hopefully I will get my name on the team sheet somehow.\"\n" +
+                        "\n" +
+                        "Coach Clarke added: \"If you look where we were prior to the Six Nations with the turmoil and off-field distraction we dropped down the ladder of the league table.",
+                "2019-04-18", "images/106562580_awj.jpg", 4, rugby, journalistRugby);
+        articleRepository.save(articleRugby5);
+
+
 
     }
 }
