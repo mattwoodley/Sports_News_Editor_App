@@ -7,12 +7,14 @@ import com.codeclan.example.SportsNews.repositories.Articles.ArticleRepository;
 import com.codeclan.example.SportsNews.repositories.Categories.CategoryRepository;
 import com.codeclan.example.SportsNews.repositories.Journalists.JournalistRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.persistence.OrderBy;
+import java.util.List;
 
 @RestController
 @RequestMapping("/articles")
@@ -35,5 +37,10 @@ public class ArticleController{
         article.setCategory(category);
         article.setJournalist(journalist);
         articleRepository.save(article);
+    }
+    @RequestMapping(value = "/")
+    public List<Article> findByOrderByCategory() {
+        List<Article> articles = articleRepository.findAll(Sort.by(Sort.Direction.DESC, "dateCreated"));
+        return articles;
     }
 }
