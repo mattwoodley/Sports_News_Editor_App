@@ -17,7 +17,7 @@ public interface ArticleProjection {
 
  String getFullStory();
 
- Date getDateCreated();
+ String getDateCreated();
 
  String getImage();
 
