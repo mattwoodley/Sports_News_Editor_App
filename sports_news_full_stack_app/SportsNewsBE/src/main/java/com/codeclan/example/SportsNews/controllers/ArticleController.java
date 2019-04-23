@@ -39,6 +39,12 @@ public class ArticleController{
         article.setJournalist(journalist);
         articleRepository.save(article);
     }
+    @RequestMapping(value="/category/{categoryId}")
+    public List<Article> findArticlesByCategory(@PathVariable Long categoryId) {
+        List<Article> articles = articleRepository.findArticlesByCategory(categoryId);
+        return articles;
+    }
+
     @RequestMapping(value = "/criteria/{criteria}/sortorder/{sortOrder}")
     public List<Article> findByDateCreated(@PathVariable String criteria, @PathVariable String sortOrder) {
         List<Article> articles;
