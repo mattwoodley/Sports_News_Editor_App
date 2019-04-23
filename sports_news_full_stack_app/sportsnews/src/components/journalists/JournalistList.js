@@ -9,7 +9,7 @@ const JournalistList = (props) => {
 		 	return (
 				<li key={index} className="microjournalist-li">
 					<div className = "micro-journalist">
-				<MicroJournalist id={journalist.id} firstName={journalist.firstName} surname={journalist.surname} image={journalist.image}/>
+				<MicroJournalist journalist={journalist}/>
 			</div>
 			</li>
 		)
