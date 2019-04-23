@@ -309,6 +309,63 @@ public class DataLoader implements ApplicationRunner {
         articleRepository.save(articleBaseball2);
 
 
+        Article articleFootBall5 = new Article(
+                "Amateur football match in Aberdeen abandoned over 'racial slur'",
+                "A university football team walked off the pitch after a racial slur was said to have been used against one of its players during a match.",
+                "A university football team walked off the pitch after a racial slur was said to have been used against one of its players during a match.\n" +
+                        "\n" +
+                        "The incident involved an amateur first division league game between Aberdeen University Football Club and Kincorth Amateurs at Tullos Primary School on Saturday.\n" +
+                        "\n" +
+                        "Aberdeen University Students' Association said it abandoned the game.\n" +
+                        "\n" +
+                        "BBC Scotland has asked Kincorth Amateurs for comment.\n" +
+                        "\n" +
+                        "Aberdeenshire Amateur Football Association said it was awaiting the referee's report into the game.\n" +
+                        "\n" +
+                        "Aberdeen University Students' Association (Ausa) said in a statement: \"Aberdeen University Football Club walked off the pitch and subsequently abandoned their game against Kincorth AFC due to the use of an extremely offensive racial slur against one of the university players.\n" +
+                        "\n" +
+                        "\"Aberdeen University Students' Association has zero-tolerance policy for discrimination of any form and will take all the necessary actions to support the AUFC (Aberdeen University Football Club) in this matter.\"\n" +
+                        "\n" +
+                        "Police Scotland appealed for any witnesses to contact them.\n" +
+                        "\n",
+                "2019-04-20", "images/ct_pan_getty", 1, football, journalistFootball2);
+        articleRepository.save(articleFootBall5);
+
+
+        Article articleFootBall6 = new Article(
+                "Billy McNeill: Former Celtic captain & manager dies aged 79",
+                "Legendary former Celtic captain Billy McNeill - the first Briton to lift the European Cup - has died aged 79",
+                "Legendary former Celtic captain Billy McNeill - the first Briton to lift the European Cup - has died aged 79.\n" +
+                        "\n" +
+                        "McNeill led Celtic when they beat Inter Milan 2-1 in 1967 and captained the club to nine successive titles, seven Scottish Cups and six League Cups.\n" +
+                        "\n" +
+                        "In two spells as Celtic boss, he won four titles and four cups. He managed Clyde, Aberdeen, Manchester City and Aston Villa too.\n" +
+                        "\n" +
+                        "McNeill had been suffering from dementia since 2010.\n" +
+                        "\n" +
+                        "Live: reaction & tributes\n" +
+                        "'He was a giant who I'm truly lucky to follow'\n" +
+                        "5 Live Sport Special: The Lisbon Lions remembered\n" +
+                        "Celtic say he died on Monday night \"surrounded by his family and loved ones\".\n" +
+                        "\n" +
+                        "A statement from the McNeill family said he \"fought bravely to the end, showing the strength and fortitude he always has done throughout his life\".\n" +
+                        "\n" +
+                        "It added: \"We would also like to note our love and appreciation to our mother, Liz, for the care, devotion and love she gave to our father throughout his illness. No one could have done any more.\n" +
+                        "\n" +
+                        "\"Whilst this is a very sad time for all the family and we know our privacy will be respected, our father always made time for the supporters so please tell his stories, sing his songs and help us celebrate his life.\"\n" +
+                        "\n" +
+                        "Big goals in big games - McNeill the player\n" +
+                        "Born in Bellshill, North Lanarkshire, McNeill was initially farmed out by Celtic to junior side Blantyre Victoria before making his debut on 23 August 1958.\n" +
+                        "\n" +
+                        "More than 800 appearances later, the Scottish Cup final win against Airdrie on 3 May 1975 was the imposing centre-back's farewell game.\n" +
+                        "\n" +
+                        "Among his many career highs was scoring the winner in the 1965 Scottish Cup final, ending an eight-year trophy drought for Celtic. He also found the net in the 1969 and 1972 finals.\n" +
+                        "\n" +
+                        "The European Cup final of 1967 was the pinnacle, coming in the same season Celtic won a domestic treble, but he was on the losing side three years later when Feyenoord beat Celtic in Milan after extra-time.\n" +
+                        "\n" +
+                        "He was capped 29 times for Scotland.",
+                "2019-04-21", "images/statueee.jpg", 1, football, journalistFootball3);
+        articleRepository.save(articleFootBall6);
 
     }
 }
