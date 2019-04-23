@@ -11,10 +11,16 @@ const CategoriesList = (props) => {
     return (category);
   });
 
-  const articles = categories.map((article, index) => {
+  const articles = categories.map((article) => {
     return (
       console.log(article),
       article
+    );
+  });
+
+  const what = articles.map((article) => {
+    return (
+      console.log(article)
     );
   });
 

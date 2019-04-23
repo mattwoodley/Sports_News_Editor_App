@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CategoriesList from '../../components/categories/CategoriesList.js';
+import ArticleList from '../../components/articles/ArticleList.js';
 import Request from '../../helpers/request.js';
 
 class CategoriesListContainer extends Component {
@@ -52,7 +52,7 @@ class CategoriesListContainer extends Component {
     }
     return (
       <div className="component">
-        <CategoriesList articles={this.state.articles}/>
+        <ArticleList articles={this.state.articles}/>
       </div>
     )
 

@@ -9,11 +9,17 @@ const ArticleList = (props) => {
 		 	return (
 				<li key={index} className="microarticle-li">
 					<div className = "micro-article">
-				<MicroArticle id={index} headline={article.headline} summary={article.summary} image={article.image} dateCreated={article.dateCreated} />
-			</div>
-			</li>
-		)
-		})
+    				<MicroArticle
+              id={index}
+              headline={article.headline}
+              summary={article.summary}
+              image={article.image}
+              dateCreated={article.dateCreated}
+            />
+    			</div>
+  			</li>
+  		);
+		});
 
 	return (
 		<ul className="microarticle-ul">
