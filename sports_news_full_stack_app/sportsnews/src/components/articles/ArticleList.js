@@ -5,6 +5,9 @@ import MicroArticle from './MicroArticle.js';
 //articles once retrieved from api collection mapped to useful react component
 
 const ArticleList = (props) => {
+  if(!props.articles){
+    return null;
+  }
   const articles = props.articles.map((article,index) => {
 		 	return (
 				<li key={index} className="microarticle-li">
