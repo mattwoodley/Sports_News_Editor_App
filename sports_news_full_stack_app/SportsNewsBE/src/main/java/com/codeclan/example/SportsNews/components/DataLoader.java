@@ -312,24 +312,5 @@ public class DataLoader implements ApplicationRunner {
         Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", "2019-04-08", "images/baseball1.jpg", 0, basketball, journalistFootball3);
         articleRepository.save(articleBaseball2);
 
-//        football.addArticle(articleFootball1);
-//        football.addArticle(articleFootball2);
-//        tennis.addArticle(articleTennis1);
-//        rugby.addArticle(articleRugby1);
-//        rugby.addArticle(articleRugby2);
-//        golf.addArticle(articleGolf1);
-//
-//        categoryRepository.save(football);
-//        categoryRepository.save(tennis);
-//        categoryRepository.save(rugby);
-//        categoryRepository.save(golf);
-//
-//        journalistFootball1.addArticle(articleFootball2);
-//        journalistFootball1.addArticle(articleFootball3);
-//        journalistRepository.save(journalistFootball1);
-//        journalistFootball3.addArticle(articleFootball1);
-//        journalistRepository.save(journalistFootball3);
-
-
     }
 }
