@@ -9,6 +9,7 @@ class ArticleListContainer extends Component {
     this.state = {articles: []}
   }
 
+// /criteria/{criteria}/sortorder/{sortOrder}
 //link in to back end api to fetch all articles store in state
 componentDidMount(){
     let request = new Request();
@@ -21,6 +22,7 @@ componentDidMount(){
 //render the main article list (which itself renders individual microarticles)
   render(){
     return (
+
      <ArticleList articles = {this.state.articles} />
     )
   }

@@ -11,9 +11,9 @@ return(
   <div className='microjournalist'>
   <Link to = {"/articles/" + props.article.id} className="microarticle-img-link">
         <img src={props.article.image}/>
-      </Link>
       <h4 className='microatricleHeadline'>{props.article.headline}</h4>
       <p className='microarticleSummary'>{props.article.summary}</p>
+      </Link>
       <p className='microarticlecategory'>{props.article.category.name}</p>
       <p className='microarticledate'>{props.article.dateCreated}</p>
     </div>
