@@ -12,9 +12,10 @@ const MicroArticle = (props) => {
       </Link>
       <h4 className='microarticleHeadline'>{props.headline}</h4>
       <p className='microarticleSummary'>{props.summary}</p>
-      <p className='microarticleDate'>{props.dateCreated}</p>
-    </React.Fragment>
-  );
+      <p className='microarticlecategory'>{props.category.name}</p>
+      <p className='microarticledate'>{props.dateCreated}</p>
+</React.Fragment>
+);
 }
 
 export default MicroArticle;

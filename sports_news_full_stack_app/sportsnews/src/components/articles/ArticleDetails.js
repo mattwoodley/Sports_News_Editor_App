@@ -7,11 +7,11 @@ const ArticleDetails = (props) => {
 
 //declare these two to be used in the buttons below, we link the button to the variable to the props function eventually leading to the scope of Single Article Container
   const onDelete = () => {
-    props.handleDelete(props.article.id);
+    props.handleDelete(props.id);
   }
 
   const onEdit = () => {
-    props.handleEdit(props.article.id)
+    props.handleEdit(props.id)
   }
 
 //if nothing is passed down return null
@@ -27,9 +27,10 @@ const ArticleDetails = (props) => {
       <h2 className='article-headline'>{props.article.headline}</h2>
       <p className='article-summary'>{props.article.summary}</p>
       <p classname='article-full-story'>{props.article.fullStory}</p>
-      <Link to = {"/journalists/" + props.journalist.id} className="article-microjournalist-link">
-        <MicroJournalist journalist={props.journalist}/>
-      </Link>
+        <Link to = {"/journalists/" + props.journalist.id} className="article-microjournalist-link">
+          <MicroJournalist journalist={props.journalist}/>
+        </Link>
+        <p classname='article-category'>{props.article._embedded.category.name}</p>
       <p classname='article-date-created'>{props.article.dateCreated}</p>
       <button className='admin-button' type='button' onClick={onEdit}>Edit this Article</button>
       <button className='admin-button' type='button' onClick={onDelete}>Delete this Article</button>

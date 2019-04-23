@@ -149,34 +149,36 @@ public class DataLoader implements ApplicationRunner {
         categoryRepository.save(golf);
 
 
-        Journalist journalistFootball1 = new Journalist("John", "Burn", "url");
+
+        Journalist journalistFootball1 = new Journalist("John", "Burn", "/images/journalist1.jpg");
         journalistRepository.save(journalistFootball1);
 
-        Journalist journalistFootball2 = new Journalist("Joe", "Bradshaw", "url");
+        Journalist journalistFootball2 = new Journalist("Joe", "Bradshaw", "/images/journalist2.jpg");
         journalistRepository.save(journalistFootball2);
 
-        Journalist journalistFootball3 = new Journalist("Gordon", "Doe", "url");
+        Journalist journalistFootball3 = new Journalist("Gordon", "Doe", "/images/journalist2.jpg");
         journalistRepository.save(journalistFootball3);
 
-        Journalist journalistBasketball1 = new Journalist("Laura", "Savvas", "url");
+        Journalist journalistBasketball1 = new Journalist("Laura", "Savvas", "/images/journalist3.jpg");
         journalistRepository.save(journalistBasketball1);
 
-        Journalist journalistBasketball2 = new Journalist("Andrew", "Alloia", "url");
+        Journalist journalistBasketball2 = new Journalist("Andrew", "Alloia", "/images/journalist4.jpg");
         journalistRepository.save(journalistBasketball2);
 
-        Journalist journalist1Formula1 = new Journalist("Ted", "Kravitz", "url");
+        Journalist journalist1Formula1 = new Journalist("Ted", "Kravitz", "/images/journalist5.jpg");
         journalistRepository.save(journalist1Formula1);
 
-        Journalist journalist2Formula1 = new Journalist("Suzi", "Perry","url");
+        Journalist journalist2Formula1 = new Journalist("Suzi", "Perry","/images/journalist6.jpg");
         journalistRepository.save(journalist2Formula1);
 
-        Journalist journalistRugby = new Journalist("Brian", "Moore", "url");
+        Journalist journalistRugby = new Journalist("Brian", "Moore", "/images/journalist7.jpg");
         journalistRepository.save(journalistRugby);
 
-        Journalist journalistTennis = new Journalist("Katrina", "Adams", "url");
+        Journalist journalistTennis = new Journalist("Katrina", "Adams", "/images/journalist8.jpg");
         journalistRepository.save(journalistTennis);
 
-        Journalist journalistGolf = new Journalist("Kelly", "Tilgman", "url");
+        Journalist journalistGolf = new Journalist("Kelly", "Tilgman", "/images/journalist9.jpg");
+
         journalistRepository.save(journalistGolf);
 
 
@@ -200,7 +202,7 @@ public class DataLoader implements ApplicationRunner {
                         "Mathematically, we will have to wait and see what happens,Benitez said. But I think we will be safe."+
                         "" +
                         "For Southampton, an improved second-half performance yielded only substitute Mario Lemina's goal and they sit just five points above Cardiff in 18th with four games to play.",
-                date, "url", 7, football, journalistFootball3);
+                date, "/images/football1.jpg", 7, football, journalistFootball3);
         articleRepository.save(articleFootball1);
 
         Article articleFootball2 = new Article(
@@ -247,7 +249,7 @@ public class DataLoader implements ApplicationRunner {
                         "The scenery now moves to Cardiff, where Liverpool travel on Sunday, then on to Old Trafford on Wednesday, with City still in control as they know victory in all their games will bring them the title." +
                         "" +
                         "This season has been two superpowers slugging it out. The decisive is yet to be landed, but in this game City showed guts in their search for glory to end a week shot through with pain with the pleasure of victory.",
-                date1, "url", 5, football, journalistFootball1);
+                date1, "/images/football2.jpg", 5, football, journalistFootball1);
         articleRepository.save(articleFootball2);
 
         Article articleFootball3 = new Article(
@@ -294,7 +296,7 @@ public class DataLoader implements ApplicationRunner {
                         "Should he have sent off Cosgrove? Possibly. The sending off of Broadfoot was also debatable. Yes, he seemed to catch Lewis with his studs. But it was probably more reckless than excessive force so perhaps a yellow card would have sufficed." +
                         "" +
                         "The proximity of those decisions - they happened within minutes of each other - meant the home fans felt particularly hard done by.",
-                date4, "url", 2, football, journalistFootball1);
+                date4, "/images/football3.jpg", 2, football, journalistFootball1);
         articleRepository.save(articleFootball3);
 
         Article articleTennis1 = new Article(
@@ -317,7 +319,7 @@ public class DataLoader implements ApplicationRunner {
                         "Mathematically, we will have to wait and see what happens, Benitez said. But I think we will be safe." +
                         "" +
                         "For Southampton, an improved second-half performance yielded only substitute Mario Lemina's goal and they sit just five points above Cardiff in 18th with four games to play.",
-                date5, "../public/images/fedcup_getty2.jpg", 1, tennis, journalistTennis);
+                date5, "/images/fedcup_getty2.jpg", 1, tennis, journalistTennis);
         articleRepository.save(articleTennis1);
 
 
@@ -341,7 +343,7 @@ public class DataLoader implements ApplicationRunner {
                         "In addition to his rugby union career, Folau has also played professional rugby league and Australian rules football." +
                         "" +
                         "Last week, Australian rugby league's governing body ruled out Folau returning to the National Rugby League.",
-                date5, "../public/images/folau_reuters.jpg", 0, rugby, journalistRugby);
+                date5, "/images/folau_reuters.jpg", 0, rugby, journalistRugby);
         articleRepository.save(articleRugby1);
 
         Article articleGolf1 = new Article(
@@ -366,7 +368,7 @@ public class DataLoader implements ApplicationRunner {
                         "Pan is only the second player from Chinese Taipei to triumph on the PGA Tour, following TC Chen at the 1987 Genesis Open." +
                         "" +
                         "The final group petered out tamely, Johnson dropped seven shots in five holes on the back nine and finished in a tie for 28th, while Poulter shared 10th after making only two birdies.",
-                date5, "../public/images/ct_pan_getty.jpg", 0, golf, journalistGolf);
+                date5, "/images/ct_pan_getty.jpg", 0, golf, journalistGolf);
         articleRepository.save(articleGolf1);
 
         Article articleRugby2 = new Article(
@@ -400,10 +402,12 @@ public class DataLoader implements ApplicationRunner {
                         "" +
                         "It's been awesome having friends supporting me, whether they agree with me or not." +
                         "",
-                date7, "../public/images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
+                date7, "/images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
         articleRepository.save(articleRugby2);
 
-        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date3, "url5", 0, basketball, journalistFootball3);
+
+        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date3, "/images/baseball1.jpg", 0, basketball, journalistFootball3);
+
         articleRepository.save(articleBaseball2);
 
         football.addArticle(articleFootball1);
