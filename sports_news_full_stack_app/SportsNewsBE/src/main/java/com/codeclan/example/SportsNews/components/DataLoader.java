@@ -334,7 +334,7 @@ public class DataLoader implements ApplicationRunner {
                         "" +
                         "Police Scotland appealed for any witnesses to contact them." +
                         "",
-                "2019-04-20", "images/ct_pan_getty", 1, football, journalistFootball2);
+                "2019-04-20", "/images/ct_pan_getty", 1, football, journalistFootball2);
         articleRepository.save(articleFootBall5);
 
 
@@ -370,7 +370,7 @@ public class DataLoader implements ApplicationRunner {
                         "The European Cup final of 1967 was the pinnacle, coming in the same season Celtic won a domestic treble, but he was on the losing side three years later when Feyenoord beat Celtic in Milan after extra-time." +
                         "" +
                         "He was capped 29 times for Scotland.",
-                "2019-04-21", "images/statueee.jpg", 1, football, journalistFootball3);
+                "2019-04-21", "/images/statueee.jpg", 1, football, journalistFootball3);
         articleRepository.save(articleFootBall6);
 
         Article articleTennis3 = new Article(
@@ -395,7 +395,7 @@ public class DataLoader implements ApplicationRunner {
                         "Australia's team of Rennae Stubbs, Elizabeth Smylie and Nicole Provis lost 3-0 to Spain in the 1993 final." +
                         "" +
                         "It's super exciting. We all work so hard all year and we're such a tight team, said Stosur. We're going to be giving it our best shot here in November.",
-                "2019-04-19", "images/barty.jpg", 0, tennis, journalistTennis);
+                "2019-04-19", "/images/barty.jpg", 0, tennis, journalistTennis);
         articleRepository.save(articleTennis3);
 
         Article articleRugby3 = new Article(
@@ -414,7 +414,7 @@ public class DataLoader implements ApplicationRunner {
                         "As it turns out, there's a lot more than just local bragging rights at stake." +
                         "" +
                         "Here's a closer look:",
-                "2019-04-21", "images/gettyimages-1137149800.jpg", 0, rugby, journalistRugby);
+                "2019-04-21", "/images/gettyimages-1137149800.jpg", 0, rugby, journalistRugby);
         articleRepository.save(articleRugby3);
 
 
@@ -444,7 +444,7 @@ public class DataLoader implements ApplicationRunner {
                         "Under the programme, players are guaranteed anonymity for a first offence, but are fined and required to undergo a rehabilitation programme, which the authorities insist is enough of a deterrent." +
                         "" +
                         "With 300-plus tests, covering three to five months worth of use, if this was a broader problem and it hadn't been a disincentive, we would see more positives, said Premiership Rugby's Phil Winstanley.",
-                "2019-04-23", "images/gettyimages-1127376085.jpg", 0, rugby, journalistRugby);
+                "2019-04-23", "/images/gettyimages-1127376085.jpg", 0, rugby, journalistRugby);
         articleRepository.save(articleRugby4);
 
 
@@ -478,7 +478,7 @@ public class DataLoader implements ApplicationRunner {
                         "I have put in a good block of training and I will be up for selection and hopefully I will get my name on the team sheet somehow." +
                         "" +
                         "Coach Clarke added: If you look where we were prior to the Six Nations with the turmoil and off-field distraction we dropped down the ladder of the league table.",
-                "2019-04-18", "images/106562580_awj.jpg", 4, rugby, journalistRugby);
+                "2019-04-18", "/images/106562580_awj.jpg", 4, rugby, journalistRugby);
         articleRepository.save(articleRugby5);
 
         Article articleCricket1 = new Article(
@@ -502,7 +502,7 @@ public class DataLoader implements ApplicationRunner {
                         "With none of their top four reaching double figures, the home side were never in the hunt, but could take encouragement from the batting of teenager Banks and Thomson, who both achieved maiden fifties for the first team in any format before Luke Fletcher (3-21) had Patel lbw in the 38th over to end the game." +
                         "" +
                         "Both sides are next in action on Friday when Notts are at home to Leicestershire and Warwickshire host Durham",
-                "2019-04-17", "images/106559325_slater_getty.jpg", 0, cricket, journalistCricket);
+                "2019-04-17", "/images/106559325_slater_getty.jpg", 0, cricket, journalistCricket);
         articleRepository.save(articleCricket1);
 
         Article articleCricket2 = new Article(
@@ -522,7 +522,7 @@ public class DataLoader implements ApplicationRunner {
                         "Earlier Rossouw, Dawson and Markram had all impressed with the bat for the holders, after openers Tom Alsop (23) and Markram had guided them past 50 without loss." +
                         "" +
                         "The victory put Hampshire top of South Group, while Middlesex, who are in action again against Surrey at The Oval on Thursday, have two wins from their three games.",
-                "2019-04-16", "images/106564515_aidenmarkramrex.jpg", 3, cricket, journalistCricket);
+                "2019-04-16", "/images/106564515_aidenmarkramrex.jpg", 3, cricket, journalistCricket);
         articleRepository.save(articleCricket2);
 
         Article articleCricket3 = new Article(
@@ -551,7 +551,7 @@ public class DataLoader implements ApplicationRunner {
                         "India left-hander Rishabh Pant won Monday's match in Jaipur with a six as the Capitals moved to the top of the table on net run-rate, although they have played a game more than second-placed Chennai Super Kings." +
                         "" +
                         "The Royals are one place off the foot of the table, eight points behind the leaders, with the top four teams qualifying for the play-off phase, which starts on 7 May",
-                "2019-04-15", "images/106550967_ashton_turner_getty.jpg", 12, cricket, journalistCricket);
+                "2019-04-15", "/images/106550967_ashton_turner_getty.jpg", 12, cricket, journalistCricket);
         articleRepository.save(articleCricket3);
 
 
@@ -573,7 +573,7 @@ public class DataLoader implements ApplicationRunner {
                         "Hull also won their respective local derby against city rivals Hull Kingston Rovers, but were undone by a stunning display from the league leaders." +
                         "" +
                         "Naiqama has now scored six tries since joining from NRL side Wests Tigers at the start of this season.",
-                "2019-04-17", "images/106550412_aw3_8555.jpg", 1, rugby, journalistRugby);
+                "2019-04-17", "/images/106550412_aw3_8555.jpg", 1, rugby, journalistRugby);
         articleRepository.save(articleRugby6);
     }
 }
