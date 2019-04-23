@@ -6,31 +6,35 @@ import CategoriesNavBar from './CategoriesNavBar.js';
 //articles once retrieved from api collection mapped to useful react component
 
 const CategoriesList = (props) => {
-  console.log(props);
-  console.log(props.articles);
 
-  const categoryArticles = props.articles.map((article,index) => {
-		 	return (
-				<li key={index} className="microarticle-li">
-					<div className = "micro-article">
-    				<MicroArticle
-              id={article.id}
-              headline={article.headline}
-              summary={article.summary}
-              image={article.image}
-              dateCreated={article.dateCreated}
-            />
-    			</div>
-  			</li>
-		)
-	})
+  const categories = props.articles.map((category,index) => {
+    return (category);
+  });
+
+  const articles = categories.map((article, index) => {
+    return (
+      console.log(article),
+      article
+    );
+  });
 
 	return (
     <React.Fragment>
     <CategoriesNavBar categories={props.articles}/>
   		<ul className="microarticle-ul">
-        {categoryArticles}
+        <li key={articles.id} className="microarticle-li">
+          <div className = "micro-article">
+            <MicroArticle
+              id={articles.id}
+              headline={articles.headline}
+              summary={articles.summary}
+              image={articles.image}
+              dateCreated={articles.dateCreated}
+            />
+          </div>
+        </li>
   	  </ul>
+
     </React.Fragment>
 	)
 }

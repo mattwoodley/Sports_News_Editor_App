@@ -21,7 +21,7 @@ componentDidMount(){
 //render the main article list (which itself renders individual microarticles)
   render(){
     return (
-     <ArticleList articles = {this.state.articles} />
+      <ArticleList articles = {this.state.articles} />
     )
   }
 }
