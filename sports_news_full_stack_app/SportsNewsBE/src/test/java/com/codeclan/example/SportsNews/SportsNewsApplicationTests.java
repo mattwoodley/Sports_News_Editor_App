@@ -68,7 +68,7 @@ public class SportsNewsApplicationTests {
 	public void articleHasDate() {
 		Category football = new Category("Football");
 		Journalist journalist1 = new Journalist("John", "Burn", "url");
-		Article footballArticle = new Article("football" , "Summary", "Full Story", "2019-04-04", "url", 5,football, journalist1 );
+		Article footballArticle = new Article("football", "Summary", "Full Story", "2019-04-04", "url", 5, football, journalist1);
 		assertEquals("2019-04-04", footballArticle.getDateCreated());
 	}
 
@@ -77,7 +77,7 @@ public class SportsNewsApplicationTests {
 
 		Category football = new Category("Football");
 		Journalist journalist1 = new Journalist("John", "Burn", "url");
-		Article footballArticle = new Article("football", "Summary", "Full Story", "2019-04-04", "url", 5,football, journalist1 );
+		Article footballArticle = new Article("football", "Summary", "Full Story", "2019-04-04", "url", 5, football, journalist1);
 		football.addArticle(footballArticle);
 		assertEquals(1, football.getArticles().size());
 	}
@@ -118,15 +118,22 @@ public class SportsNewsApplicationTests {
 //	}
 
 	@Test
-	public void canFindArticlesByCategoryId(){
-     	List<Article> found = categoryRepository.findArticlesByCategory(1L);
-     	assertEquals(3, found.size());
+	public void canFindArticlesByCategoryId() {
+		List<Article> found = articleRepository.findArticlesByCategory(1L);
+		assertEquals(3, found.size());
 	}
 
 
 	@Test
-	public void canFindByDateAscending() {
+	public void canSortByDateAscending() {
+		List<Article> articles = articleRepository.findAll(Sort.by(Sort.Direction.ASC, "dateCreated"));
+		assertEquals("2019-04-15", articles.get(7).getDateCreated());
+	}
+
+	@Test
+	public void canSortByDateDescending() {
 		List<Article> articles = articleRepository.findAll(Sort.by(Sort.Direction.DESC, "dateCreated"));
-		assertEquals("2019-04-01",articles.get(7).getDateCreated());
+		assertEquals("2019-04-01", articles.get(7).getDateCreated());
+
 	}
 }

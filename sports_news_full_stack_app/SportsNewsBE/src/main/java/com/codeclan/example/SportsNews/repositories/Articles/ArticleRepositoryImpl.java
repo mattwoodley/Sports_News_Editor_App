@@ -1,6 +1,10 @@
 package com.codeclan.example.SportsNews.repositories.Articles;
 
 import com.codeclan.example.SportsNews.models.Article;
+import org.hibernate.Criteria;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 
@@ -17,4 +21,19 @@ public class ArticleRepositoryImpl implements ArticleRepositoryCustom{
     @Autowired
     ArticleRepository articleRepository;
 
+    @Transactional
+    public List<Article> findArticlesByCategory(Long categoryId) {
+        List<Article> result = null;
+        org.hibernate.Session session = entityManager.unwrap(Session.class);
+        try {
+            Criteria cr = session.createCriteria(Article.class);
+
+//            cr.createAlias("category", "category");
+            cr.add(Restrictions.eq("category.id", categoryId));
+            result = cr.list();
+        } catch (HibernateException ex) {
+            ex.printStackTrace();
+        }
+        return result;
+    }
 }
