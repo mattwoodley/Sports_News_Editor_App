@@ -24,13 +24,15 @@ const ArticleDetails = (props) => {
 
   return (
     <React.Fragment>
+      <img src={props.article.image}/>
       <h2 className='article-headline'>{props.article.headline}</h2>
       <p className='article-summary'>{props.article.summary}</p>
       <p classname='article-full-story'>{props.article.fullStory}</p>
         <Link to = {"/journalists/" + props.journalist.id} className="article-microjournalist-link">
           <MicroJournalist journalist={props.journalist}/>
         </Link>
-        <p classname='article-category'>{props.article._embedded.category.name}</p>
+        <Link to={"/articles/categories/"+props.article._embedded.category.id}>
+        <p classname='article-category'>{props.article._embedded.category.name}</p></Link>
       <p classname='article-date-created'>{props.article.dateCreated}</p>
       <button className='admin-button' type='button' onClick={onEdit}>Edit this Article</button>
       <button className='admin-button' type='button' onClick={onDelete}>Delete this Article</button>

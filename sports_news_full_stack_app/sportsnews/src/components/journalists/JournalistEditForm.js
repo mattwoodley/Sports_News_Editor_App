@@ -31,11 +31,11 @@ class JournalistEditForm extends Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <label for="firstName">First Name:</label>
-          <input type="text" id='firstName' name="firstName" value={this.state.firstName} onChange={evt=>this.setState({firstName: evt.target.value})} />
-          <label for="summary">Summary:</label>
-          <input type="text" id='surname' name="surname" value={this.state.surname} onChange={evt=>this.setState({surname: evt.target.value})}/>
+          <input required type="text" id='firstName' name="firstName" value={this.state.firstName} onChange={evt=>this.setState({firstName: evt.target.value})} />
+          <label for="surname">Last Name:</label>
+          <input required type="text" id='surname' name="surname" value={this.state.surname} onChange={evt=>this.setState({surname: evt.target.value})}/>
           <label for="image">Image path:</label>
-          <input type="text" id='image' name="image" value={this.state.image} onChange={evt=>this.setState({image: evt.target.value})}/>
+          <input required type="text" id='image' name="image" value={this.state.image} onChange={evt=>this.setState({image: evt.target.value})}/>
           <button type="submit">Save Journalist</button>
         </form>
       </div>

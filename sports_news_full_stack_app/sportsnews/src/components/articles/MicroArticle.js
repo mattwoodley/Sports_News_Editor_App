@@ -5,15 +5,17 @@ import {Link} from 'react-router-dom';
 //note the use of fragment to avoid creating a dom node - each microarticle is contained within the parent li or div element - this will allow for different layouts of the same component
 
 const MicroArticle = (props) => {
-  return(
-    <React.Fragment>
-      <Link to = {"/articles/" + props.id} className="microarticle-img-link">
-        <img src={props.image}/>
+return(
+<React.Fragment>
+  <div className='microarticle'>
+  <Link to = {"/articles/" + props.article.id} className="microarticle-img-link">
+        <img src={props.article.image}/>
+      <h4 className='microatricleHeadline'>{props.article.headline}</h4>
+      <p className='microarticleSummary'>{props.article.summary}</p>
       </Link>
-      <h4 className='microarticleHeadline'>{props.headline}</h4>
-      <p className='microarticleSummary'>{props.summary}</p>
-      <p className='microarticlecategory'>{props.category.name}</p>
-      <p className='microarticledate'>{props.dateCreated}</p>
+      <p className='microarticlecategory'>{props.article.category.name}</p>
+      <p className='microarticledate'>{props.article.dateCreated}</p>
+    </div>
 </React.Fragment>
 );
 }
