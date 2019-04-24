@@ -83,7 +83,7 @@ public class DataLoader implements ApplicationRunner {
 
         journalistRepository.save(journalistGolf);
 
-        Journalist journalistCricket = new Journalist("Steve", "Get", "images/Steve_Get.jpeg");
+        Journalist journalistCricket = new Journalist("Steve", "Get", "/images/Steve_Get.jpeg");
         journalistRepository.save(journalistCricket);
 
 
@@ -274,7 +274,7 @@ public class DataLoader implements ApplicationRunner {
                         "Pan is only the second player from Chinese Taipei to triumph on the PGA Tour, following TC Chen at the 1987 Genesis Open." +
                         "" +
                         "The final group petered out tamely, Johnson dropped seven shots in five holes on the back nine and finished in a tie for 28th, while Poulter shared 10th after making only two birdies.",
-                "2019-04-06", "/images/ct_pan_getty.jpg", 0, golf, journalistGolf);
+                "2019-04-06", "/images/golfer.jpg", 0, golf, journalistGolf);
         articleRepository.save(articleGolf1);
 
         Article articleRugby2 = new Article(
@@ -334,7 +334,7 @@ public class DataLoader implements ApplicationRunner {
                         "" +
                         "Police Scotland appealed for any witnesses to contact them." +
                         "",
-                "2019-04-20", "/images/ct_pan_getty", 1, football, journalistFootball2);
+                "2019-04-20", "/images/ct_pan_getty.jpg", 1, football, journalistFootball2);
         articleRepository.save(articleFootBall5);
 
 
