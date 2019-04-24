@@ -12,3 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.navButton{
+  margin:2px;
+  padding:5px;
+}
+
+ul{
+list-style: none;
+}
