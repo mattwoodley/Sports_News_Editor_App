@@ -11,10 +11,6 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @Component
 public class DataLoader implements ApplicationRunner {
@@ -31,103 +27,6 @@ public class DataLoader implements ApplicationRunner {
     public DataLoader() {}
 
     public void run(ApplicationArguments args) {
-        DateFormat sfd = new SimpleDateFormat("dd-MM-yy");
-        String newDate= "11-02-2019";
-        Date date = null;
-        try {
-            date = sfd.parse(newDate);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        DateFormat sfd1 = new SimpleDateFormat("dd-MM-yy");
-        String newDate1 = "12-02-2019";
-        Date date1 = null;
-        try {
-            date1 = sfd.parse(newDate1);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        DateFormat sfd2 = new SimpleDateFormat("dd-MM-yy");
-        String newDate2 = "13-02-2019";
-        Date date2 = null;
-        try {
-            date1 = sfd.parse(newDate2);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        DateFormat sfd3 = new SimpleDateFormat("dd-MM-yy");
-        String newDate3 = "14-02-2019";
-        Date date3 = null;
-        try {
-            date3 = sfd.parse(newDate3);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        DateFormat sfd4 = new SimpleDateFormat("dd-MM-yy");
-        String newDate4 = "15-02-2019";
-        Date date4 = null;
-        try {
-            date4 = sfd.parse(newDate4);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        DateFormat sfd5 = new SimpleDateFormat("dd-MM-yy");
-        String newDate5 = "12-02-2019";
-        Date date5 = null;
-        try {
-            date5 = sfd.parse(newDate5);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        DateFormat sfd6 = new SimpleDateFormat("dd-MM-yy");
-        String newDate6 = "16-02-2019";
-        Date date6 = null;
-        try {
-            date6 = sfd.parse(newDate6);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        DateFormat sfd7 = new SimpleDateFormat("dd-MM-yy");
-        String newDate7 = "17-02-2019";
-        Date date7 = null;
-        try {
-            date7 = sfd.parse(newDate7);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        DateFormat sfd8 = new SimpleDateFormat("dd-MM-yy");
-        String newDate8 = "18-02-2019";
-        Date date8 = null;
-        try {
-            date8 = sfd.parse(newDate8);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        DateFormat sfd9 = new SimpleDateFormat("dd-MM-yy");
-        String newDate9 = "19-02-2019";
-        Date date9 = null;
-        try {
-            date9 = sfd.parse(newDate9);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        DateFormat sfd10 = new SimpleDateFormat("dd-MM-yy");
-        String newDate10 = "20-02-2019";
-        Date date10 = null;
-        try {
-            date10 = sfd.parse(newDate10);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
 
 
         Category football = new Category("Football");
@@ -141,6 +40,9 @@ public class DataLoader implements ApplicationRunner {
 
         Category rugby = new Category("Rugby");
         categoryRepository.save(rugby);
+
+        Category cricket = new Category("Cricket");
+        categoryRepository.save(cricket);
 
         Category tennis = new Category("Tennis");
         categoryRepository.save(tennis);
@@ -156,7 +58,7 @@ public class DataLoader implements ApplicationRunner {
         Journalist journalistFootball2 = new Journalist("Joe", "Bradshaw", "/images/journalist2.jpg");
         journalistRepository.save(journalistFootball2);
 
-        Journalist journalistFootball3 = new Journalist("Gordon", "Doe", "/images/journalist2.jpg");
+        Journalist journalistFootball3 = new Journalist("Gordon", "Doe", "/images/journalist10.jpg");
         journalistRepository.save(journalistFootball3);
 
         Journalist journalistBasketball1 = new Journalist("Laura", "Savvas", "/images/journalist3.jpg");
@@ -181,6 +83,9 @@ public class DataLoader implements ApplicationRunner {
 
         journalistRepository.save(journalistGolf);
 
+        Journalist journalistCricket = new Journalist("Steve", "Get", "images/Steve_Get.jpeg");
+        journalistRepository.save(journalistCricket);
+
 
         Article articleFootball1 = new Article(
                 "Benitez pleased with important Magpies win",
@@ -202,7 +107,8 @@ public class DataLoader implements ApplicationRunner {
                         "Mathematically, we will have to wait and see what happens,Benitez said. But I think we will be safe."+
                         "" +
                         "For Southampton, an improved second-half performance yielded only substitute Mario Lemina's goal and they sit just five points above Cardiff in 18th with four games to play.",
-                date, "/images/football1.jpg", 7, football, journalistFootball3);
+                "2019-04-01", "/images/football1.jpg", 7, football, journalistFootball3);
+
         articleRepository.save(articleFootball1);
 
         Article articleFootball2 = new Article(
@@ -249,7 +155,7 @@ public class DataLoader implements ApplicationRunner {
                         "The scenery now moves to Cardiff, where Liverpool travel on Sunday, then on to Old Trafford on Wednesday, with City still in control as they know victory in all their games will bring them the title." +
                         "" +
                         "This season has been two superpowers slugging it out. The decisive is yet to be landed, but in this game City showed guts in their search for glory to end a week shot through with pain with the pleasure of victory.",
-                date1, "/images/football2.jpg", 5, football, journalistFootball1);
+                "2019-04-15", "/images/football2.jpg", 5, football, journalistFootball1);
         articleRepository.save(articleFootball2);
 
         Article articleFootball3 = new Article(
@@ -296,7 +202,7 @@ public class DataLoader implements ApplicationRunner {
                         "Should he have sent off Cosgrove? Possibly. The sending off of Broadfoot was also debatable. Yes, he seemed to catch Lewis with his studs. But it was probably more reckless than excessive force so perhaps a yellow card would have sufficed." +
                         "" +
                         "The proximity of those decisions - they happened within minutes of each other - meant the home fans felt particularly hard done by.",
-                date4, "/images/football3.jpg", 2, football, journalistFootball1);
+                "2019-04-03", "/images/football3.jpg", 2, football, journalistFootball1);
         articleRepository.save(articleFootball3);
 
         Article articleTennis1 = new Article(
@@ -319,7 +225,7 @@ public class DataLoader implements ApplicationRunner {
                         "Mathematically, we will have to wait and see what happens, Benitez said. But I think we will be safe." +
                         "" +
                         "For Southampton, an improved second-half performance yielded only substitute Mario Lemina's goal and they sit just five points above Cardiff in 18th with four games to play.",
-                date5, "/images/fedcup_getty2.jpg", 1, tennis, journalistTennis);
+                "2019-04-04", "/images/fedcup_getty2.jpg", 1, tennis, journalistTennis);
         articleRepository.save(articleTennis1);
 
 
@@ -343,7 +249,7 @@ public class DataLoader implements ApplicationRunner {
                         "In addition to his rugby union career, Folau has also played professional rugby league and Australian rules football." +
                         "" +
                         "Last week, Australian rugby league's governing body ruled out Folau returning to the National Rugby League.",
-                date5, "/images/folau_reuters.jpg", 0, rugby, journalistRugby);
+                "2019-04-05", "/images/folau_reuters.jpg", 0, rugby, journalistRugby);
         articleRepository.save(articleRugby1);
 
         Article articleGolf1 = new Article(
@@ -368,7 +274,7 @@ public class DataLoader implements ApplicationRunner {
                         "Pan is only the second player from Chinese Taipei to triumph on the PGA Tour, following TC Chen at the 1987 Genesis Open." +
                         "" +
                         "The final group petered out tamely, Johnson dropped seven shots in five holes on the back nine and finished in a tie for 28th, while Poulter shared 10th after making only two birdies.",
-                date5, "/images/ct_pan_getty.jpg", 0, golf, journalistGolf);
+                "2019-04-06", "/images/ct_pan_getty.jpg", 0, golf, journalistGolf);
         articleRepository.save(articleGolf1);
 
         Article articleRugby2 = new Article(
@@ -402,32 +308,272 @@ public class DataLoader implements ApplicationRunner {
                         "" +
                         "It's been awesome having friends supporting me, whether they agree with me or not." +
                         "",
-                date7, "/images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
+                "2019-04-07", "/images/billy_vunipola_getty.jpg", 1, rugby, journalistRugby);
         articleRepository.save(articleRugby2);
 
-
-        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", date3, "/images/baseball1.jpg", 0, basketball, journalistFootball3);
-
+        Article articleBaseball2 = new Article("Baseball", "Yello baseball", "Doing great stuff", "2019-04-08", "/images/baseball1.jpg", 0, basketball, journalistFootball3);
         articleRepository.save(articleBaseball2);
 
-        football.addArticle(articleFootball1);
-        football.addArticle(articleFootball2);
-        tennis.addArticle(articleTennis1);
-        rugby.addArticle(articleRugby1);
-        rugby.addArticle(articleRugby2);
-        golf.addArticle(articleGolf1);
 
-        categoryRepository.save(football);
-        categoryRepository.save(tennis);
-        categoryRepository.save(rugby);
-        categoryRepository.save(golf);
+        Article articleFootBall5 = new Article(
+                "Amateur football match in Aberdeen abandoned over 'racial slur'",
+                "A university football team walked off the pitch after a racial slur was said to have been used against one of its players during a match.",
+                "A university football team walked off the pitch after a racial slur was said to have been used against one of its players during a match." +
+                        "" +
+                        "The incident involved an amateur first division league game between Aberdeen University Football Club and Kincorth Amateurs at Tullos Primary School on Saturday." +
+                        "" +
+                        "Aberdeen University Students' Association said it abandoned the game." +
+                        "" +
+                        "BBC Scotland has asked Kincorth Amateurs for comment." +
+                        "" +
+                        "Aberdeenshire Amateur Football Association said it was awaiting the referee's report into the game." +
+                        "" +
+                        "Aberdeen University Students' Association (Ausa) said in a statement: Aberdeen University Football Club walked off the pitch and subsequently abandoned their game against Kincorth AFC due to the use of an extremely offensive racial slur against one of the university players." +
+                        "" +
+                        "Aberdeen University Students' Association has zero-tolerance policy for discrimination of any form and will take all the necessary actions to support the AUFC (Aberdeen University Football Club) in this matter." +
+                        "" +
+                        "Police Scotland appealed for any witnesses to contact them." +
+                        "",
+                "2019-04-20", "/images/ct_pan_getty", 1, football, journalistFootball2);
+        articleRepository.save(articleFootBall5);
 
-        journalistFootball1.addArticle(articleFootball2);
-        journalistFootball1.addArticle(articleFootball3);
-        journalistRepository.save(journalistFootball1);
-        journalistFootball3.addArticle(articleFootball1);
-        journalistRepository.save(journalistFootball3);
+
+        Article articleFootBall6 = new Article(
+                "Billy McNeill: Former Celtic captain & manager dies aged 79",
+                "Legendary former Celtic captain Billy McNeill - the first Briton to lift the European Cup - has died aged 79",
+                "Legendary former Celtic captain Billy McNeill - the first Briton to lift the European Cup - has died aged 79." +
+                        "" +
+                        "McNeill led Celtic when they beat Inter Milan 2-1 in 1967 and captained the club to nine successive titles, seven Scottish Cups and six League Cups." +
+                        "" +
+                        "In two spells as Celtic boss, he won four titles and four cups. He managed Clyde, Aberdeen, Manchester City and Aston Villa too." +
+                        "" +
+                        "McNeill had been suffering from dementia since 2010." +
+                        "" +
+                        "Live: reaction & tributes" +
+                        "'He was a giant who I'm truly lucky to follow'" +
+                        "5 Live Sport Special: The Lisbon Lions remembered" +
+                        "Celtic say he died on Monday night surrounded by his family and loved ones." +
+                        "" +
+                        "A statement from the McNeill family said he fought bravely to the end, showing the strength and fortitude he always has done throughout his life." +
+                        "" +
+                        "It added: We would also like to note our love and appreciation to our mother, Liz, for the care, devotion and love she gave to our father throughout his illness. No one could have done any more." +
+                        "" +
+                        "Whilst this is a very sad time for all the family and we know our privacy will be respected, our father always made time for the supporters so please tell his stories, sing his songs and help us celebrate his life." +
+                        "" +
+                        "Big goals in big games - McNeill the player" +
+                        "Born in Bellshill, North Lanarkshire, McNeill was initially farmed out by Celtic to junior side Blantyre Victoria before making his debut on 23 August 1958." +
+                        "" +
+                        "More than 800 appearances later, the Scottish Cup final win against Airdrie on 3 May 1975 was the imposing centre-back's farewell game." +
+                        "" +
+                        "Among his many career highs was scoring the winner in the 1965 Scottish Cup final, ending an eight-year trophy drought for Celtic. He also found the net in the 1969 and 1972 finals." +
+                        "" +
+                        "The European Cup final of 1967 was the pinnacle, coming in the same season Celtic won a domestic treble, but he was on the losing side three years later when Feyenoord beat Celtic in Milan after extra-time." +
+                        "" +
+                        "He was capped 29 times for Scotland.",
+                "2019-04-21", "/images/statueee.jpg", 1, football, journalistFootball3);
+        articleRepository.save(articleFootBall6);
+
+        Article articleTennis3 = new Article(
+                "Fed Cup: Australia to face France in November's final",
+                "Australia reached their first Fed Cup final for 26 years with a 3-2 win over Belarus in Brisbane",
+                "Australia reached their first Fed Cup final for 26 years with a 3-2 win over Belarus in Brisbane." +
+                        "" +
+                        "Ashleigh Barty and Samantha Stosur beat Victoria Azarenka and Aryna Sabalenka 7-5 3-6 6-2 in the deciding doubles tie to seal victory." +
+                        "" +
+                        "Barty also won both her singles matches, while US Open champion Stosur lost twice." +
+                        "" +
+                        "In November's final, Australia will host France, who beat favourites Romania 3-2 on Sunday." +
+                        "" +
+                        "French Open champion Simona Halep won both of her singles matches for Romania but victories for France's Kristina Mladenovic and Pauline Parmentier - against Mihaela Buzarnescu and Irina-Camelia Begu respectively - meant the tie went into a doubles decider." +
+                        "" +
+                        "Mladenovic and Caroline Garcia, who had not played together since the 2016 Fed Cup final after a public fall-out, came from behind to beat Halep and Monica Niculescu 5-7 6-3 6-4 and clinch victory for two-time champions France." +
+                        "" +
+                        "Romania, who beat defending champions the Czech Republic in an epic quarter-final, had been bidding to reach their first final." +
+                        "" +
+                        "France's most recent Fed Cup title was in 2003, while Australia won the last of their seven titles in 1974." +
+                        "" +
+                        "Australia's team of Rennae Stubbs, Elizabeth Smylie and Nicole Provis lost 3-0 to Spain in the 1993 final." +
+                        "" +
+                        "It's super exciting. We all work so hard all year and we're such a tight team, said Stosur. We're going to be giving it our best shot here in November.",
+                "2019-04-19", "/images/barty.jpg", 0, tennis, journalistTennis);
+        articleRepository.save(articleTennis3);
+
+        Article articleRugby3 = new Article(
+                "Pro14: Titles, home draws and European places on the line on final day",
+                "The regular season in the Pro14 reaches a climax on Saturday with seven matches in four countries",
+                "The regular season in the Pro14 reaches a climax on Saturday with seven matches in four countries." +
+                        "" +
+                        "Defending champions Leinster have clinched the Conference B title and with it a home game in the play-off semi finals." +
+                        "" +
+                        "But Glasgow and Munster can both still win Conference A, and there is a battle for third place in Conference B between Benetton, Edinburgh and Scarlets." +
+                        "" +
+                        "Can Benetton claim a Champions Cup spot for Italy, and will any Welsh region make it into Europe's top tournament?" +
+                        "" +
+                        "The final weekend - where every game is a local derby - was designed to keep interest high when there was a danger of dead rubbers dominating." +
+                        "" +
+                        "As it turns out, there's a lot more than just local bragging rights at stake." +
+                        "" +
+                        "Here's a closer look:",
+                "2019-04-21", "/images/gettyimages-1137149800.jpg", 0, rugby, journalistRugby);
+        articleRepository.save(articleRugby3);
 
 
+        Article articleRugby4 = new Article(
+                "Rugby Football Union says more cases of positive tests reflects society use",
+                "Four Premiership rugby players tested positive for cocaine last season, which the Rugby Football Union say reflects increasing drug use in society",
+                "Four Premiership rugby players tested positive for cocaine last season, which the Rugby Football Union say reflects increasing drug use in society." +
+                        "" +
+                        "There were three more cases in 2017-2018 compared to the previous campaign." +
+                        "" +
+                        "The positives reflect risks 18-35 year-olds are exposed to when going out socially, RFU's Dr Simon Kemp says." +
+                        "" +
+                        "We are trying to have a policy which continues to protect the game, but recognises illicit drug use in society is becoming increasingly common." +
+                        "" +
+                        "Dr Kemp added that the players who tested positive for recreational drug use had found themselves peripheral figures at their clubs." +
+                        "" +
+                        "These positives are not from players who are typically playing and training every week, the medical chief explained." +
+                        "" +
+                        "These are players who [have become] somewhat dislocated from their clubs, either through injury or non-selection." +
+                        "" +
+                        "All of these players were reviewed by an independent specialist psychiatrist, and plans to manage any ongoing problems were created." +
+                        "" +
+                        "The RFU run an illicit drugs programme independent of the World Anti-Doping Agency (WADA), and carried out 332 tests during the 2017-2018 season, 94% of which were hair samples and have a 3-5 month detection period." +
+                        "" +
+                        "We are confident that this level of testing, which is over and above what we are required to do under the WADA code, tries to cover off both protecting the reputation and integrity of the game and addressing some of the health issues we know are associated with illicit drug use, Dr Kemp added." +
+                        "" +
+                        "Under the programme, players are guaranteed anonymity for a first offence, but are fined and required to undergo a rehabilitation programme, which the authorities insist is enough of a deterrent." +
+                        "" +
+                        "With 300-plus tests, covering three to five months worth of use, if this was a broader problem and it hadn't been a disincentive, we would see more positives, said Premiership Rugby's Phil Winstanley.",
+                "2019-04-23", "/images/gettyimages-1127376085.jpg", 0, rugby, journalistRugby);
+        articleRepository.save(articleRugby4);
+
+
+        Article articleRugby5 = new Article(
+                "Judgement Day: Alun Wyn Jones and George North set for returns",
+                "Alun Wyn Jones and George North are in line to return for Ospreys' crucial Pro14 match against Cardiff Blues",
+                "Alun Wyn Jones and George North are in line to return for Ospreys' crucial Pro14 match against Cardiff Blues." +
+                        "" +
+                        "Neither has played since Wales' Grand Slam-clinching Six Nations win against Ireland on 16 March." +
+                        "" +
+                        "Both face fitness tests, but lock Jones is set to return after his knee problem while wing North is close after breaking a bone in his hand." +
+                        "" +
+                        "They have had some contact this week, we will check again on Thursday and Friday, said coach Allen Clarke." +
+                        "" +
+                        "We need to take that to another level before we finalise selection." +
+                        "" +
+                        "It would be great if they could come through but we are not in a position to confirm that yet." +
+                        "" +
+                        "Pro14: What's at stake on final day" +
+                        "Ospreys expect Wales duo to stay" +
+                        "Jones and North were both injured in the same passage of play early in the 25-7 defeat of Ireland in Cardiff." +
+                        "" +
+                        "North left the field while Jones played on with a bandaged knee to lead Wales to a fourth Grand Slam in 14 years." +
+                        "" +
+                        "Saturday's clash with the Blues in the Cardiff Judgement Day double-header will decide who finishes fourth in Conference A and wins a play-off place to qualify for the 2019-20 European Champions Cup." +
+                        "" +
+                        "Ospreys are one place ahead of the Blues after a run of three wins, and North is keen to play after his lay-off." +
+                        "" +
+                        "It's been a long few weeks and it was not a straightforward break, he said." +
+                        "" +
+                        "I have put in a good block of training and I will be up for selection and hopefully I will get my name on the team sheet somehow." +
+                        "" +
+                        "Coach Clarke added: If you look where we were prior to the Six Nations with the turmoil and off-field distraction we dropped down the ladder of the league table.",
+                "2019-04-18", "/images/106562580_awj.jpg", 4, rugby, journalistRugby);
+        articleRepository.save(articleRugby5);
+
+        Article articleCricket1 = new Article(
+                "One-Day Cup: Ben Slater century sets up Notts win over Warwickshire",
+                "Opener Ben Slater hit a century as Nottinghamshire made it three wins out of three in the One-Day Cup, beating Warwickshire by 118 runs at Edgbaston",
+                "Opener Ben Slater hit a century as Nottinghamshire made it three wins out of three in the One-Day Cup, beating Warwickshire by 118 runs at Edgbaston." +
+                        "" +
+                        "Slater made exactly 100 off 115 balls, with 15 fours, to rescue his side after they slumped from 81-0 to 98-4." +
+                        "" +
+                        "He put on 95 with Steven Mullaney (40) and they eventually totalled 301-9 despite 5-45 from spinner Jeetan Patel." +
+                        "" +
+                        "Warwickshire struggled to 22-4 and although Liam Banks made 57 and Alex Thomson 55, they were all out for 183." +
+                        "" +
+                        "One-Day Cup group tables" +
+                        "Having opted to bat first, Notts made a positive start through Slater and Joe Clarke (39), with the latter hitting three fours and a six from the final four deliveries of Henry Brookes' fourth over, which cost 23." +
+                        "" +
+                        "Patel's off-spin, though, checked their progress and he twice took two wickets in the space of three balls, eventually bowling Slater with one that turned and hit off stump, on his way to only the second limited-overs 'five-for' of his career." +
+                        "" +
+                        "Matt Carter (21 not out) hit two full tosses from Chris Woakes for four to see the total past 300 and then made a breakthrough at the start of Warwickshire's reply by having Ed Pollock lbw for a duck." +
+                        "" +
+                        "With none of their top four reaching double figures, the home side were never in the hunt, but could take encouragement from the batting of teenager Banks and Thomson, who both achieved maiden fifties for the first team in any format before Luke Fletcher (3-21) had Patel lbw in the 38th over to end the game." +
+                        "" +
+                        "Both sides are next in action on Friday when Notts are at home to Leicestershire and Warwickshire host Durham",
+                "2019-04-17", "/images/106559325_slater_getty.jpg", 0, cricket, journalistCricket);
+        articleRepository.save(articleCricket1);
+
+        Article articleCricket2 = new Article(
+                "One-Day Cup: Hampshire beat Middlesex by 119 runs as Aiden Markram stars",
+                "Aiden Markram hit 88 off 90 balls for Hampshire and then took 3-39 with the ball as they comfortably beat Middlesex by 119 runs in the One-Day Cup",
+                "Aiden Markram hit 88 off 90 balls for Hampshire and then took 3-39 with the ball as they comfortably beat Middlesex by 119 runs in the One-Day Cup." +
+                        "" +
+                        "The win was Hampshire's third from three games in this year's competition." +
+                        "" +
+                        "Markram's knock and Rilee Rossouw's 64 from 55 balls helped the home side post 301-9, despite Tom Helm's fine 5-71." +
+                        "" +
+                        "Eoin Morgan's 41 was the visitors' best offering with the bat in reply, as they slipped to 182 all out on their way to a first defeat in the group." +
+                        "" +
+                        "One-Day Cup group tables" +
+                        "Liam Dawson (3-37), Kyle Abbott (3-36) and Markram worked their way through Middlesex's line-up, before Mason Crane sealed the win when he bowled Tim Murtagh in the 36th over." +
+                        "" +
+                        "Earlier Rossouw, Dawson and Markram had all impressed with the bat for the holders, after openers Tom Alsop (23) and Markram had guided them past 50 without loss." +
+                        "" +
+                        "The victory put Hampshire top of South Group, while Middlesex, who are in action again against Surrey at The Oval on Thursday, have two wins from their three games.",
+                "2019-04-16", "/images/106564515_aidenmarkramrex.jpg", 3, cricket, journalistCricket);
+        articleRepository.save(articleCricket2);
+
+        Article articleCricket3 = new Article(
+                "Ashton Turner in record fifth successive T20 duck - four of them first ball",
+                "Australian Ashton Turner became the first man in Twenty20 history to make five consecutive ducks as he fell first ball in the Indian Premier League",
+                "It was the third successive IPL golden duck for the 26-year-old, who batted at number five for Rajasthan Royals." +
+                        "" +
+                        "Team-mate Ajinkya Rahane, the India batsman, struck their side's highest IPL score with an unbeaten 105." +
+                        "" +
+                        "Last month Turner hit 84 against India in a one-day international and he has played three ODIs and five T20s." +
+                        "" +
+                        "His unbeaten one-day innings in Chandigarh broke the run of T20 ducks, which began with a first-ball dismissal in the Big Bash League in February and was followed by a five-ball nought for Australia against India." +
+                        "" +
+                        "The Royals, captained by Australian Steve Smith and featuring England all-rounder Ben Stokes and newcomer Jofra Archer, lost the match against Delhi Capitals by six wickets with four deliveries left." +
+                        "" +
+                        "Smith compiled his second successive fifty, though Stokes made only eight and has scored a modest 112 runs in eight innings in this year's event, with a best of 46." +
+                        "" +
+                        "Archer clipped the stumps with a full toss but the bails stayed in place and he finished with 0-31 from his four overs." +
+                        "" +
+                        "The 24-year-old Sussex all-rounder took 11 wickets in his 10 matches but he and Stokes now head home to prepare for England's one-day series against Pakistan, beginning on 8 May, which is preceded by a one-off match with Ireland on 3 May." +
+                        "" +
+                        "Barbados-born Archer, 24, qualified to play for England in March after a change in residency rules." +
+                        "" +
+                        "He was not selected in a preliminary 15-man World Cup squad but could still be chosen if he impresses in the pre-tournament matches as changes can be made up to 23 May." +
+                        "" +
+                        "India left-hander Rishabh Pant won Monday's match in Jaipur with a six as the Capitals moved to the top of the table on net run-rate, although they have played a game more than second-placed Chennai Super Kings." +
+                        "" +
+                        "The Royals are one place off the foot of the table, eight points behind the leaders, with the top four teams qualifying for the play-off phase, which starts on 7 May",
+                "2019-04-15", "/images/106550967_ashton_turner_getty.jpg", 12, cricket, journalistCricket);
+        articleRepository.save(articleCricket3);
+
+
+        Article articleRugby6 = new Article(
+                "Super League: St Helens 62-16 Hull FC",
+                "Adam Swift and Kevin Naiqama scored a hat-trick of tries each as St Helens ran in 11 tries to hammer Hull FC.",
+                "Joe Westerman and Carlos Tuimavave gave Hull the lead early on but Saints raced back through two Jonny Lomax tries." +
+                        "" +
+                        "Naiqama, Swift and Lachlan Coote also crossed before the break but Jez Litten cut the deficit for the hosts." +
+                        "" +
+                        "Swift completed his hat-trick while Naiqama scored twice more either side of Jack Welsby's try as Saints wrapped up a stunning Easter Monday victory." +
+                        "" +
+                        "Despite their early setback through Westerman and Tuimavave's tries, Saints soon took control of the game, with Lomax registering two tries on his 200th Saints appearance." +
+                        "" +
+                        "The win caps off a fine Easter period for Saints, who enjoyed a thumping derby win against Wigan on Friday." +
+                        "" +
+                        "Their third victory in a row in Super League ensures they maintain their four-point lead on second-placed Warrington at the top of the table with 12 games played." +
+                        "" +
+                        "Hull also won their respective local derby against city rivals Hull Kingston Rovers, but were undone by a stunning display from the league leaders." +
+                        "" +
+                        "Naiqama has now scored six tries since joining from NRL side Wests Tigers at the start of this season.",
+                "2019-04-17", "/images/106550412_aw3_8555.jpg", 1, rugby, journalistRugby);
+        articleRepository.save(articleRugby6);
     }
 }

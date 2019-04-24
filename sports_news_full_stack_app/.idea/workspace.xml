@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="2f13c670-bc5c-4ebd-b1ea-e5badef13715" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/sportsnews/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/sportsnews/package-lock.json" afterDir="false" />
+=======
+    <list default="true" id="80b776e6-427c-478b-9da8-6972641a2d95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportsNewsBE/src/main/java/com/codeclan/example/SportsNews/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/SportsNewsBE/src/main/java/com/codeclan/example/SportsNews/components/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportsNewsBE/target/classes/com/codeclan/example/SportsNews/components/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/SportsNewsBE/target/classes/com/codeclan/example/SportsNews/components/DataLoader.class" afterDir="false" />
+>>>>>>> 52a12c3e9134c8be6d396eb94af5de1237de43f5
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+<<<<<<< HEAD
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="51" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+=======
+  <component name="FUSProjectUsageTrigger">
+    <session id="1715932035">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Downloads/demo" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="710" />
+>>>>>>> 52a12c3e9134c8be6d396eb94af5de1237de43f5
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+<<<<<<< HEAD
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sports_news_full_stack_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports_news_full_stack_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports_news_full_stack_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports_news_full_stack_app" type="462c0819:PsiDirectoryNode" />
+              <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports_news_full_stack_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports_news_full_stack_app" type="462c0819:PsiDirectoryNode" />
+              <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports_news_full_stack_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports_news_full_stack_app" type="462c0819:PsiDirectoryNode" />
+              <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports_news_full_stack_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports_news_full_stack_app" type="462c0819:PsiDirectoryNode" />
+              <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports_news_full_stack_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports_news_full_stack_app" type="462c0819:PsiDirectoryNode" />
+              <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports_news_full_stack_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports_news_full_stack_app" type="462c0819:PsiDirectoryNode" />
+              <item name="SportsNewsBE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="codeclan" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+>>>>>>> 52a12c3e9134c8be6d396eb94af5de1237de43f5
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
+      <changelist id="2f13c670-bc5c-4ebd-b1ea-e5badef13715" name="Default Changelist" comment="" />
+      <created>1555942353640</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555942353640</updated>
+=======
+      <changelist id="80b776e6-427c-478b-9da8-6972641a2d95" name="Default Changelist" comment="" />
+      <created>1556030250489</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556030250489</updated>
+>>>>>>> 52a12c3e9134c8be6d396eb94af5de1237de43f5
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <layout>
+=======
+    <frame x="0" y="23" width="1280" height="710" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+>>>>>>> 52a12c3e9134c8be6d396eb94af5de1237de43f5
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+<<<<<<< HEAD
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+=======
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+>>>>>>> 52a12c3e9134c8be6d396eb94af5de1237de43f5
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+<<<<<<< HEAD
+      <window_info anchor="right" id="Maven" />
+=======
+      <window_info anchor="right" id="Maven Projects" />
+>>>>>>> 52a12c3e9134c8be6d396eb94af5de1237de43f5
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+<<<<<<< HEAD
+=======
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+>>>>>>> 52a12c3e9134c8be6d396eb94af5de1237de43f5
+</project>
