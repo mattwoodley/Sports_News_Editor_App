@@ -25,7 +25,7 @@ const JournalistDetails = (props) => {
   if(!props.articles){
     return (
       <React.Fragment>
-        <MicroJournalist id={props.journalist.id} firstName={props.journalist.firstName} surname={props.journalist.surname} image={props.journalist.image}/>
+        <MicroJournalist journalist={props.journalist}/>
         <button className='admin-button' type='button' onClick={onEdit}>Edit Journalist</button>
         <button className='admin-button' type='button' onClick={onDelete}>Delete Journalist</button>
       </React.Fragment>
@@ -37,7 +37,7 @@ const JournalistDetails = (props) => {
 
   return (
     <React.Fragment>
-      <MicroJournalist id={props.journalist.id} firstName={props.journalist.firstName} surname={props.journalist.surname} image={props.journalist.image}/>
+      <MicroJournalist journalist={props.journalist}/>
       <button className='admin-button' type='button' onClick={onEdit}>Edit Journalist</button>
       <button className='admin-button' type='button' onClick={onDelete}>Delete Journalist</button>
       <ArticleList articles = {props.journalist._embedded.articles} />;
