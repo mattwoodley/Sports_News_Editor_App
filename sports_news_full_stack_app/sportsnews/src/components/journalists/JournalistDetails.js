@@ -16,13 +16,13 @@ const JournalistDetails = (props) => {
   }
 
   //if nothing is passed down return null
-  if(!props.articles && !props.journalist){
+  if(!props.journalist){
     return null;
   }
 
 //in the odd case that a journalist has produced no articles
 
-  if(!props.articles){
+  if(!props.journalist._embedded){
     return (
       <React.Fragment>
         <MicroJournalist journalist={props.journalist}/>
