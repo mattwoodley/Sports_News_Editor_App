@@ -13,8 +13,8 @@ class ArticleListContainer extends Component {
 //link in to back end api to fetch all articles store in state
 componentDidMount(){
     let request = new Request();
-    request.get('/api/articles').then((data) => {
-      this.setState({articles: data._embedded.articles})
+    request.get('/articles/criteria/dateCreated/sortorder/DESC').then((data) => {
+      this.setState({articles: data})
     })
   }
 
