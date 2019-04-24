@@ -25,8 +25,8 @@ class App extends Component {
           <Switch>
             <Route exact path = '/' component={MainContainer}/>
             <Route exact path = '/articles' component={ArticleListContainer}/>
-            <Route exact path = '/articles/new' component={ArticleCreateFormContainer}/>
-            <Route exact path = '/articles/edit/:id' render = {(props) =>{
+            <Route path = '/articles/new' component={ArticleCreateFormContainer}/>
+            <Route path = '/articles/edit/:id' render = {(props) =>{
               const id = props.match.params.id;
               return <ArticleEditFormContainer id = {id} />
             }}
