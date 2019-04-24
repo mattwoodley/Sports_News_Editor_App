@@ -6,13 +6,11 @@ import {Link} from 'react-router-dom';
 
 const MicroJournalist= (props) => {
   return(<React.Fragment>
-    <div className='microjournalist'>
     <Link to = {"/journalists/" + props.journalist.id} className="microjournalist-img-link">
           <img src={props.journalist.image}/>
         </Link>
         <p className='microjournalistFirstName'>{props.journalist.firstName}</p>
         <p className='microjournalistSurname'>{props.journalist.surname}</p>
-      </div>
   </React.Fragment>
 )
 }

@@ -11,9 +11,7 @@ const ArticleList = (props) => {
   const articles = props.articles.map((article,index) => {
 		 	return (
 				<li key={index} className="microarticle-li">
-					<div className = "micro-article">
 				<MicroArticle article={article}/>
-			</div>
 			</li>
 		)
 		})
