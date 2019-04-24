@@ -1,29 +1,47 @@
 import React, {Component} from 'react';
 import ArticleList from '../../components/articles/ArticleList.js';
 import Request from '../../helpers/request.js';
+import CategoriesNavBar from '../../components/categories/CategoriesNavBar';
 
 class CategoriesListContainer extends Component {
 
 //props are passed in from app, set up a blank state to receive article to be passed down to components, edit and delete are bound at object scope and passed down to component
   constructor(props){
     super(props);
-    this.state = {articles: null}
+    this.state =
+    {articles: [],
+    categories: []}
+
   }
 
 
   componentDidMount(){
-    let request = new Request();
-    request.get('/api/categories').then((data) => {
-      this.setState({articles: data._embedded.categories})
+    let categories = new Request();
+    categories.get('/api/categories').then((data) => {
+      this.setState({categories: data._embedded.categories})
     })
-  }
 
+    if (this.props.id) {
+    let request = new Request();
+    request.get('/articles/category/' + this.props.id).then((data) => {
+      this.setState({articles: data.articles})
+    })
+    }
+  }
   render(){
-    if(!this.state.articles){
-      return null;
+    // if(!this.state.articles){
+    //   return null;
+    // }
+    if (!this.props.id)  {
+      return (
+        <div className="category-navbar">
+          <CategoriesNavBar categories = {this.state.categories}/>
+        </div>
+      )
     }
     return (
-      <div className="component">
+      <div className="category-navbar">
+        <CategoriesNavBar categories = {this.state.categories}/>
         <ArticleList articles={this.state.articles}/>
       </div>
     )

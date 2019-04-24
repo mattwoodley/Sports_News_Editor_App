@@ -48,9 +48,13 @@ class App extends Component {
               return <SingleJournalistContainer id = {id} />
             }}
             />
-            <Route exact path = '/articles/categories/:id' render = {(props) =>{
+            <Route exact path = '/categories/:id' render = {(props) =>{
               const id = props.match.params.id;
               return <CategoriesListContainer id = {id} />
+            }}
+            />
+            <Route exact path = '/categories' render = {(props) =>{
+              return <CategoriesListContainer/>
             }}
             />
           </Switch>

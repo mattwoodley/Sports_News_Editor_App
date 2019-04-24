@@ -7,38 +7,20 @@ import CategoriesNavBar from './CategoriesNavBar.js';
 
 const CategoriesList = (props) => {
 
-  const categories = props.articles.map((category,index) => {
-    return (category);
-  });
-
-  const articles = categories.map((article) => {
+  const articles = props.articles.map((article,index) => {
     return (
-      console.log(article),
-      article
+      <li key={article.id} className="microarticle-li">
+        <MicroArticle article = {article}/>
+      </li>
     );
   });
 
-  const what = articles.map((article) => {
-    return (
-      console.log(article)
-    );
-  });
 
 	return (
     <React.Fragment>
     <CategoriesNavBar categories={props.articles}/>
   		<ul className="microarticle-ul">
-        <li key={articles.id} className="microarticle-li">
-          <div className = "micro-article">
-            <MicroArticle
-              id={articles.id}
-              headline={articles.headline}
-              summary={articles.summary}
-              image={articles.image}
-              dateCreated={articles.dateCreated}
-            />
-          </div>
-        </li>
+        {articles}
   	  </ul>
 
     </React.Fragment>
