@@ -18,7 +18,6 @@ const CategoriesList = (props) => {
 
 	return (
     <React.Fragment>
-    <CategoriesNavBar categories={props.articles}/>
   		<ul className="microarticle-ul">
         {articles}
   	  </ul>

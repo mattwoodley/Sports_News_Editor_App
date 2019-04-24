@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 const CategoriesNavBar = (props) => {
   const categories = props.categories.map((category,index) => {
 		 	return (
-    		<Link className='categoriesNavButton' to={/categories/+category.id}>{category.name}</Link>
+    		<Link className='categoriesNavButton' to={`/categories/${category.id}`}>{category.name}</Link>
   		)
 		})
 

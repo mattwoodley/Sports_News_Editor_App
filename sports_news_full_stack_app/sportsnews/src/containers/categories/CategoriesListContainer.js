@@ -21,17 +21,14 @@ class CategoriesListContainer extends Component {
       this.setState({categories: data._embedded.categories})
     })
 
-    if (this.props.id) {
+    if (this.props.id > 0) {
     let request = new Request();
     request.get('/articles/category/' + this.props.id).then((data) => {
-      this.setState({articles: data.articles})
+      this.setState({articles: data})
     })
     }
   }
   render(){
-    // if(!this.state.articles){
-    //   return null;
-    // }
     if (!this.props.id)  {
       return (
         <div className="category-navbar">
