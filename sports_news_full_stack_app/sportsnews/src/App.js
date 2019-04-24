@@ -52,7 +52,7 @@ class App extends Component {
               return <CategoriesListContainer/>
             }}
             />
-            <Route path = '/categories/:id' render = {(props) =>{
+            <Route exact path = '/categories/:id' render = {(props) =>{
               const id = props.match.params.id;
               return <CategoriesListContainer id = {id} />
             }}

@@ -11,7 +11,7 @@ class CategoriesListContainer extends Component {
     this.state =
     {articles: [],
     categories: []}
-
+    this.handleLink = this.handleLink.bind(this);
   }
 
 
@@ -20,13 +20,14 @@ class CategoriesListContainer extends Component {
     categories.get('/api/categories').then((data) => {
       this.setState({categories: data._embedded.categories})
     })
+  }
 
-    if (this.props.id > 0) {
-    let request = new Request();
-    request.get('/articles/category/' + this.props.id).then((data) => {
-      this.setState({articles: data})
+  handleLink(id){
+    let updateArticle = new Request();
+    updateArticle.get('/articles/category/' + id).then((data) => {
+      this.setState({articles:data})
     })
-    }
+
   }
   render(){
     if (!this.props.id)  {
@@ -38,7 +39,7 @@ class CategoriesListContainer extends Component {
     }
     return (
       <div className="category-navbar">
-        <CategoriesNavBar categories = {this.state.categories}/>
+        <CategoriesNavBar categories = {this.state.categories} handleLink={this.handleLink}/>
         <ArticleList articles={this.state.articles}/>
       </div>
     )
