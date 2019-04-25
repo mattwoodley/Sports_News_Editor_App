@@ -48,7 +48,7 @@ class ArticleEditForm extends Component {
 
     //autopopulate with existing values from props, then update state
     return (
-      <div>
+      <div className='article-edit-form'>
         <form onSubmit={this.handleSubmit}>
 
           <label for="journalist">Journalist:</label>
@@ -56,26 +56,27 @@ class ArticleEditForm extends Component {
             {journalists}
           </select>
           <Link to = "/journalists/new">New Journalist?</Link>
+          <br></br>
           <label for="date">Article Date:</label>
           <input type="date" id='date' value={this.state.dateCreated} name="dateCreated" onChange={evt=>this.setState({date: evt.target.value})}/>
-
+          <br></br>
           <label for="headline">Headline:</label>
           <input type="text" id='headline' name="headline" value={this.state.headline} onChange={evt=>this.setState({headline: evt.target.value})} />
-
+          <br></br>
           <label for="summary">Summary:</label>
           <input type="text" id='summary' name="summary" value={this.state.summary} onChange={evt=>this.setState({summary: evt.target.value})}/>
-
+          <br></br>
           <label for="image">Image path:</label>
           <input type="text" id='image' name="image" value={this.state.image} onChange={evt=>this.setState({image: evt.target.value})}/>
-
+          <br></br>
           <label for="fullstory">Full Story:</label>
           <textarea name="fullstory" id='fullstory' wrap="hard" rows="10" cols="50" value={this.state.fullstory} onChange={evt=>this.setState({fullstory: evt.target.value})}></textarea>
-
+          <br></br>
           <label for="category">Category:</label>
           <select id='category' name="category" onChange={evt=>this.setState({journalist: evt.target.value})}>
             {categories}
           </select>
-
+          <br></br>
           <button type="submit">Save Article</button>
         </form>
       </div>

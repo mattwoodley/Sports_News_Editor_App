@@ -28,14 +28,17 @@ class JournalistEditForm extends Component {
 
     //autopopulate with existing values from props, then update state
     return (
-      <div>
+      <div className='journalist-edit-form'>
         <form onSubmit={this.handleSubmit}>
           <label for="firstName">First Name:</label>
           <input required type="text" id='firstName' name="firstName" value={this.state.firstName} onChange={evt=>this.setState({firstName: evt.target.value})} />
+          <br></br>
           <label for="surname">Last Name:</label>
           <input required type="text" id='surname' name="surname" value={this.state.surname} onChange={evt=>this.setState({surname: evt.target.value})}/>
+          <br></br>
           <label for="image">Image path:</label>
           <input required type="text" id='image' name="image" value={this.state.image} onChange={evt=>this.setState({image: evt.target.value})}/>
+          <br></br>
           <button type="submit">Save Journalist</button>
         </form>
       </div>

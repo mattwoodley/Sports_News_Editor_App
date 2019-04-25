@@ -83,7 +83,11 @@ header{
 }
 
 
-
+.article-create-form{
+     grid-row-start: 2;
+  grid-column-start:2; 
+  text-align:center;
+}
 .microjournalist{
   grid-row-start: 2;
   grid-column-start:2; 
@@ -107,6 +111,27 @@ header{
   background-color: black;
   color: yellow;
 
+}
+.journalist-create-form{
+  grid-row-start: 2;
+  grid-column-start:2;  
+  text-align: center;
+}
+
+.journalist-edit-form{
+    grid-row-start: 2;
+  grid-column-start:2;  
+  text-align: center;
+}
+.article-edit-form{
+    grid-row-start: 2;
+  grid-column-start:2;  
+  text-align: center;
+}
+
+.main-container{
+      grid-row-start: 2;
+  grid-column-start:2; 
 }
 
 .navButton{

@@ -17,18 +17,18 @@ const JournalistCreateForm = (props) => {
 
       //render form
       return (
-        <div>
+        <div className='journalist-create-form'>
           <form onSubmit={handleSubmit}>
 
             <label for="firstName">First Name:</label>
             <input type="text" id='firstName' name="firstName"/>
-
+            <br></br>
             <label for="surname">Last Name:</label>
             <input type="text" id='surname' name="surname"/>
-
+            <br></br>
             <label for="image">Image path:</label>
             <input type="text" id='image' name="image"/>
-
+            <br></br>
             <button type="submit">Save Journalist</button>
           </form>
         </div>

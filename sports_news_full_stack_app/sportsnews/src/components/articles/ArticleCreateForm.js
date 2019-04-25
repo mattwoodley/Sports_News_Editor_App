@@ -33,7 +33,7 @@ const ArticleCreateForm = (props) => {
 
     //render form
     return (
-      <div>
+      <div className='article-create-form'>
         <form onSubmit={handleSubmit}>
 
           <label for="journalist">Journalist:</label>
@@ -41,26 +41,27 @@ const ArticleCreateForm = (props) => {
             {journalists}
           </select>
           <Link to = "/journalists/new">New Journalist?</Link>
+        <br></br>
           <label for="date">Article Date:</label>
           <input type="date" id='date' name="dateCreated"/>
-
+          <br></br>
           <label for="headline">Headline:</label>
           <input type="text" id='headline' name="headline"/>
-
+          <br></br>
           <label for="summary">Summary:</label>
           <input type="text" id='summary' name="summary"/>
-
+          <br></br>
           <label for="image">Image path:</label>
           <input type="text" id='image' name="image"/>
-
+          <br></br>
           <label for="fullstory">Full Story:</label>
           <textarea name="fullstory" id='fullstory' wrap="hard" rows="10" cols="50"></textarea>
-
+          <br></br>
           <label for="category">Category:</label>
           <select id='category' name="category">
             {categories}
           </select>
-
+          <br></br>
           <button type="submit">Save Article</button>
         </form>
       </div>

@@ -10,8 +10,7 @@ const MicroJournalist= (props) => {
     <Link to = {"/journalists/" + props.journalist.id} className="microjournalist-img-link">
           <img src={props.journalist.image}/>
         </Link>
-        <p className='microjournalistFirstName'>{props.journalist.firstName}</p>
-        <p className='microjournalistSurname'>{props.journalist.surname}</p>
+        <p className='microjournalist-full-name'>{props.journalist.firstName} {props.journalist.surname}</p>
       </div>
   </React.Fragment>
 )
