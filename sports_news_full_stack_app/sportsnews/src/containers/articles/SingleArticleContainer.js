@@ -43,7 +43,7 @@ class SingleArticleContainer extends Component {
       return null;
     }
     return (
-      <div className="component">
+      <div className="articledetail">
        <ArticleDetails id={this.props.id} article = {this.state.article} journalist={this.state.article._embedded.journalist} handleDelete = {this.handleDelete} handleEdit={this.handleEdit}/>
      </div>
     )

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import MainContainer from './containers/MainContainer';
-import NavBar from './containers/NavBar';
+
 import Header from './containers/Header';
 import ArticleListContainer from './containers/articles/ArticleListContainer'
 import SingleArticleContainer from './containers/articles/SingleArticleContainer';
@@ -21,7 +21,6 @@ class App extends Component {
       <Router >
         <React.Fragment>
           <Header/>
-          <NavBar/>
           <Switch>
             <Route exact path = '/' component={MainContainer}/>
             <Route exact path = '/articles' component={ArticleListContainer}/>

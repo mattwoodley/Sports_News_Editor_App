@@ -37,9 +37,6 @@ header{
 
 }
 
-.article-microjournalist-link img{
-  max-width: 250px;
-}
 .microarticle{
   max-width:250px;
 }
@@ -52,9 +49,7 @@ header{
 .microarticle-li{
   text-align: justify;
 }
-.articledetail{
-  text-align:justify;
-}
+
 .microarticle-li img {
   width: 250px;
 }
@@ -65,9 +60,6 @@ header{
   grid-column-start:2;
   grid-gap: 10px;
 
-}
-.articledetail img{
-  width: 700px;
 }
 
 .categoriesNavButton{
