@@ -37,9 +37,7 @@ header{
 
 }
 
-.article-microjournalist-link img{
-  max-width: 250px;
-}
+
 .microarticle{
   max-width:250px;
 }
@@ -58,6 +56,7 @@ header{
 .microarticle-li img {
   width: 250px;
 }
+
 .microjournalists-ul{
   display: flex;
   flex-wrap: wrap;
@@ -70,15 +69,52 @@ header{
   width: 700px;
 }
 
-.categoriesNavButton{
-  margin:2px;
-  padding:5px;
+.article-microjournalist-link img{
+  max-width: 250px;
 }
+
+.single-journalist-container{
+   grid-row-start: 2;
+  grid-column-start:2; 
+  text-align:center;
+}
+.single-journalist-container .microjournalist{
+
+}
+
+
+
+.microjournalist{
+  grid-row-start: 2;
+  grid-column-start:2; 
+}
+
 .microjournalist-li img {
   width: 150px;
 }
 
+.admin-button{
+  background-color: yellow;
+  color: black;
+  font-weight:bold;
+  font-size:large;
+  padding:5px;
+  border:none;
+  margin: 5px;
+}
+
+.admin-button:hover{
+  background-color: black;
+  color: yellow;
+
+}
+
 .navButton{
+  margin:2px;
+  padding:5px;
+}
+
+.categoriesNavButton{
   margin:2px;
   padding:5px;
 }

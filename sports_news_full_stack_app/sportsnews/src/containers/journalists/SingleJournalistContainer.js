@@ -44,13 +44,13 @@ class SingleJournalistContainer extends Component {
     }
     if(!this.state.articles){
       return(
-        <div className="component">
+        <div className="single-journalist-container">
       <JournalistDetails id={this.props.id} journalist = {this.state.journalist} articles={null} handleDelete = {this.handleDelete} handleEdit={this.handleEdit}/>
        </div>
      )
     }
     return (
-      <div className="component">
+      <div className="single-journalist-container">
        <JournalistDetails id={this.props.id} journalist = {this.state.journalist} articles={this.state.journalist._embedded.articles} handleDelete = {this.handleDelete} handleEdit={this.handleEdit}/>
      </div>
     )

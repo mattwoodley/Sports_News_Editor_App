@@ -10,7 +10,9 @@ class NavBar extends Component {
         <nav>
           <Link className='navButton' to="/">Home</Link>
           <Link className='navButton' to="/articles">Articles</Link>
+          <Link className='navButton' to="/articles/new">New Article</Link>
           <Link className='navButton' to="/journalists">Journalists</Link>
+          <Link className='navButton' to="/journalists/new">New Journalist</Link>
           <Link className='navButton' to="/categories">Categories</Link>
         </nav>
       </React.Fragment>
